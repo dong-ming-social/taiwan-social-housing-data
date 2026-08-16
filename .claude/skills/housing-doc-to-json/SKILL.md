@@ -15,6 +15,13 @@ the JSON is this repo's own schema (anydoc does **not** emit JSON directly).
   diff against existing `*.json` files and process only the missing ones.
 - User asks to add/update a document in the dataset.
 
+## Repo layout (multi-site)
+Files are organised **one folder per housing site**, named by the URL slug in
+`/documents/<site>/...` (e.g. `dongming/`, `nangangdepot1/`). Different sites
+reuse the same attachment names (附件10, 附件11, …) with different content, so the
+site folder is what keeps them apart — **never write a second site's files to the
+repo root**. When a new site appears, create `<site>/` and put every JSON there.
+
 ## Prerequisites (one-time per machine)
 Homebrew Python is externally managed and its `pip` is not on PATH; always use a venv.
 ```bash
@@ -26,11 +33,12 @@ Pin `firecrawl-anydoc==0.1.9` — the `metadata.parser` block in every existing 
 ## Workflow
 
 ### 1. Resolve the document list
+- Note the **site slug** from the URL path (`/documents/<site>/`) — it is the
+  output folder and the base for every `official_pdf_url`.
 - Single URL → one document.
-- Download-page HTML → collect every `/documents/dongming/*.pdf` href, decode the
-  `&#xNNNN;` entities to real filenames, and **skip any whose `.json` already
-  exists** (match by the base filename with extension changed to `.json`). Confirm
-  the final list with the user if it is large.
+- Download-page HTML → collect every `/documents/<site>/*.pdf` href, decode the
+  `&#xNNNN;` entities to real filenames, and **skip any whose `<site>/*.json`
+  already exists**. Confirm the final list with the user if it is large.
 
 ### 2. Download & verify (into scratchpad, never commit the PDF)
 Python 3.14's `urllib` rejects this host's TLS cert — use `curl`:
@@ -47,13 +55,26 @@ the source is unchanged — leave that file as-is and tell the user.
 - `anydoc.to_markdown(path)` for the overall structure.
 - `pdfplumber` per page for clean `text`, `tables`, `image_count` — it is more
   reliable than anydoc's markdown for multi-column legal layouts.
+- **Scanned / image-only PDFs**: anydoc raises `UnsupportedError` ("PDF has no
+  extractable text … OCR is required") and pdfplumber returns empty text. Do **not**
+  OCR or guess. Still emit the JSON (the helper handles empty text: pages get
+  `has_text:false` + `image_note`), set `document_type:"announcement"` (or as
+  fitting) and `structured_data.requires_ocr:true` with a note, and tell the user.
+- **Table layouts vary between sites/versions** (e.g. 附件5 exists in an 8-column
+  form with 行政區 and a 7-column form without). Detect column count from the header
+  row; don't hard-code indices.
 
 ### 4. Build the JSON (use the helper)
 `scripts/pdf_to_json.py` builds `metadata` / `source` / `sections` / `pages`
-automatically from the PDF and merges hand-authored `structured_data`. See
-`reference/schema.md` for the full schema and the `document_type` / structured
-conventions. Author `structured_data` faithfully from the extracted text — **never
-invent content for image-only pages**; mark them with the standard `image_note`.
+automatically and merges hand-authored `structured_data`. Import `build()` and pass
+`official_pdf_url` for the current site (the module's default `BASE` is dongming;
+`build(..., official_pdf_url="https://rent.thurc.org.taipei/documents/<site>/"+quote(name))`),
+and write the result to `<site>/<doc_name>.json`. See `reference/schema.md` for the
+full schema and `document_type` conventions. Author `structured_data` faithfully
+from the extracted text — **never invent content for image-only pages**; mark them
+with the standard `image_note`. Standardised clauses (e.g. 附件10 管理扣分規定) may
+reuse another site's authored `penalty_rules`, but `pages[]` must carry this PDF's
+own verbatim text.
 
 ### 5. Update README.md
 Add the document to the 收錄範圍 list (numeric order) and bump the
