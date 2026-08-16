@@ -24,7 +24,7 @@
 ### 南港機廠社會住宅 1 區（`nangangdepot1/`，14 份、120 頁）
 
 - 南港機廠社宅 1 區招租手冊
-- 南港機廠社會住宅 1 區招租公告（掃描影像 PDF，無文字層，詳見「資料來源與品質」）
+- 南港機廠社會住宅 1 區招租公告（掃描影像 PDF，內文以 macOS Vision OCR 擷取，詳見「資料來源與品質」）
 - 附件 2：租期及住宅相關補貼切結書
 - 附件 3：所得級距及分級補貼租金表
 - 附件 4-1：申請書填寫範例（一般、低收入、原住民）
@@ -78,7 +78,7 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
 - 網站主管機關：臺北市政府都市發展局
 - 原始 PDF 的來源網址與 SHA-256 均記錄於各 JSON。
 - 所有 PDF 均已確認未加密，並完成逐頁文字、表格及圖像核對。
-- 南港機廠社會住宅 1 區招租公告為掃描影像 PDF、無文字層，anydoc 與 pdfplumber 均無法擷取文字（需 OCR）；該檔僅記錄來源、頁數與各頁影像存在，未臆測影像內容（`structured_data.requires_ocr` 為 `true`）。
+- 多數文件的文字由 anydoc（firecrawl-anydoc 0.1.9）解析、pdfplumber 逐頁核對。**南港機廠社會住宅 1 區招租公告**為掃描影像 PDF、無文字層，anydoc 與 pdfplumber 均無法擷取，改以 **macOS Vision OCR（繁體中文）** 擷取內文（`metadata.parser.name` 為 `macos-vision-ocr`、`structured_data.ocr_applied` 為 `true`）。OCR 內容可能含少量辨識誤差，且頁緣單字（裝、訂、線、騎等）為公文裝訂線之旋轉版面殘留，非公告內文；如需精確引用請對照官方 PDF。
 
 本資料集是官方文件的結構化整理成果，不是政府機關的正式法律解釋或申請審查依據。若內容與最新公告不同，應以發布單位的最新官方文件為準。
 

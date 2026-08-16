@@ -56,10 +56,19 @@ the source is unchanged — leave that file as-is and tell the user.
 - `pdfplumber` per page for clean `text`, `tables`, `image_count` — it is more
   reliable than anydoc's markdown for multi-column legal layouts.
 - **Scanned / image-only PDFs**: anydoc raises `UnsupportedError` ("PDF has no
-  extractable text … OCR is required") and pdfplumber returns empty text. Do **not**
-  OCR or guess. Still emit the JSON (the helper handles empty text: pages get
-  `has_text:false` + `image_note`), set `document_type:"announcement"` (or as
-  fitting) and `structured_data.requires_ocr:true` with a note, and tell the user.
+  extractable text … OCR is required") and pdfplumber returns empty text. By
+  default do **not** OCR or guess — emit the JSON (the helper handles empty text:
+  pages get `has_text:false` + `image_note`), set a fitting `document_type` (e.g.
+  `announcement`) and `structured_data.requires_ocr:true` with a note, and tell
+  the user it has no extractable text.
+  - **If the user asks to OCR it**: use `scripts/ocr_vision.py` (macOS Vision,
+    Traditional Chinese — needs `pymupdf` + `pyobjc-framework-Vision`/`-Quartz`).
+    `ocr_pdf(path)` returns `{page_no: text}`. Then set each page's `text`/`has_text`,
+    rebuild `sections`, set `structured_data.ocr_applied:true` (drop `requires_ocr`),
+    and record OCR provenance in `metadata.parser` (`name:"macos-vision-ocr"`, level
+    accurate, languages, rasterizer pymupdf, dpi) instead of anydoc — the text did
+    not come from anydoc. Warn that OCR text may contain errors and that rotated
+    binding-margin single characters (裝/訂/線/騎) are scan artifacts, not content.
 - **Table layouts vary between sites/versions** (e.g. 附件5 exists in an 8-column
   form with 行政區 and a 7-column form without). Detect column count from the header
   row; don't hard-code indices.
