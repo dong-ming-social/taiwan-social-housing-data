@@ -86,4 +86,28 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
 
 本 repository 的資料選編、JSON schema、欄位整理與結構化成果採 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) 授權，詳見 [LICENSE](LICENSE)。
 
-官方文件原始內容不因收錄於本 repository 而被重新授權；其使用條件仍以[臺北市政府政府網站資料開放宣告](https://www.gov.taipei/News_Content.aspx?n=10FDEA7683714512&s=3B6C92FD22C01611&sms=AA987E1C50412097)及個別文件的權利聲明為準。使用或散布時請保留官方來源與本資料集出處。
+官方文件原始內容不因收錄於本 repository 而被重新授權；其使用條件仍以[臺北市政府政府網站資料開放宣告](https://www.gov.taipei/News_Content.aspx?n=10FDEA7683714512&s=3B6C92FD22C01611&sms=AA987E1C50412097)及個別文件的權利聲明為準。依該開放宣告，官方資料可無償、非專屬、得再授權地重製、改作、編輯、公開傳輸及其他利用，**惟使用時應註明出處**。
+
+## 出處標示
+
+使用或散布本資料集（含衍生成果）時，請一併保留「官方原始來源」與「本資料集」兩項出處。
+
+**官方原始來源**
+
+- 發布單位：臺北市住宅及都市更新中心
+- 網站主管機關：臺北市政府都市發展局
+- 來源網站：臺北市政府安心樂租網（<https://rent.thurc.org.taipei/>）
+- 各檔對應之官方 PDF 網址與 SHA-256 均記錄於該 JSON 的 `source` 與 `metadata` 欄位。
+
+**本資料集**
+
+- 名稱：Taiwan Social Housing Data
+- 來源：dwhao84/taiwan-social-housing-data（GitHub）
+- 授權：資料整理與結構化成果採 CC BY 4.0
+
+**引用範例**
+
+- 官方文件：「資料來源：臺北市住宅及都市更新中心，《東明社會住宅住戶規約手冊（114 年 12 月版）》，臺北市政府安心樂租網，https://rent.thurc.org.taipei/。」
+- 本資料集：「本資料整理自 Taiwan Social Housing Data（dwhao84/taiwan-social-housing-data），採 CC BY 4.0 授權。」
+
+> 提醒：開放宣告之授權僅及於著作權，不含專利、商標及市府標誌；部分經特別聲明之影音、圖像等素材不在授權範圍內。資料中如涉個人資料，使用者應自行遵守《個人資料保護法》。使用時不得惡意變更原始資訊致與原意不符。
