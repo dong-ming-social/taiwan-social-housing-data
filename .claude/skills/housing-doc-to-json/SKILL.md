@@ -6,8 +6,9 @@ description: Convert a Taiwan social-housing PDF (e.g. 東明社宅 附件 downl
 # Housing document → JSON pipeline
 
 Turns an official social-housing PDF into a repo-schema `.json` file, updates
-`README.md`, and ships it via a squash-merged PR. anydoc parses the PDF to text;
-the JSON is this repo's own schema (anydoc does **not** emit JSON directly).
+`README.md`, and ships it via a squash-merged PR. [anydoc](https://github.com/firecrawl/anydoc)
+parses the PDF to text; the JSON is this repo's own schema (anydoc does **not**
+emit JSON directly).
 
 ## When to use
 - User pastes one or more PDF URLs from `rent.thurc.org.taipei/documents/...`.
@@ -29,6 +30,8 @@ python3 -m venv .venv
 ./.venv/bin/python -m pip install "firecrawl-anydoc==0.1.9" pypdf pdfplumber
 ```
 Pin `firecrawl-anydoc==0.1.9` — the `metadata.parser` block in every existing JSON records that version.
+Upstream project: <https://github.com/firecrawl/anydoc> (installed via the `firecrawl-anydoc` PyPI package).
+Note: existing JSON `metadata.parser.repository` records a fork URL for provenance of what was actually used — leave those values as-is unless doing a deliberate metadata migration.
 
 ## Workflow
 
