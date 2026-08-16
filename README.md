@@ -78,7 +78,7 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
 - 網站主管機關：臺北市政府都市發展局
 - 原始 PDF 的來源網址與 SHA-256 均記錄於各 JSON。
 - 所有 PDF 均已確認未加密，並完成逐頁文字、表格及圖像核對。
-- 多數文件的文字由 anydoc（firecrawl-anydoc 0.1.9）解析、pdfplumber 逐頁核對。**南港機廠社會住宅 1 區招租公告**為掃描影像 PDF、無文字層，anydoc 與 pdfplumber 均無法擷取，改以 **macOS Vision OCR（繁體中文）** 擷取內文（`metadata.parser.name` 為 `macos-vision-ocr`、`structured_data.ocr_applied` 為 `true`）。OCR 內容可能含少量辨識誤差，且頁緣單字（裝、訂、線、騎等）為公文裝訂線之旋轉版面殘留，非公告內文；如需精確引用請對照官方 PDF。
+- 多數文件的文字由 anydoc（firecrawl-anydoc 0.1.9）解析、pdfplumber 逐頁核對。**南港機廠社會住宅 1 區招租公告**為掃描影像 PDF、無文字層，anydoc 與 pdfplumber 均無法擷取，改以 **macOS Vision OCR（繁體中文）** 擷取內文（`metadata.parser.name` 為 `macos-vision-ocr`、`structured_data.ocr_applied` 為 `true`）。OCR 文字已再清理：濾除裝訂線／騎縫殘留（單一字元行，共 75 行）與「第N頁，共N頁」頁尾（23 行），並將硬斷行接回段落；`structured_data.full_text` 另提供跨頁接續之連續全文（`structured_data.ocr_cleaning` 記錄清理內容）。惟 OCR 仍可能含少量字元辨識誤差，如需精確引用請對照官方 PDF。
 
 本資料集是官方文件的結構化整理成果，不是政府機關的正式法律解釋或申請審查依據。若內容與最新公告不同，應以發布單位的最新官方文件為準。
 

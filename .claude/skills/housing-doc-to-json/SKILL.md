@@ -69,6 +69,13 @@ the source is unchanged — leave that file as-is and tell the user.
     accurate, languages, rasterizer pymupdf, dpi) instead of anydoc — the text did
     not come from anydoc. Warn that OCR text may contain errors and that rotated
     binding-margin single characters (裝/訂/線/騎) are scan artifacts, not content.
+  - **Cleaning OCR text** (if asked): drop bare single-CJK-char lines (裝訂線／騎縫
+    residue) and `第N頁，共N頁` footers, then rejoin OCR hard-wraps into paragraphs —
+    glue a line onto the previous unless it starts a structural marker (一、／（一）／
+    1、／（1）／附件…) or the previous line ended in 。！？：；. Provide the cross-page
+    continuous text as `structured_data.full_text`, keep per-page cleaned text in
+    `pages[].text`, and record what was stripped in `structured_data.ocr_cleaning`.
+    Do NOT rewrite misrecognized characters — that would fabricate content.
 - **Table layouts vary between sites/versions** (e.g. 附件5 exists in an 8-column
   form with 行政區 and a 7-column form without). Detect column count from the header
   row; don't hard-code indices.
