@@ -81,6 +81,28 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
 
 `.claude/skills/housing-doc-to-json/` 收錄可重複使用的轉檔技能，封裝「下載 → anydoc 解析 → 產生 repo schema JSON → 更新 README → 開 PR squash merge」的完整流程。在此 repo 目錄以 Claude Code 開新 session 後，貼上新的 PDF 連結或附件下載頁即可觸發；詳見該資料夾的 `SKILL.md` 與 `reference/schema.md`。
 
+## 每日自動更新
+
+GitHub Actions 於每天 **06:20（Asia/Taipei）** 執行「每日更新社宅官方文件」，也可從 Actions 頁面手動執行。流程會重新盤點基地地圖、基地附件頁、最新消息公告與全站下載頁，並重新下載目前在線的 PDF 比對 SHA-256，因此能偵測「網址不變、內容被官方替換」的情況。
+
+- 新 PDF 會自動轉成 JSON；同一網址內容更新時會重建原 JSON。
+- 官網不再連結的文件只在 inventory 標記 `active: false`，不會自動刪除歷史資料。
+- 若本次找到的文件少於上次有效盤點的 90%，流程會失敗並停止，不會大量誤標下架。
+- 全庫驗證通過且確實有差異時，才會以 `dwhao84/automated-housing-update` 建立或更新 PR；**不會自動合併**。
+- 自動 commit 使用 `Da Wei Hao <dawei84@hotaileasing.com.tw>`，不加入 AI 共同作者。
+
+首次啟用時，repository 管理者需在 **Settings → Actions → General → Workflow permissions** 允許 GitHub Actions 建立 pull request。workflow 僅申請 `contents: write` 與 `pull-requests: write`。
+
+本機可用下列命令先做唯讀盤點，或完整演練：
+
+```bash
+# 只盤點官方連結，不下載 PDF、不修改 repo
+./.venv/bin/python .claude/skills/housing-doc-to-json/scripts/daily_update.py --discover-only
+
+# 完整更新與 SHA 比對
+./.venv/bin/python .claude/skills/housing-doc-to-json/scripts/daily_update.py
+```
+
 ## 資料來源與品質
 
 - 來源：臺北市政府安心樂租網。完整盤點同時使用[社宅基地地圖](https://rent.thurc.org.taipei/housing-sites/map)、各基地 `/Attachments/<slug>` 附件頁，以及[最新消息](https://rent.thurc.org.taipei/news)全 10 頁的公告詳情附件。

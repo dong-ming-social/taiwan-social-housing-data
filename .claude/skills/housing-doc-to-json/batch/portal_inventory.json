@@ -3,9 +3,10 @@
   "bucket": "_assets",
   "stem": "1100430-社會住宅代租代管委託租賃契約書範本",
   "path": "/assets/attachments/1100430-社會住宅代租代管委託租賃契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -14,9 +15,10 @@
   "bucket": "_assets",
   "stem": "1120602-社會住宅代租代管住宅租賃契約書範本",
   "path": "/assets/attachments/1120602-社會住宅代租代管住宅租賃契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -25,9 +27,10 @@
   "bucket": "_assets",
   "stem": "1120602-社會住宅代租代管委託管理契約書範本",
   "path": "/assets/attachments/1120602-社會住宅代租代管委託管理契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -36,9 +39,10 @@
   "bucket": "_assets",
   "stem": "1120602-社會住宅包租契約書範本",
   "path": "/assets/attachments/1120602-社會住宅包租契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -47,9 +51,10 @@
   "bucket": "_assets",
   "stem": "1120602-社會住宅轉租契約書範本",
   "path": "/assets/attachments/1120602-社會住宅轉租契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -58,9 +63,10 @@
   "bucket": "_assets",
   "stem": "11312版-臺北市社會住宅租賃契約書(a)",
   "path": "/assets/attachments/11312版-臺北市社會住宅租賃契約書(a).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -69,9 +75,10 @@
   "bucket": "_assets",
   "stem": "11312版-臺北市社會住宅租賃契約書(b)",
   "path": "/assets/attachments/11312版-臺北市社會住宅租賃契約書(b).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -80,9 +87,10 @@
   "bucket": "_assets",
   "stem": "a01-社會住宅包租代管第3期計畫出租人出租住宅申請書(1120105)",
   "path": "/assets/attachments/a01-社會住宅包租代管第3期計畫出租人出租住宅申請書(1120105).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -91,9 +99,10 @@
   "bucket": "_assets",
   "stem": "a05-社會住宅包租代管第3期計畫民眾承租住宅申請書(1130516)",
   "path": "/assets/attachments/a05-社會住宅包租代管第3期計畫民眾承租住宅申請書(1130516).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -102,75 +111,82 @@
   "bucket": "_assets",
   "stem": "新奇岩社會住宅青年創新回饋計畫-徵件簡章",
   "path": "/assets/attachments/新奇岩社會住宅青年創新回饋計畫-徵件簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "2102"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "新奇岩社會住宅青年創新回饋計畫-徵選公告",
   "path": "/assets/attachments/新奇岩社會住宅青年創新回饋計畫-徵選公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "2102"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "新奇岩青創計畫_開始徵件",
   "path": "/assets/attachments/新奇岩青創計畫_開始徵件.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2103"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "瑞光徵選簡章",
   "path": "/assets/attachments/瑞光徵選簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "1096"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "瑞光社宅青創回饋計畫第二階段評選結果",
   "path": "/assets/attachments/瑞光社宅青創回饋計畫第二階段評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2098"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "瑞光社會住宅青年創新回饋計畫第二階段評選結果公告",
   "path": "/assets/attachments/瑞光社會住宅青年創新回饋計畫第二階段評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2098"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "社會住宅代租代管住宅租賃契約書範本(本局修3)fin",
   "path": "/assets/attachments/社會住宅代租代管住宅租賃契約書範本(本局修3)fin.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -179,9 +195,10 @@
   "bucket": "_assets",
   "stem": "社會住宅代租代管委託租賃契約書範本(本局修)fin",
   "path": "/assets/attachments/社會住宅代租代管委託租賃契約書範本(本局修)fin.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -190,9 +207,10 @@
   "bucket": "_assets",
   "stem": "社會住宅代租代管委託管理契約書範本(本局修)fin",
   "path": "/assets/attachments/社會住宅代租代管委託管理契約書範本(本局修)fin.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -201,9 +219,10 @@
   "bucket": "_assets",
   "stem": "社會住宅包租代管第2期計畫宣導摺頁_20200416100000",
   "path": "/assets/attachments/社會住宅包租代管第2期計畫宣導摺頁_20200416100000.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -212,9 +231,10 @@
   "bucket": "_assets",
   "stem": "社會住宅包租契約書範本(本局修)fin",
   "path": "/assets/attachments/社會住宅包租契約書範本(本局修)fin.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -223,9 +243,10 @@
   "bucket": "_assets",
   "stem": "社會住宅轉租契約書範本(本局修)fin",
   "path": "/assets/attachments/社會住宅轉租契約書範本(本局修)fin.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -234,9 +255,10 @@
   "bucket": "_assets",
   "stem": "第2期計畫-代租案租約範本(1091201前適用)",
   "path": "/assets/attachments/第2期計畫-代租案租約範本(1091201前適用).pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -245,9 +267,10 @@
   "bucket": "_assets",
   "stem": "第2期計畫-代租案租約範本-1091201起適用-社會住宅包租代管計畫代租代管案住宅租賃契約書範本（函頒）定稿",
   "path": "/assets/attachments/第2期計畫-代租案租約範本-1091201起適用-社會住宅包租代管計畫代租代管案住宅租賃契約書範本（函頒）定稿.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -256,9 +279,10 @@
   "bucket": "_assets",
   "stem": "第2期計畫-民眾承租住宅申請書_20200416095052",
   "path": "/assets/attachments/第2期計畫-民眾承租住宅申請書_20200416095052.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -267,9 +291,10 @@
   "bucket": "_assets",
   "stem": "第2期計畫-社會住宅包租契約書範本_20200416094807",
   "path": "/assets/attachments/第2期計畫-社會住宅包租契約書範本_20200416094807.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -278,9 +303,10 @@
   "bucket": "_assets",
   "stem": "第2期計畫-社會住宅轉租契約書範本_20200416094807",
   "path": "/assets/attachments/第2期計畫-社會住宅轉租契約書範本_20200416094807.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
+   "attachments",
    "extra_Attachments"
   ],
   "dupe": false
@@ -289,54 +315,59 @@
   "bucket": "_assets",
   "stem": "第一階段計畫推薦評選結果及第二階段簡報評選公告",
   "path": "/assets/attachments/第一階段計畫推薦評選結果及第二階段簡報評選公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2097"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "附件一-第一階段錄取名單及第二階段簡報評選組別",
   "path": "/assets/attachments/附件一-第一階段錄取名單及第二階段簡報評選組別.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2097"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "附件三-瑞光社宅青創計畫審查結果",
   "path": "/assets/attachments/附件三-瑞光社宅青創計畫審查結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2097"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "_assets",
   "stem": "附件二-瑞光社宅青年創新回饋計畫評選說明與流程",
   "path": "/assets/attachments/附件二-瑞光社宅青年創新回饋計畫評選說明與流程.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "2097"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "16-in-one",
   "stem": "115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案",
   "path": "/documents/16-in-one/115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -344,7 +375,7 @@
   "bucket": "16-in-one",
   "stem": "115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案_公告用印",
   "path": "/documents/16-in-one/115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案_公告用印.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3272"
@@ -355,11 +386,12 @@
   "bucket": "16-in-one",
   "stem": "附件1_撤案申請書",
   "path": "/documents/16-in-one/附件1_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -367,11 +399,12 @@
   "bucket": "16-in-one",
   "stem": "附件2_租賃標的、租期及費用",
   "path": "/documents/16-in-one/附件2_租賃標的、租期及費用.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -379,11 +412,12 @@
   "bucket": "16-in-one",
   "stem": "附件3_小彎等16處社會住宅所得級距及分級補貼租金表",
   "path": "/documents/16-in-one/附件3_小彎等16處社會住宅所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -391,11 +425,12 @@
   "bucket": "16-in-one",
   "stem": "附件4_申請社會住宅應備文件",
   "path": "/documents/16-in-one/附件4_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -403,11 +438,12 @@
   "bucket": "16-in-one",
   "stem": "附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形",
   "path": "/documents/16-in-one/附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -415,11 +451,12 @@
   "bucket": "16-in-one",
   "stem": "附件6_申請案不能補正與應補正事項",
   "path": "/documents/16-in-one/附件6_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -427,11 +464,12 @@
   "bucket": "16-in-one",
   "stem": "附件7_管理扣分規定",
   "path": "/documents/16-in-one/附件7_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -439,11 +477,12 @@
   "bucket": "16-in-one",
   "stem": "附件8_11505版-臺北市社會住宅租賃契約書(自建版A2)-契約書範本",
   "path": "/documents/16-in-one/附件8_11505版-臺北市社會住宅租賃契約書(自建版A2)-契約書範本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3272",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -451,7 +490,7 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "115年「樟新水岸等10處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/19-in-one-zhangxinshuian/115年「樟新水岸等10處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3271"
@@ -462,7 +501,7 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "115年「樟新水岸等10處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/19-in-one-zhangxinshuian/115年「樟新水岸等10處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3269"
@@ -473,7 +512,7 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "115年「樟新水岸等10處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第再次公告",
   "path": "/documents/19-in-one-zhangxinshuian/115年「樟新水岸等10處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3270"
@@ -484,11 +523,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "15處社會住宅及4處幸福住宅招租公告",
   "path": "/documents/19-in-one-zhangxinshuian/15處社會住宅及4處幸福住宅招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -496,7 +536,7 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "【複查申請表】115年「東明社會住宅」暨「樟新水岸等10處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/19-in-one-zhangxinshuian/【複查申請表】115年「東明社會住宅」暨「樟新水岸等10處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3269"
@@ -507,11 +547,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件11_申請案不能補正與應補正事項",
   "path": "/documents/19-in-one-zhangxinshuian/附件11_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -519,11 +560,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件12_管理扣分規定",
   "path": "/documents/19-in-one-zhangxinshuian/附件12_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -531,11 +573,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件13_臺北市社會住宅租賃契約書",
   "path": "/documents/19-in-one-zhangxinshuian/附件13_臺北市社會住宅租賃契約書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -543,11 +586,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件1_租賃標的、租期及費用",
   "path": "/documents/19-in-one-zhangxinshuian/附件1_租賃標的、租期及費用.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -555,11 +599,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件2-103年8月12日臺北市大內湖科技園區次核心產業使用許可回饋規定細部計畫案",
   "path": "/documents/19-in-one-zhangxinshuian/附件2-103年8月12日臺北市大內湖科技園區次核心產業使用許可回饋規定細部計畫案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -567,11 +612,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件5_15處社會住宅及4處幸福住宅所得級距及分級補貼租金表",
   "path": "/documents/19-in-one-zhangxinshuian/附件5_15處社會住宅及4處幸福住宅所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -579,11 +625,12 @@
   "bucket": "19-in-one-zhangxinshuian",
   "stem": "附件7_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形",
   "path": "/documents/19-in-one-zhangxinshuian/附件7_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3267",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -591,7 +638,7 @@
   "bucket": "2025",
   "stem": "114年10月3日臺北住都契服字第1140008238號公告",
   "path": "/documents/2025/114年10月3日臺北住都契服字第1140008238號公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3255"
@@ -602,7 +649,7 @@
   "bucket": "2025",
   "stem": "東明及興隆E區青創計畫入選名單簡報評選流程",
   "path": "/documents/2025/東明及興隆E區青創計畫入選名單簡報評選流程.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3258"
@@ -613,7 +660,7 @@
   "bucket": "2025",
   "stem": "東明及興隆E區青創計畫入選第二階段簡報評選名單及會議流程公告",
   "path": "/documents/2025/東明及興隆E區青創計畫入選第二階段簡報評選名單及會議流程公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3258"
@@ -624,7 +671,7 @@
   "bucket": "2025",
   "stem": "東明及興隆E區青創計畫評選說明",
   "path": "/documents/2025/東明及興隆E區青創計畫評選說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3258"
@@ -635,7 +682,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3227"
@@ -646,7 +693,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點分數第1次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3225"
@@ -657,7 +704,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/4-in-one-xinglong_a/114年「六張犁社會住宅1、2區」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3229"
@@ -668,7 +715,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「樟新水岸社會住宅」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「樟新水岸社會住宅」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3227"
@@ -679,7 +726,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「樟新水岸社會住宅」其他特殊情形身分戶評點分數第1次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「樟新水岸社會住宅」其他特殊情形身分戶評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3225"
@@ -690,7 +737,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「樟新水岸社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/4-in-one-xinglong_a/114年「樟新水岸社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3229"
@@ -701,7 +748,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「經貿社會住宅」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「經貿社會住宅」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3227"
@@ -712,7 +759,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「經貿社會住宅」其他特殊情形身分戶評點分數第1次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「經貿社會住宅」其他特殊情形身分戶評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3225"
@@ -723,7 +770,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「經貿社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/4-in-one-xinglong_a/114年「經貿社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3229"
@@ -734,7 +781,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「興隆社會住宅A區」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「興隆社會住宅A區」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3227"
@@ -745,7 +792,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「興隆社會住宅A區」其他特殊情形身分戶評點分數第1次公告",
   "path": "/documents/4-in-one-xinglong_a/114年「興隆社會住宅A區」其他特殊情形身分戶評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3225"
@@ -756,7 +803,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年「興隆社會住宅A區」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/4-in-one-xinglong_a/114年「興隆社會住宅A區」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3229"
@@ -767,7 +814,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "114年四處社宅聯招手冊",
   "path": "/documents/4-in-one-xinglong_a/114年四處社宅聯招手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -782,7 +829,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "「114年興隆A、樟新水岸、經貿、六張犁1.2區」社會住宅招租公告",
   "path": "/documents/4-in-one-xinglong_a/「114年興隆A、樟新水岸、經貿、六張犁1.2區」社會住宅招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -797,7 +844,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "【複查申請表】114年「興隆A區、樟新水岸、經貿及六張犁1、2區」社會住宅其他特殊情形",
   "path": "/documents/4-in-one-xinglong_a/【複查申請表】114年「興隆A區、樟新水岸、經貿及六張犁1、2區」社會住宅其他特殊情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3225"
@@ -808,7 +855,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "六張犁社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/4-in-one-xinglong_a/六張犁社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "liuzhangli"
@@ -819,7 +866,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "樟新水岸住戶手冊(114年12月版)",
   "path": "/documents/4-in-one-xinglong_a/樟新水岸住戶手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "zhangxinshuian"
@@ -830,7 +877,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "經貿社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/4-in-one-xinglong_a/經貿社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jingmao"
@@ -841,7 +888,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "興隆A區住戶手冊(114年12月版)",
   "path": "/documents/4-in-one-xinglong_a/興隆A區住戶手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong_a"
@@ -852,7 +899,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件10_申請案不能補正與應補正事項",
   "path": "/documents/4-in-one-xinglong_a/附件10_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -867,7 +914,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件11_管理扣分規定",
   "path": "/documents/4-in-one-xinglong_a/附件11_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -882,7 +929,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件12_臺北市社會住宅租賃契約書",
   "path": "/documents/4-in-one-xinglong_a/附件12_臺北市社會住宅租賃契約書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -897,7 +944,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件13_4社會住宅周邊教育及公共服務資源一覽表",
   "path": "/documents/4-in-one-xinglong_a/附件13_4社會住宅周邊教育及公共服務資源一覽表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3222",
@@ -912,7 +959,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件14_免附家庭成員財稅資料",
   "path": "/documents/4-in-one-xinglong_a/附件14_免附家庭成員財稅資料.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3222",
@@ -927,7 +974,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件1_租賃標的、租期及費用(含分級租金補貼)",
   "path": "/documents/4-in-one-xinglong_a/附件1_租賃標的、租期及費用(含分級租金補貼).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222"
@@ -938,7 +985,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件4-1_申請書範本(一般、低收入、原住民)",
   "path": "/documents/4-in-one-xinglong_a/附件4-1_申請書範本(一般、低收入、原住民).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222"
@@ -949,7 +996,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件4-2_申請書範本(其他特殊情形身分戶)",
   "path": "/documents/4-in-one-xinglong_a/附件4-2_申請書範本(其他特殊情形身分戶).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222"
@@ -960,7 +1007,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（114.03）",
   "path": "/documents/4-in-one-xinglong_a/附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（114.03）.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -975,7 +1022,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件6-安康平宅說明",
   "path": "/documents/4-in-one-xinglong_a/附件6-安康平宅說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3222",
@@ -990,7 +1037,7 @@
   "bucket": "4-in-one-xinglong_a",
   "stem": "附件7_申請社會住宅應備文件",
   "path": "/documents/4-in-one-xinglong_a/附件7_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3222",
@@ -1005,7 +1052,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "115年「南港機廠社會住宅1區（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分",
   "path": "/documents/5-in-one-xinglong_D1/115年「南港機廠社會住宅1區（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3263"
@@ -1016,7 +1063,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "115年「興隆社會住宅E區」其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/5-in-one-xinglong_D1/115年「興隆社會住宅E區」其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3263"
@@ -1027,7 +1074,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "【複查申請表】115年「興隆社會住宅E區」暨「南港機廠社會住宅1區（零星空戶及候補戶名）",
   "path": "/documents/5-in-one-xinglong_D1/【複查申請表】115年「興隆社會住宅E區」暨「南港機廠社會住宅1區（零星空戶及候補戶名）.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3263"
@@ -1038,7 +1085,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "興隆D1區等5處零星空戶招租公告",
   "path": "/documents/5-in-one-xinglong_D1/興隆D1區等5處零星空戶招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1049,7 +1096,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件10_申請案不能補正與應補正事項",
   "path": "/documents/5-in-one-xinglong_D1/附件10_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1060,7 +1107,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件11_管理扣分規定",
   "path": "/documents/5-in-one-xinglong_D1/附件11_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1071,7 +1118,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件12_臺北市社會住宅租賃契約書",
   "path": "/documents/5-in-one-xinglong_D1/附件12_臺北市社會住宅租賃契約書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1082,7 +1129,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件1_租賃標的、租期及費用",
   "path": "/documents/5-in-one-xinglong_D1/附件1_租賃標的、租期及費用.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1093,7 +1140,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件4_興隆D1區社會住宅115年所得級距分級標準表及租金補貼表",
   "path": "/documents/5-in-one-xinglong_D1/附件4_興隆D1區社會住宅115年所得級距分級標準表及租金補貼表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1104,7 +1151,7 @@
   "bucket": "5-in-one-xinglong_D1",
   "stem": "附件7_申請社會住宅應備文件",
   "path": "/documents/5-in-one-xinglong_D1/附件7_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3260"
@@ -1115,7 +1162,7 @@
   "bucket": "7-in-one-2",
   "stem": "114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告",
   "path": "/documents/7-in-one-2/114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1126,7 +1173,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件10_申請書封套",
   "path": "/documents/7-in-one-2/附件10_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1137,7 +1184,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件11_福星等7社宅-個身分類別及房型數",
   "path": "/documents/7-in-one-2/附件11_福星等7社宅-個身分類別及房型數.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3218"
@@ -1148,7 +1195,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件2_租期及住宅相關補貼切結書",
   "path": "/documents/7-in-one-2/附件2_租期及住宅相關補貼切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1159,7 +1206,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件3-各社宅所得級距及分級補貼租金表",
   "path": "/documents/7-in-one-2/附件3-各社宅所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1170,7 +1217,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件4_申請社會住宅應備文件",
   "path": "/documents/7-in-one-2/附件4_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1181,7 +1228,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件5_免附家庭成員財稅資料切結書",
   "path": "/documents/7-in-one-2/附件5_免附家庭成員財稅資料切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1192,7 +1239,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件6_撤案申請書",
   "path": "/documents/7-in-one-2/附件6_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1203,7 +1250,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件7_申請案不能補正與應補正事項",
   "path": "/documents/7-in-one-2/附件7_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1214,7 +1261,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件8_管理扣分規定",
   "path": "/documents/7-in-one-2/附件8_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1225,7 +1272,7 @@
   "bucket": "7-in-one-2",
   "stem": "附件9_11312版-臺北市社會住宅租賃契約書(自建版)final",
   "path": "/documents/7-in-one-2/附件9_11312版-臺北市社會住宅租賃契約書(自建版)final.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3218"
@@ -1236,7 +1283,7 @@
   "bucket": "aboriginal-rental",
   "stem": "113.2.16公告用印",
   "path": "/documents/aboriginal-rental/113.2.16公告用印.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1247,7 +1294,7 @@
   "bucket": "aboriginal-rental",
   "stem": "113年福星社宅原住民族招租案補充公告(育兒加籤)",
   "path": "/documents/aboriginal-rental/113年福星社宅原住民族招租案補充公告(育兒加籤).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1258,7 +1305,7 @@
   "bucket": "aboriginal-rental",
   "stem": "113年福星社會住宅原住民戶招租公告",
   "path": "/documents/aboriginal-rental/113年福星社會住宅原住民戶招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1269,7 +1316,7 @@
   "bucket": "aboriginal-rental",
   "stem": "福星社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/aboriginal-rental/福星社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1280,7 +1327,7 @@
   "bucket": "aboriginal-rental",
   "stem": "附件10_社區周圍教育及公共服務資源一覽表",
   "path": "/documents/aboriginal-rental/附件10_社區周圍教育及公共服務資源一覽表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "fuxing"
@@ -1291,7 +1338,7 @@
   "bucket": "aboriginal-rental",
   "stem": "附件1_福星社宅租賃標的租期費用相關名詞定義",
   "path": "/documents/aboriginal-rental/附件1_福星社宅租賃標的租期費用相關名詞定義.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1302,7 +1349,7 @@
   "bucket": "aboriginal-rental",
   "stem": "附件4_福星社宅介紹資訊",
   "path": "/documents/aboriginal-rental/附件4_福星社宅介紹資訊.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "fuxing"
@@ -1313,7 +1360,7 @@
   "bucket": "aboriginal-rental",
   "stem": "附件5_所得級距及分級補貼租金表",
   "path": "/documents/aboriginal-rental/附件5_所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1324,7 +1371,7 @@
   "bucket": "aboriginal-rental",
   "stem": "附件6_社會住宅租賃契約書樣本",
   "path": "/documents/aboriginal-rental/附件6_社會住宅租賃契約書樣本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "fuxing"
@@ -1335,10 +1382,11 @@
   "bucket": "apply",
   "stem": "安心樂租網操作方式",
   "path": "/documents/apply/安心樂租網操作方式.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1346,7 +1394,7 @@
   "bucket": "dalongdong",
   "stem": "大龍峒社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/dalongdong/大龍峒社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "dalongdong"
@@ -1357,11 +1405,12 @@
   "bucket": "dongming",
   "stem": "115年3月30日臺北住都契服字第1150002837號(用印)_東明重招",
   "path": "/documents/dongming/115年3月30日臺北住都契服字第1150002837號(用印)_東明重招.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3266",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1369,7 +1418,7 @@
   "bucket": "dongming",
   "stem": "115年5月7日臺北住都契服字第1150004188號",
   "path": "/documents/dongming/115年5月7日臺北住都契服字第1150004188號.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3268"
@@ -1380,7 +1429,7 @@
   "bucket": "dongming",
   "stem": "115年「東明社會住宅」其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/dongming/115年「東明社會住宅」其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3269"
@@ -1391,7 +1440,7 @@
   "bucket": "dongming",
   "stem": "115年「東明社會住宅」其他特殊情形身分戶評點分數第再次公告",
   "path": "/documents/dongming/115年「東明社會住宅」其他特殊情形身分戶評點分數第再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3270"
@@ -1402,7 +1451,7 @@
   "bucket": "dongming",
   "stem": "115年「東明社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/dongming/115年「東明社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3271"
@@ -1418,7 +1467,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1442,7 +1492,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1455,7 +1506,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1468,7 +1520,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1481,7 +1534,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1494,7 +1548,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1507,7 +1562,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1520,7 +1576,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1533,7 +1590,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1546,7 +1604,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1559,7 +1618,8 @@
   "src": [
    "3266",
    "dongming",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1567,11 +1627,12 @@
   "bucket": "elder-project",
   "stem": "115年度臺北市社會住宅青銀換居公告",
   "path": "/documents/elder-project/115/115年度臺北市社會住宅青銀換居公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1579,11 +1640,12 @@
   "bucket": "elder-project",
   "stem": "附件1_115年度青銀換居計畫基地介紹",
   "path": "/documents/elder-project/115/附件1_115年度青銀換居計畫基地介紹.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1591,11 +1653,12 @@
   "bucket": "elder-project",
   "stem": "附件2_115年度青銀換居計畫懶人包",
   "path": "/documents/elder-project/115/附件2_115年度青銀換居計畫懶人包.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1603,11 +1666,12 @@
   "bucket": "elder-project",
   "stem": "附件3_115年度青銀換居計畫招租申請書",
   "path": "/documents/elder-project/115/附件3_115年度青銀換居計畫招租申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1615,11 +1679,12 @@
   "bucket": "elder-project",
   "stem": "附件4_委託書",
   "path": "/documents/elder-project/115/附件4_委託書.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1627,11 +1692,12 @@
   "bucket": "elder-project",
   "stem": "附件5_建物所有權人授權書",
   "path": "/documents/elder-project/115/附件5_建物所有權人授權書.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3262",
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -1639,7 +1705,7 @@
   "bucket": "four-in-one-rental",
   "stem": "(111)本市歷次社宅其他特殊情形身分戶評點制辦理情形公告版",
   "path": "/documents/four-in-one-rental/(111)本市歷次社宅其他特殊情形身分戶評點制辦理情形公告版.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_d",
@@ -1653,7 +1719,7 @@
   "bucket": "four-in-one-rental",
   "stem": "「廣慈D社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/four-in-one-rental/「廣慈D社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_d"
@@ -1664,7 +1730,7 @@
   "bucket": "four-in-one-rental",
   "stem": "「廣慈E社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/four-in-one-rental/「廣慈E社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_e"
@@ -1675,7 +1741,7 @@
   "bucket": "four-in-one-rental",
   "stem": "「斯文里三期都更分回戶」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/four-in-one-rental/「斯文里三期都更分回戶」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "svenly3"
@@ -1686,7 +1752,7 @@
   "bucket": "four-in-one-rental",
   "stem": "「行善社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/four-in-one-rental/「行善社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xingshan"
@@ -1697,7 +1763,7 @@
   "bucket": "four-in-one-rental",
   "stem": "廣慈DE行善及斯三抽籤後審查作業說明",
   "path": "/documents/four-in-one-rental/廣慈DE行善及斯三抽籤後審查作業說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_d",
@@ -1711,7 +1777,7 @@
   "bucket": "four-in-one-rental",
   "stem": "廣慈DE行善社宅及斯三都更分回戶公告",
   "path": "/documents/four-in-one-rental/廣慈DE行善社宅及斯三都更分回戶公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_d",
@@ -1725,7 +1791,7 @@
   "bucket": "four-in-one-rental",
   "stem": "廣慈D、E、行善社會住宅暨斯文里三期都更分回戶招租手冊",
   "path": "/documents/four-in-one-rental/廣慈D、E、行善社會住宅暨斯文里三期都更分回戶招租手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_d",
@@ -1739,7 +1805,7 @@
   "bucket": "four-in-one-rental",
   "stem": "廣慈D社會住宅樓層平面圖",
   "path": "/documents/four-in-one-rental/廣慈D社會住宅樓層平面圖.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_d"
@@ -1750,7 +1816,7 @@
   "bucket": "four-in-one-rental",
   "stem": "廣慈D選屋作業平面圖",
   "path": "/documents/four-in-one-rental/廣慈D選屋作業平面圖.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_d"
@@ -1761,7 +1827,7 @@
   "bucket": "four-in-one-rental",
   "stem": "斯文理三期都更分回戶選屋作業平面圖",
   "path": "/documents/four-in-one-rental/斯文理三期都更分回戶選屋作業平面圖.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "svenly3"
@@ -1772,7 +1838,7 @@
   "bucket": "four-in-one-rental",
   "stem": "更正廣慈E社宅二房型無障礙戶數量公告",
   "path": "/documents/four-in-one-rental/更正廣慈E社宅二房型無障礙戶數量公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_e"
@@ -1783,7 +1849,7 @@
   "bucket": "four-in-one-rental",
   "stem": "行善社宅選屋手冊",
   "path": "/documents/four-in-one-rental/行善社宅選屋手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xingshan"
@@ -1794,7 +1860,7 @@
   "bucket": "four-in-one-rental",
   "stem": "附件1_廣慈D、E及行善社會住宅暨斯文里三期都更分回戶標的租期費用相關定義",
   "path": "/documents/four-in-one-rental/附件1_廣慈D、E及行善社會住宅暨斯文里三期都更分回戶標的租期費用相關定義.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_d",
@@ -1808,7 +1874,7 @@
   "bucket": "four-in-one-rental",
   "stem": "附件2_廣慈E-選屋手冊V4",
   "path": "/documents/four-in-one-rental/附件2_廣慈E-選屋手冊V4.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_e"
@@ -1819,7 +1885,7 @@
   "bucket": "guangci_3",
   "stem": "廣慈3區社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/guangci_3/廣慈3區社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_3"
@@ -1830,7 +1896,7 @@
   "bucket": "guangci_3",
   "stem": "附件1-廣3選屋作業說明",
   "path": "/documents/guangci_3/附件1-廣3選屋作業說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "guangci_3"
@@ -1841,7 +1907,7 @@
   "bucket": "guangci_d_e",
   "stem": "廣慈1區社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/guangci_d_e/廣慈1區社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_e"
@@ -1852,7 +1918,7 @@
   "bucket": "guangci_d_e",
   "stem": "廣慈2區社會社宅住戶規約手冊(114年12月版)",
   "path": "/documents/guangci_d_e/廣慈2區社會社宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "guangci_d"
@@ -1863,7 +1929,7 @@
   "bucket": "hesingshueian",
   "stem": "和興水岸社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/hesingshueian/和興水岸社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "hesingshueian"
@@ -1874,7 +1940,7 @@
   "bucket": "huarong",
   "stem": "華榮社會住宅-113年10月1日及10月4日臨櫃受理之申請編號",
   "path": "/documents/huarong/華榮社會住宅-113年10月1日及10月4日臨櫃受理之申請編號.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "huarong"
@@ -1885,7 +1951,7 @@
   "bucket": "huarong",
   "stem": "華榮社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/huarong/華榮社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "huarong"
@@ -1896,7 +1962,7 @@
   "bucket": "immediate",
   "stem": "114年「興隆D1區、東明、明倫、小彎、行善及木柵等6處社會住宅」其他特殊情形身分戶評",
   "path": "/documents/immediate/114年「興隆D1區、東明、明倫、小彎、行善及木柵等6處社會住宅」其他特殊情形身分戶評.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3249"
@@ -1907,7 +1973,7 @@
   "bucket": "immediate",
   "stem": "114年「興隆D1區、東明、明倫、行善、小彎及木柵等6處社會住宅」其他特殊情形身分戶評",
   "path": "/documents/immediate/114年「興隆D1區、東明、明倫、行善、小彎及木柵等6處社會住宅」其他特殊情形身分戶評.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3252"
@@ -1918,7 +1984,7 @@
   "bucket": "immediate",
   "stem": "附件10_申請案不能補正與應補正事項",
   "path": "/documents/immediate/附件10_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1929,7 +1995,7 @@
   "bucket": "immediate",
   "stem": "附件11_管理扣分規定",
   "path": "/documents/immediate/附件11_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1940,7 +2006,7 @@
   "bucket": "immediate",
   "stem": "附件12_臺北市社會住宅租賃契約書",
   "path": "/documents/immediate/附件12_臺北市社會住宅租賃契約書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1951,7 +2017,7 @@
   "bucket": "immediate",
   "stem": "附件13_免附家庭成員財稅資料切結書",
   "path": "/documents/immediate/附件13_免附家庭成員財稅資料切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1962,7 +2028,7 @@
   "bucket": "immediate",
   "stem": "附件1_租賃標的、租期及費用",
   "path": "/documents/immediate/附件1_租賃標的、租期及費用.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1973,7 +2039,7 @@
   "bucket": "immediate",
   "stem": "附件3_興隆D1區等11處社會住宅所得級距及分級補貼租金表",
   "path": "/documents/immediate/附件3_興隆D1區等11處社會住宅所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -1984,7 +2050,7 @@
   "bucket": "immediate",
   "stem": "附件5-1_興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租申請書(一般、低收入、原住民)填寫範例",
   "path": "/documents/immediate/附件5-1_興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租申請書(一般、低收入、原住民)填寫範例.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3237"
@@ -1995,7 +2061,7 @@
   "bucket": "immediate",
   "stem": "附件5-2_興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租申請書(其他特殊情形身分戶)填寫範例",
   "path": "/documents/immediate/附件5-2_興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租申請書(其他特殊情形身分戶)填寫範例.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3237"
@@ -2006,7 +2072,7 @@
   "bucket": "immediate",
   "stem": "附件6_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形(114.03)",
   "path": "/documents/immediate/附件6_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形(114.03).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -2017,7 +2083,7 @@
   "bucket": "immediate",
   "stem": "附件7_申請社會住宅應備文件",
   "path": "/documents/immediate/附件7_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -2028,7 +2094,7 @@
   "bucket": "immediate",
   "stem": "附件8_撤案申請書",
   "path": "/documents/immediate/附件8_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -2039,7 +2105,7 @@
   "bucket": "immediate",
   "stem": "附件9_申請書封套",
   "path": "/documents/immediate/附件9_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3237"
@@ -2050,7 +2116,7 @@
   "bucket": "jiankang",
   "stem": "健康社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/jiankang/健康社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2061,7 +2127,7 @@
   "bucket": "jiankang",
   "stem": "附件3_所得級距及分級補貼租金表",
   "path": "/documents/jiankang/附件3_所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2072,7 +2138,7 @@
   "bucket": "jiankang",
   "stem": "附件4_申請社會住宅應備文件",
   "path": "/documents/jiankang/附件4_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2083,7 +2149,7 @@
   "bucket": "jiankang",
   "stem": "附件5_撤案申請書",
   "path": "/documents/jiankang/附件5_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2094,7 +2160,7 @@
   "bucket": "jiankang",
   "stem": "附件6_申請書封套",
   "path": "/documents/jiankang/附件6_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2105,7 +2171,7 @@
   "bucket": "jiankang",
   "stem": "附件7_管理扣分規定",
   "path": "/documents/jiankang/附件7_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2116,7 +2182,7 @@
   "bucket": "jiankang",
   "stem": "附件8_社宅租賃契約書樣本",
   "path": "/documents/jiankang/附件8_社宅租賃契約書樣本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiankang"
@@ -2127,7 +2193,7 @@
   "bucket": "jiankang",
   "stem": "附件9_健康社會住宅周邊教育及公共服務資源一覽表",
   "path": "/documents/jiankang/附件9_健康社會住宅周邊教育及公共服務資源一覽表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "jiankang"
@@ -2138,7 +2204,7 @@
   "bucket": "jiuzong",
   "stem": "舊宗社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/jiuzong/舊宗社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jiuzong"
@@ -2149,7 +2215,7 @@
   "bucket": "juguang",
   "stem": "1110728莒光社會住宅招租公告(一般戶)",
   "path": "/documents/juguang/111年莒光社宅公告附件/1110728莒光社會住宅招租公告(一般戶).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2160,7 +2226,7 @@
   "bucket": "juguang",
   "stem": "111年莒光社宅招租手冊",
   "path": "/documents/juguang/111年莒光社宅公告附件/111年莒光社宅招租手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2171,7 +2237,7 @@
   "bucket": "juguang",
   "stem": "「莒光社會住宅」其他特殊情形身分戶評點排序結果公告(111.09.08)",
   "path": "/documents/juguang/111年莒光社宅公告附件/「莒光社會住宅」其他特殊情形身分戶評點排序結果公告(111.09.08).pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2182,7 +2248,7 @@
   "bucket": "juguang",
   "stem": "本市歷次社宅「其他特殊情形身分戶」評點制辦理情形",
   "path": "/documents/juguang/111年莒光社宅公告附件/本市歷次社宅「其他特殊情形身分戶」評點制辦理情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2193,7 +2259,7 @@
   "bucket": "juguang",
   "stem": "社會住宅應備文件",
   "path": "/documents/juguang/111年莒光社宅公告附件/社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2204,7 +2270,7 @@
   "bucket": "juguang",
   "stem": "線上申請戶籍謄本_財稅資料操作說明",
   "path": "/documents/juguang/111年莒光社宅公告附件/線上申請戶籍謄本_財稅資料操作說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2215,7 +2281,7 @@
   "bucket": "juguang",
   "stem": "臺北市莒光社宅家具冷暖氣租賃服務媒合平台公告",
   "path": "/documents/juguang/111年莒光社宅公告附件/臺北市莒光社宅家具冷暖氣租賃服務媒合平台公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2226,7 +2292,7 @@
   "bucket": "juguang",
   "stem": "莒光-手冊封面v4-yellow",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光-手冊封面v4-yellow.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2237,7 +2303,7 @@
   "bucket": "juguang",
   "stem": "莒光社宅其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社宅其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2248,7 +2314,7 @@
   "bucket": "juguang",
   "stem": "莒光社宅其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社宅其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2259,7 +2325,7 @@
   "bucket": "juguang",
   "stem": "莒光社宅參觀及選屋作業說明",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社宅參觀及選屋作業說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2270,7 +2336,7 @@
   "bucket": "juguang",
   "stem": "莒光社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2281,7 +2347,7 @@
   "bucket": "juguang",
   "stem": "莒光社會住宅其他特殊情形身分戶評點分數再次公告(111.09.06)",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社會住宅其他特殊情形身分戶評點分數再次公告(111.09.06).pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2292,7 +2358,7 @@
   "bucket": "juguang",
   "stem": "莒光社會住宅選屋作業參考手冊1111101",
   "path": "/documents/juguang/111年莒光社宅公告附件/莒光社會住宅選屋作業參考手冊1111101.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2303,7 +2369,7 @@
   "bucket": "juguang",
   "stem": "附件1_莒光社宅租賃標的租期費用相關名詞定義",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件1_莒光社宅租賃標的租期費用相關名詞定義.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2314,7 +2380,7 @@
   "bucket": "juguang",
   "stem": "附件2.4_福民平宅現住戶申請說明",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件2.4_福民平宅現住戶申請說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2325,7 +2391,7 @@
   "bucket": "juguang",
   "stem": "附件3_租期及住宅相關補貼切結書",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件3_租期及住宅相關補貼切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2336,7 +2402,7 @@
   "bucket": "juguang",
   "stem": "附件4.1_所得級距及分級補貼租金表",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件4.1_所得級距及分級補貼租金表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2347,7 +2413,7 @@
   "bucket": "juguang",
   "stem": "附件4.2_福民平宅安置戶租金折價數及實付租金",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件4.2_福民平宅安置戶租金折價數及實付租金.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2358,7 +2424,7 @@
   "bucket": "juguang",
   "stem": "附件5_社會住宅租賃契約書樣本",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件5_社會住宅租賃契約書樣本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2369,7 +2435,7 @@
   "bucket": "juguang",
   "stem": "附件6_申請人資格條件表",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件6_申請人資格條件表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2380,7 +2446,7 @@
   "bucket": "juguang",
   "stem": "附件7_撤案申請書",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件7_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2391,7 +2457,7 @@
   "bucket": "juguang",
   "stem": "附件8_(莒光)信封套",
   "path": "/documents/juguang/111年莒光社宅公告附件/附件8_(莒光)信封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2402,7 +2468,7 @@
   "bucket": "juguang",
   "stem": "參考資料-家庭成員及人口數如何認定",
   "path": "/documents/juguang/參考資料-家庭成員及人口數如何認定.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "juguang"
@@ -2413,7 +2479,7 @@
   "bucket": "juguang",
   "stem": "莒光社宅青創計畫徵件簡章",
   "path": "/documents/juguang/莒光社宅青創計畫徵件簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2424,7 +2490,7 @@
   "bucket": "juguang",
   "stem": "莒光社宅青創計畫徵選公告",
   "path": "/documents/juguang/莒光社宅青創計畫徵選公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "juguang"
@@ -2435,7 +2501,7 @@
   "bucket": "ming-lun",
   "stem": "109學年度明倫非營利幼兒園新生入園預約登記報名Q_A",
   "path": "/documents/ming-lun/109學年度明倫非營利幼兒園新生入園預約登記報名Q_A.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2446,7 +2512,7 @@
   "bucket": "ming-lun",
   "stem": "已配租戶",
   "path": "/documents/ming-lun/已配租戶.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2457,7 +2523,7 @@
   "bucket": "ming-lun",
   "stem": "明倫公告",
   "path": "/documents/ming-lun/明倫公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "minglun"
@@ -2468,7 +2534,7 @@
   "bucket": "ming-lun",
   "stem": "明倫社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/ming-lun/明倫社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "minglun"
@@ -2479,7 +2545,7 @@
   "bucket": "ming-lun",
   "stem": "明倫社會住宅其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/ming-lun/明倫社會住宅其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2490,7 +2556,7 @@
   "bucket": "ming-lun",
   "stem": "明倫非營利幼兒園109學年度預約登記報名簡章",
   "path": "/documents/ming-lun/明倫非營利幼兒園109學年度預約登記報名簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2501,7 +2567,7 @@
   "bucket": "ming-lun",
   "stem": "臺北市政府社會局辦理本市明倫社會住宅其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/ming-lun/臺北市政府社會局辦理本市明倫社會住宅其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2512,7 +2578,7 @@
   "bucket": "ming-lun",
   "stem": "青年創新回饋計畫第二階段評選結果",
   "path": "/documents/ming-lun/青年創新回饋計畫第二階段評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2523,7 +2589,7 @@
   "bucket": "ming-lun",
   "stem": "青年創新回饋計畫第二階段評選結果公告",
   "path": "/documents/ming-lun/青年創新回饋計畫第二階段評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "minglun"
@@ -2534,10 +2600,11 @@
   "bucket": "mydata",
   "stem": "Mydata操作方式",
   "path": "/documents/mydata/Mydata操作方式.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
-   "extra_home"
+   "extra_home",
+   "home"
   ],
   "dupe": false
  },
@@ -2545,7 +2612,7 @@
   "bucket": "nangangdepot1",
   "stem": "114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/nangangdepot1/114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3241"
@@ -2556,7 +2623,7 @@
   "bucket": "nangangdepot1",
   "stem": "114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數第1次公告",
   "path": "/documents/nangangdepot1/114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3240"
@@ -2567,7 +2634,7 @@
   "bucket": "nangangdepot1",
   "stem": "114年「南港機廠社會住宅1區」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/nangangdepot1/114年「南港機廠社會住宅1區」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3242"
@@ -2578,7 +2645,7 @@
   "bucket": "nangangdepot1",
   "stem": "115年「南港機廠社宅1區（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/nangangdepot1/115年「南港機廠社宅1區（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3265"
@@ -2589,7 +2656,7 @@
   "bucket": "nangangdepot1",
   "stem": "115年「南港機廠社會住宅1區（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分",
   "path": "/documents/nangangdepot1/115年「南港機廠社會住宅1區（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3264"
@@ -2600,7 +2667,7 @@
   "bucket": "nangangdepot1",
   "stem": "【複查申請表】114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/nangangdepot1/【複查申請表】114年「南港機廠社會住宅1區」其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3240"
@@ -2787,7 +2854,7 @@
   "bucket": "nangangdepot1",
   "stem": "青年1區及南港機廠1區社宅青創計畫簡報評選結果",
   "path": "/documents/nangangdepot1/青年1區及南港機廠1區社宅青創計畫簡報評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3243"
@@ -2798,7 +2865,7 @@
   "bucket": "nangangdepot1",
   "stem": "青年1區及南港機廠1區社宅青創計畫簡報評選結果公告",
   "path": "/documents/nangangdepot1/青年1區及南港機廠1區社宅青創計畫簡報評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3243"
@@ -2809,7 +2876,7 @@
   "bucket": "qingnian-2",
   "stem": "青年社宅2區社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/qingnian-2/青年社宅2區社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "qingnian-2"
@@ -2820,7 +2887,7 @@
   "bucket": "qingnian",
   "stem": "114年「青年社會住宅1區」續租評點分數再次公告",
   "path": "/documents/qingnian/114年「青年社會住宅1區」續租評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3232"
@@ -2831,7 +2898,7 @@
   "bucket": "qingnian",
   "stem": "114年「青年社會住宅1區」續租評點分數第1次公告",
   "path": "/documents/qingnian/114年「青年社會住宅1區」續租評點分數第1次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3230"
@@ -2842,7 +2909,7 @@
   "bucket": "qingnian",
   "stem": "114年「青年社會住宅1區」續租評點排序結果公告",
   "path": "/documents/qingnian/114年「青年社會住宅1區」續租評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3233"
@@ -2853,7 +2920,7 @@
   "bucket": "qingnian",
   "stem": "【複查申請表】114年「青年社會住宅1區」續租評點分數複查申請表",
   "path": "/documents/qingnian/【複查申請表】114年「青年社會住宅1區」續租評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3230"
@@ -2864,7 +2931,7 @@
   "bucket": "qingnian",
   "stem": "附件1、青年社宅1區青創種子評選說明",
   "path": "/documents/qingnian/附件1、青年社宅1區青創種子評選說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3223"
@@ -2875,7 +2942,7 @@
   "bucket": "qingnian",
   "stem": "青年社宅1區住戶規約手冊(114年12月版)",
   "path": "/documents/qingnian/青年社宅1區住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "qingnian"
@@ -2886,7 +2953,7 @@
   "bucket": "qingnian",
   "stem": "青年社會住宅1區青年創新回饋計畫徵選公告",
   "path": "/documents/qingnian/青年社會住宅1區青年創新回饋計畫徵選公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3223"
@@ -2897,7 +2964,7 @@
   "bucket": "qingnian_1_joyful",
   "stem": "114年「青年社會住宅1區」其他特殊情形身分戶評點分數第再次公告",
   "path": "/documents/qingnian_1_joyful/114年「青年社會住宅1區」其他特殊情形身分戶評點分數第再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3248"
@@ -2908,7 +2975,7 @@
   "bucket": "qingnian_1_joyful",
   "stem": "114年「青年社會住宅1區」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/qingnian_1_joyful/114年「青年社會住宅1區」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3251"
@@ -2919,161 +2986,175 @@
   "bucket": "qingnian_1_joyful",
   "stem": "114年度青1暨洲美等4處幸福住宅招租手冊",
   "path": "/documents/qingnian_1_joyful/114年度青1暨洲美等4處幸福住宅招租手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "114年青1暨幸福第2波招租公告(用印)",
   "path": "/documents/qingnian_1_joyful/114年青1暨幸福第2波招租公告(用印).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件10-1_臺北市社會住宅租賃契約書(青1社宅版)",
   "path": "/documents/qingnian_1_joyful/附件10-1_臺北市社會住宅租賃契約書(青1社宅版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件10-2_臺北市社會住宅租賃契約書(幸福住宅版)",
   "path": "/documents/qingnian_1_joyful/附件10-2_臺北市社會住宅租賃契約書(幸福住宅版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件11_5社會住宅周邊教育及公共服務資源一覽表",
   "path": "/documents/qingnian_1_joyful/附件11_5社會住宅周邊教育及公共服務資源一覽表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件12_免附家庭成員財稅資料",
   "path": "/documents/qingnian_1_joyful/附件12_免附家庭成員財稅資料.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件1_租賃標的、租期及費用(含分級租金補貼)",
   "path": "/documents/qingnian_1_joyful/附件1_租賃標的、租期及費用(含分級租金補貼).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件3_租期及住宅相關補貼切結書",
   "path": "/documents/qingnian_1_joyful/附件3_租期及住宅相關補貼切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件4_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（114.03）",
   "path": "/documents/qingnian_1_joyful/附件4_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（114.03）.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件5_申請社會住宅應備文件",
   "path": "/documents/qingnian_1_joyful/附件5_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件6_撤案申請書",
   "path": "/documents/qingnian_1_joyful/附件6_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件7_申請書封套",
   "path": "/documents/qingnian_1_joyful/附件7_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件8_申請案不能補正與應補正事項",
   "path": "/documents/qingnian_1_joyful/附件8_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
   "stem": "附件9_管理扣分規定",
   "path": "/documents/qingnian_1_joyful/附件9_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3244"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "ruiguang",
   "stem": "1100504瑞光社宅評點公告",
   "path": "/documents/ruiguang/1100504瑞光社宅評點公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "ruiguang"
@@ -3084,7 +3165,7 @@
   "bucket": "ruiguang",
   "stem": "110年度瑞光社會住宅再次公告評點分數",
   "path": "/documents/ruiguang/110年度瑞光社會住宅再次公告評點分數.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3095,7 +3176,7 @@
   "bucket": "ruiguang",
   "stem": "中華電信網路方案",
   "path": "/documents/ruiguang/中華電信網路方案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3106,7 +3187,7 @@
   "bucket": "ruiguang",
   "stem": "凱擘大寬頻有線電視方案",
   "path": "/documents/ruiguang/凱擘大寬頻有線電視方案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3117,7 +3198,7 @@
   "bucket": "ruiguang",
   "stem": "北都有線電視方案",
   "path": "/documents/ruiguang/北都有線電視方案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3128,7 +3209,7 @@
   "bucket": "ruiguang",
   "stem": "台北光纖網路方案",
   "path": "/documents/ruiguang/台北光纖網路方案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3139,7 +3220,7 @@
   "bucket": "ruiguang",
   "stem": "本市歷次社宅其他特殊情形身分戶評點制辦理情形1100120",
   "path": "/documents/ruiguang/本市歷次社宅其他特殊情形身分戶評點制辦理情形1100120.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "ruiguang"
@@ -3150,7 +3231,7 @@
   "bucket": "ruiguang",
   "stem": "瑞光社宅選屋作業-已配租地址清冊(更新日期：110年7月7日）",
   "path": "/documents/ruiguang/瑞光社宅選屋作業-已配租地址清冊(更新日期：110年7月7日）.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3161,7 +3242,7 @@
   "bucket": "ruiguang",
   "stem": "瑞光社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/ruiguang/瑞光社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "ruiguang"
@@ -3172,7 +3253,7 @@
   "bucket": "ruiguang",
   "stem": "瑞光社會住宅其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/ruiguang/瑞光社會住宅其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3183,7 +3264,7 @@
   "bucket": "ruiguang",
   "stem": "附件1-103年8月12日臺北市大內湖科技園區次核心產業使用許可回饋規定細部計畫案",
   "path": "/documents/ruiguang/附件1-103年8月12日臺北市大內湖科技園區次核心產業使用許可回饋規定細部計畫案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3194,7 +3275,7 @@
   "bucket": "ruiguang",
   "stem": "附件2_分級租金補貼",
   "path": "/documents/ruiguang/附件2_分級租金補貼.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "ruiguang"
@@ -3205,7 +3286,7 @@
   "bucket": "ruiguang",
   "stem": "麗冠有線電視方案",
   "path": "/documents/ruiguang/麗冠有線電視方案.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "ruiguang"
@@ -3216,7 +3297,7 @@
   "bucket": "svenly3",
   "stem": "114年度斯文里三期中繼安置21戶住宅短期承租公告(用印版)",
   "path": "/documents/svenly3/114年度斯文里三期中繼安置21戶住宅短期承租公告(用印版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3227,7 +3308,7 @@
   "bucket": "svenly3",
   "stem": "附件2_租期及住宅相關補貼切結書-0211修",
   "path": "/documents/svenly3/附件2_租期及住宅相關補貼切結書-0211修.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3238,7 +3319,7 @@
   "bucket": "svenly3",
   "stem": "附件3_應備文件",
   "path": "/documents/svenly3/附件3_應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3249,7 +3330,7 @@
   "bucket": "svenly3",
   "stem": "附件4_撤案申請書",
   "path": "/documents/svenly3/附件4_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3260,7 +3341,7 @@
   "bucket": "svenly3",
   "stem": "附件5_申請書封套",
   "path": "/documents/svenly3/附件5_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3271,7 +3352,7 @@
   "bucket": "svenly3",
   "stem": "附件6_管理扣分規定",
   "path": "/documents/svenly3/附件6_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3282,7 +3363,7 @@
   "bucket": "svenly3",
   "stem": "附件7_租賃契約書樣本",
   "path": "/documents/svenly3/附件7_租賃契約書樣本.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3217"
@@ -3293,7 +3374,7 @@
   "bucket": "three-in-one-rental",
   "stem": "木柵社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/three-in-one-rental/木柵社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "muzha"
@@ -3304,7 +3385,7 @@
   "bucket": "three-in-one-rental",
   "stem": "木柵等三處社宅招租公告",
   "path": "/documents/three-in-one-rental/木柵等三處社宅招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "daqiaotou",
@@ -3317,7 +3398,7 @@
   "bucket": "three-in-one-rental",
   "stem": "本市歷次社宅其他特殊情形身分戶評點制辦理情形",
   "path": "/documents/three-in-one-rental/本市歷次社宅其他特殊情形身分戶評點制辦理情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "daqiaotou",
@@ -3330,7 +3411,7 @@
   "bucket": "three-in-one-rental",
   "stem": "臺北市3合1及明倫社會住宅家具冷暖氣租賃服務媒合平台公告",
   "path": "/documents/three-in-one-rental/臺北市3合1及明倫社會住宅家具冷暖氣租賃服務媒合平台公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "jinlong"
@@ -3341,7 +3422,7 @@
   "bucket": "three-in-one-rental",
   "stem": "金龍都更分回戶、木柵、大橋頭等社會住宅評點複查公告文字",
   "path": "/documents/three-in-one-rental/金龍都更分回戶、木柵、大橋頭等社會住宅評點複查公告文字.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "daqiaotou",
@@ -3354,7 +3435,7 @@
   "bucket": "xiaowan",
   "stem": "111年度小彎社宅評點分數公告文字",
   "path": "/documents/xiaowan/111年度小彎社宅評點分數公告文字.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xiaowan"
@@ -3365,7 +3446,7 @@
   "bucket": "xiaowan",
   "stem": "公告",
   "path": "/documents/xiaowan/公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3376,7 +3457,7 @@
   "bucket": "xiaowan",
   "stem": "小彎徵件公告",
   "path": "/documents/xiaowan/小彎徵件公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3387,7 +3468,7 @@
   "bucket": "xiaowan",
   "stem": "小彎徵件簡章(第1次修正)",
   "path": "/documents/xiaowan/小彎徵件簡章(第1次修正).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3398,7 +3479,7 @@
   "bucket": "xiaowan",
   "stem": "小彎暨興隆D1手冊內文",
   "path": "/documents/xiaowan/小彎暨興隆D1手冊內文.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3409,7 +3490,7 @@
   "bucket": "xiaowan",
   "stem": "小彎社宅青創資格審查結果",
   "path": "/documents/xiaowan/小彎社宅青創資格審查結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xiaowan"
@@ -3420,7 +3501,7 @@
   "bucket": "xiaowan",
   "stem": "小彎社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/xiaowan/小彎社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3431,7 +3512,7 @@
   "bucket": "xiaowan",
   "stem": "小彎社會住宅其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/xiaowan/小彎社會住宅其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xiaowan"
@@ -3442,7 +3523,7 @@
   "bucket": "xiaowan",
   "stem": "小彎社會住宅青年創新回饋計畫-徵選公告第1次修正",
   "path": "/documents/xiaowan/小彎社會住宅青年創新回饋計畫-徵選公告第1次修正.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3453,7 +3534,7 @@
   "bucket": "xiaowan",
   "stem": "本市歷次社宅其他特殊情形身分戶評點制辦理情形",
   "path": "/documents/xiaowan/本市歷次社宅其他特殊情形身分戶評點制辦理情形.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3464,7 +3545,7 @@
   "bucket": "xiaowan",
   "stem": "附件-切結書",
   "path": "/documents/xiaowan/附件-切結書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xiaowan"
@@ -3475,7 +3556,7 @@
   "bucket": "xinglong-1",
   "stem": "114年03月17日臺北住都契服字第1140001908號公告",
   "path": "/documents/xinglong-1/114年03月17日臺北住都契服字第1140001908號公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3220"
@@ -3486,7 +3567,7 @@
   "bucket": "xinglong-1",
   "stem": "興隆D1社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/xinglong-1/興隆D1社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong-1"
@@ -3497,7 +3578,7 @@
   "bucket": "xinglong-1",
   "stem": "辦理114年度本市興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租公告",
   "path": "/documents/xinglong-1/辦理114年度本市興隆D1區等11處社會住宅零星空戶暨候補戶名單建置招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3237"
@@ -3508,7 +3589,7 @@
   "bucket": "xinglong",
   "stem": "113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/xinglong/113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3214"
@@ -3519,7 +3600,7 @@
   "bucket": "xinglong",
   "stem": "113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數第一次公告",
   "path": "/documents/xinglong/113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數第一次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3213"
@@ -3530,7 +3611,7 @@
   "bucket": "xinglong",
   "stem": "113年度「興隆D2區社會住宅」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/xinglong/113年度「興隆D2區社會住宅」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3215"
@@ -3541,7 +3622,7 @@
   "bucket": "xinglong",
   "stem": "【複查申請表】113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數複查申請表",
   "path": "/documents/xinglong/【複查申請表】113年度「興隆D2區社會住宅」其他特殊情形身分戶評點分數複查申請表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3213"
@@ -3552,7 +3633,7 @@
   "bucket": "xinglong",
   "stem": "興隆D2區招租手冊",
   "path": "/documents/xinglong/興隆D2區招租手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3563,7 +3644,7 @@
   "bucket": "xinglong",
   "stem": "興隆D2社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/xinglong/興隆D2社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3574,7 +3655,7 @@
   "bucket": "xinglong",
   "stem": "附件10_11312版-臺北市社會住宅租賃契約書(自建版)final",
   "path": "/documents/xinglong/附件10_11312版-臺北市社會住宅租賃契約書(自建版)final.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3585,7 +3666,7 @@
   "bucket": "xinglong",
   "stem": "附件3_D二所得級距及分級補貼租金表113年(附表一二)-2.5新簽約-檢討後",
   "path": "/documents/xinglong/附件3_D二所得級距及分級補貼租金表113年(附表一二)-2.5新簽約-檢討後.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3596,7 +3677,7 @@
   "bucket": "xinglong",
   "stem": "附件4_申請社會住宅應備文件",
   "path": "/documents/xinglong/附件4_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3607,7 +3688,7 @@
   "bucket": "xinglong",
   "stem": "附件5_撤案申請書",
   "path": "/documents/xinglong/附件5_撤案申請書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3618,7 +3699,7 @@
   "bucket": "xinglong",
   "stem": "附件6_申請書封套",
   "path": "/documents/xinglong/附件6_申請書封套.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3629,7 +3710,7 @@
   "bucket": "xinglong",
   "stem": "附件7_申請案不能補正與應補正事項",
   "path": "/documents/xinglong/附件7_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3640,7 +3721,7 @@
   "bucket": "xinglong",
   "stem": "附件8_管理扣分規定",
   "path": "/documents/xinglong/附件8_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinglong"
@@ -3651,7 +3732,7 @@
   "bucket": "xinglong",
   "stem": "附件9_【社會局】本市興隆D2區社會住宅周邊社會福利服務資源一覽表",
   "path": "/documents/xinglong/附件9_【社會局】本市興隆D2區社會住宅周邊社會福利服務資源一覽表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xinglong"
@@ -3662,7 +3743,7 @@
   "bucket": "xinglong_e",
   "stem": "115年「興隆社會住宅E區」其他特殊情形身分戶評點分數再次公告",
   "path": "/documents/xinglong_e/115年「興隆社會住宅E區」其他特殊情形身分戶評點分數再次公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3264"
@@ -3673,7 +3754,7 @@
   "bucket": "xinglong_e",
   "stem": "115年「興隆社會住宅E區」其他特殊情形身分戶評點排序結果公告",
   "path": "/documents/xinglong_e/115年「興隆社會住宅E區」其他特殊情形身分戶評點排序結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3265"
@@ -3684,7 +3765,7 @@
   "bucket": "xinglong_e",
   "stem": "臺北市興隆E區社會住宅招租案公告",
   "path": "/documents/xinglong_e/臺北市興隆E區社會住宅招租案公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3695,7 +3776,7 @@
   "bucket": "xinglong_e",
   "stem": "興隆社宅E區招租手冊",
   "path": "/documents/xinglong_e/興隆社宅E區招租手冊.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3706,7 +3787,7 @@
   "bucket": "xinglong_e",
   "stem": "附件10_申請案不能補正與應補正事項",
   "path": "/documents/xinglong_e/附件10_申請案不能補正與應補正事項.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3717,7 +3798,7 @@
   "bucket": "xinglong_e",
   "stem": "附件11_管理扣分規定",
   "path": "/documents/xinglong_e/附件11_管理扣分規定.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3728,7 +3809,7 @@
   "bucket": "xinglong_e",
   "stem": "附件12_臺北市社會住宅租賃契約書",
   "path": "/documents/xinglong_e/附件12_臺北市社會住宅租賃契約書.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3739,7 +3820,7 @@
   "bucket": "xinglong_e",
   "stem": "附件3_所得級距分級標準表及租金補貼表-改",
   "path": "/documents/xinglong_e/附件3_所得級距分級標準表及租金補貼表-改.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3750,7 +3831,7 @@
   "bucket": "xinglong_e",
   "stem": "附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（115.01）",
   "path": "/documents/xinglong_e/附件5_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（115.01）.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3761,7 +3842,7 @@
   "bucket": "xinglong_e",
   "stem": "附件6_安康平宅說明-2改",
   "path": "/documents/xinglong_e/附件6_安康平宅說明-2改.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3261"
@@ -3772,7 +3853,7 @@
   "bucket": "xinglong_e",
   "stem": "附件7_申請社會住宅應備文件",
   "path": "/documents/xinglong_e/附件7_申請社會住宅應備文件.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3261"
@@ -3783,7 +3864,7 @@
   "bucket": "xingshan",
   "stem": "行善社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/xingshan/行善社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xingshan"
@@ -3794,7 +3875,7 @@
   "bucket": "xinqiyan",
   "stem": "0928、29_新奇岩-地址清冊-已配租",
   "path": "/documents/xinqiyan/0928、29_新奇岩-地址清冊-已配租.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xinqiyan"
@@ -3805,7 +3886,7 @@
   "bucket": "xinqiyan",
   "stem": "新奇岩社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/xinqiyan/新奇岩社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinqiyan"
@@ -3816,7 +3897,7 @@
   "bucket": "xinqiyan",
   "stem": "新奇岩社會住宅青年創新回饋計畫-徵件簡章",
   "path": "/documents/xinqiyan/新奇岩社會住宅青年創新回饋計畫-徵件簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinqiyan"
@@ -3827,7 +3908,7 @@
   "bucket": "xinqiyan",
   "stem": "新奇岩社會住宅青年創新回饋計畫-徵選公告第1次修正",
   "path": "/documents/xinqiyan/新奇岩社會住宅青年創新回饋計畫-徵選公告第1次修正.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinqiyan"
@@ -3838,7 +3919,7 @@
   "bucket": "xinqiyan",
   "stem": "新奇岩社會住宅青年創新回饋計畫-徵選公告第2次修正",
   "path": "/documents/xinqiyan/新奇岩社會住宅青年創新回饋計畫-徵選公告第2次修正.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "xinqiyan"
@@ -3849,7 +3930,7 @@
   "bucket": "xinqiyan",
   "stem": "附件-新奇岩社宅青年創新回饋計畫第二階段評選結果",
   "path": "/documents/xinqiyan/附件-新奇岩社宅青年創新回饋計畫第二階段評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "xinqiyan"
@@ -3860,7 +3941,7 @@
   "bucket": "yir",
   "stem": "東明及興隆E區社宅青創計畫徵選公告",
   "path": "/documents/yir/dongming/東明及興隆E區社宅青創計畫徵選公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3254"
@@ -3871,7 +3952,7 @@
   "bucket": "yir",
   "stem": "東明及興隆E社宅青創計畫簡報評選結果公告",
   "path": "/documents/yir/dongming/東明及興隆E社宅青創計畫簡報評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3259"
@@ -3882,7 +3963,7 @@
   "bucket": "yir",
   "stem": "東明青創種子簡報評選結果",
   "path": "/documents/yir/dongming/東明青創種子簡報評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3253"
@@ -3893,7 +3974,7 @@
   "bucket": "yir",
   "stem": "東明青創種子簡報評選結果公告",
   "path": "/documents/yir/dongming/東明青創種子簡報評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3253"
@@ -3904,7 +3985,7 @@
   "bucket": "yir",
   "stem": "東明青創計畫青創種子身分資格審查結果及第二階段簡報評選會議流程公告",
   "path": "/documents/yir/dongming/東明青創計畫青創種子身分資格審查結果及第二階段簡報評選會議流程公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3250"
@@ -3915,7 +3996,7 @@
   "bucket": "yir",
   "stem": "簡報評選流程",
   "path": "/documents/yir/dongming/簡報評選流程.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3250"
@@ -3926,7 +4007,7 @@
   "bucket": "yir",
   "stem": "簡報評選結果",
   "path": "/documents/yir/dongming/簡報評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3259"
@@ -3937,7 +4018,7 @@
   "bucket": "yir",
   "stem": "資格審查結果",
   "path": "/documents/yir/dongming/資格審查結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3250"
@@ -3948,7 +4029,7 @@
   "bucket": "yir",
   "stem": "附件-東明及興隆E青創計畫社宅身分資格審查結果公告",
   "path": "/documents/yir/dongming/附件-東明及興隆E青創計畫社宅身分資格審查結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3256"
@@ -3959,7 +4040,7 @@
   "bucket": "yir",
   "stem": "附件-社會住宅身分資格審查結果",
   "path": "/documents/yir/dongming/附件-社會住宅身分資格審查結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3256"
@@ -3970,7 +4051,7 @@
   "bucket": "yir",
   "stem": "附件1-東明及興隆E區社宅青創計畫徵件簡章",
   "path": "/documents/yir/dongming/附件1-東明及興隆E區社宅青創計畫徵件簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3254"
@@ -3981,7 +4062,7 @@
   "bucket": "yir",
   "stem": "六張犁1與2區青創徵選簡章",
   "path": "/documents/yir/liuzhangli/六張犁1與2區青創徵選簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "liuzhangli"
@@ -3992,7 +4073,7 @@
   "bucket": "yir",
   "stem": "六張犁社宅1與2區青創計畫簡報評選結果公告",
   "path": "/documents/yir/liuzhangli/六張犁社宅1與2區青創計畫簡報評選結果公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3238"
@@ -4003,7 +4084,7 @@
   "bucket": "yir",
   "stem": "簡報評選結果",
   "path": "/documents/yir/liuzhangli/簡報評選結果.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3238"
@@ -4014,7 +4095,7 @@
   "bucket": "yir",
   "stem": "附件1-入選名單簡報評選流程",
   "path": "/documents/yir/qingnian1_nangangdepot1/附件1-入選名單簡報評選流程.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3239"
@@ -4025,7 +4106,7 @@
   "bucket": "yir",
   "stem": "附件2-評選說明",
   "path": "/documents/yir/qingnian1_nangangdepot1/附件2-評選說明.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3239"
@@ -4036,7 +4117,7 @@
   "bucket": "yir",
   "stem": "青年1區及南港機廠1區青創計畫入選第二階段簡報評選名單及會議流程公告",
   "path": "/documents/yir/qingnian1_nangangdepot1/青年1區及南港機廠1區青創計畫入選第二階段簡報評選名單及會議流程公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "3239"
@@ -4047,7 +4128,7 @@
   "bucket": "yir",
   "stem": "青年1區及南港機廠1區青創計畫徵件公告",
   "path": "/documents/yir/qingnian1_nangangdepot1/青年1區及南港機廠1區青創計畫徵件公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3228"
@@ -4058,7 +4139,7 @@
   "bucket": "yir",
   "stem": "青年1區＆南港機廠1區徵件簡章",
   "path": "/documents/yir/qingnian1_nangangdepot1/青年1區＆南港機廠1區徵件簡章.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "3228"
@@ -4069,7 +4150,7 @@
   "bucket": "yongping",
   "stem": "永平社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/yongping/永平社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "yongping"
@@ -4080,7 +4161,7 @@
   "bucket": "zhongnan",
   "stem": "中南、永平社會住宅特殊情形身份第一次評點公告",
   "path": "/documents/zhongnan/中南、永平社會住宅特殊情形身份第一次評點公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "yongping",
@@ -4092,7 +4173,7 @@
   "bucket": "zhongnan",
   "stem": "中南及永平社宅分級租金補貼說明表",
   "path": "/documents/zhongnan/中南及永平社宅分級租金補貼說明表.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "yongping",
@@ -4104,7 +4185,7 @@
   "bucket": "zhongnan",
   "stem": "中南及永平社宅招租公告",
   "path": "/documents/zhongnan/中南及永平社宅招租公告.pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "yongping",
@@ -4116,7 +4197,7 @@
   "bucket": "zhongnan",
   "stem": "中南社宅出租對象及戶數表",
   "path": "/documents/zhongnan/中南社宅出租對象及戶數表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "zhongnan"
@@ -4127,7 +4208,7 @@
   "bucket": "zhongnan",
   "stem": "中南社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/zhongnan/中南社會住宅住戶規約手冊(114年12月版).pdf",
-  "have": false,
+  "have": true,
   "tier": "high",
   "src": [
    "zhongnan"
@@ -4138,7 +4219,7 @@
   "bucket": "zhongnan",
   "stem": "永平社宅出租對象及戶數表",
   "path": "/documents/zhongnan/永平社宅出租對象及戶數表.pdf",
-  "have": false,
+  "have": true,
   "tier": "low",
   "src": [
    "yongping"

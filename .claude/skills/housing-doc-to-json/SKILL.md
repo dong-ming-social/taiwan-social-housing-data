@@ -118,3 +118,12 @@ git checkout main && git pull
 - `python3 -c "import json; json.load(open('<file>.json'))"` parses for every file.
 - Spot-check `pages[].text` and tables against the PDF; confirm sha256 and page counts.
 - `gh pr view` shows the PR merged and `main` contains the new files + README bump.
+
+## Daily automation
+
+`.github/workflows/daily-housing-update.yml` runs the complete portal discovery and
+SHA comparison every day. `scripts/daily_update.py` is the single local/CI entrypoint;
+`--discover-only` performs a read-only link audit. The updater never deletes a JSON
+when a portal link disappears: it records `active:false` in `portal_inventory.json`.
+It aborts if discovery falls below 90% of the previous active inventory, regenerates
+only new or content-changed PDFs, validates the full dataset, and opens a review PR.
