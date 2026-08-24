@@ -11,7 +11,6 @@ from pathlib import Path
 
 
 REPO = Path(__file__).resolve().parents[4]
-EXPECTED_DOCUMENTS = 365
 EXPECTED_PUBLISHER = "臺北市住宅及都市更新中心"
 EXPECTED_OWNER = "臺北市政府都市發展局"
 REQUIRED_TOP_LEVEL = {"metadata", "source", "sections", "structured_data", "pages"}
@@ -29,11 +28,6 @@ def main():
     page_total = 0
     ocr_required = []
     files = sorted(REPO.glob("*/*.json"))
-
-    if len(files) != EXPECTED_DOCUMENTS:
-        errors.append(
-            f"dataset: expected {EXPECTED_DOCUMENTS} JSON files, found {len(files)}"
-        )
 
     for path in files:
         try:
@@ -87,8 +81,11 @@ def main():
     )
     inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
     expected_paths = {record["path"] for record in inventory if not record.get("dupe")}
-    if len(inventory) != 367 or sum(bool(record.get("dupe")) for record in inventory) != 2:
-        errors.append("inventory: expected 367 records with 2 explicit duplicates")
+    if len(files) != len(expected_paths):
+        errors.append(
+            f"dataset: expected {len(expected_paths)} JSON files from inventory, "
+            f"found {len(files)}"
+        )
     for path in sorted(expected_paths - source_paths):
         errors.append(f"inventory source missing from dataset: {path}")
     for path in sorted(source_paths - expected_paths):

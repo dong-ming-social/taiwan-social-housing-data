@@ -79,7 +79,7 @@ def valid_pdf(path):
         return False
 
 
-def fetch(path):
+def fetch(path, refresh=False):
     """Download one PDF; returns local path. Percent-encodes the filename only."""
     os.makedirs(PDFDIR, exist_ok=True)
     parts = path.split("/")
@@ -87,7 +87,7 @@ def fetch(path):
         [urllib.parse.quote(p, safe="") if i == len(parts) - 1 else p
          for i, p in enumerate(parts)])
     local = os.path.join(PDFDIR, re.sub(r"[/]", "_", path.lstrip("/")))
-    if not valid_pdf(local):
+    if refresh or not valid_pdf(local):
         tmp = local + ".download"
         r = subprocess.run(["curl", "-sSL", "--fail", "-o", tmp, url],
                            capture_output=True, text=True)
