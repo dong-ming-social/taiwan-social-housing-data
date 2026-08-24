@@ -20,6 +20,47 @@ INVENTORY = BATCH / "portal_inventory.json"
 README = REPO / "README.md"
 SUMMARY_PATH = Path(os.environ.get("HOUSING_UPDATE_SUMMARY", "/tmp/housing-update-summary.md"))
 MIN_DISCOVERY_RATIO = 0.90
+FOLDER_DESCRIPTIONS = {
+    "16-in-one": "小彎等 16 處零星空戶暨候補戶聯合招租",
+    "19-in-one-zhangxinshuian": "樟新水岸等社宅與幸福住宅聯合招租",
+    "2025": "東明、興隆 E 區青年創新回饋計畫（民國 114 年）",
+    "4-in-one-xinglong_a": "興隆 A、樟新水岸、經貿及六張犁社宅聯合招租",
+    "5-in-one-xinglong_D1": "興隆 D1 區等 5 處零星空戶聯合招租",
+    "7-in-one-2": "福星等 7 處隨到隨辦招租",
+    "aboriginal-rental": "社會住宅原住民族專案招租",
+    "apply": "安心樂租網申請操作說明",
+    "citywide": "全市通用契約、申請書與專案附件",
+    "dalongdong": "大龍峒社會住宅",
+    "dongming": "東明社會住宅",
+    "elder-project": "社會住宅青銀換居計畫",
+    "four-in-one-rental": "廣慈、行善及斯文里三期等聯合招租",
+    "guangci_3": "廣慈博愛園區社會住宅 3 區",
+    "guangci_d_e": "廣慈博愛園區社會住宅 1、2 區",
+    "hesingshueian": "和興水岸社會住宅",
+    "huarong": "華榮社會住宅",
+    "immediate": "興隆 D1 區等 11 處零星空戶暨候補戶招租",
+    "jiankang": "健康社會住宅",
+    "jiuzong": "舊宗社會住宅",
+    "juguang": "莒光社會住宅",
+    "ming-lun": "明倫社會住宅",
+    "mydata": "MyData 線上申請操作說明",
+    "nangangdepot1": "南港機廠社會住宅 1 區",
+    "qingnian": "青年社會住宅 1 區",
+    "qingnian-2": "青年社會住宅 2 區",
+    "qingnian_1_joyful": "青年 1 區暨洲美等幸福住宅聯合招租",
+    "ruiguang": "瑞光社會住宅",
+    "svenly3": "斯文里三期整宅及中繼住宅",
+    "three-in-one-rental": "木柵、金龍及大橋頭等社宅聯合招租",
+    "xiaowan": "小彎社會住宅",
+    "xinglong": "興隆社會住宅 D2 區",
+    "xinglong-1": "興隆社會住宅 D1 區",
+    "xinglong_e": "興隆社會住宅 E 區",
+    "xingshan": "行善社會住宅",
+    "xinqiyan": "新奇岩社會住宅",
+    "yir": "青年創新回饋計畫跨基地公告",
+    "yongping": "永平社會住宅",
+    "zhongnan": "中南社會住宅及永平聯合招租",
+}
 
 sys.path.insert(0, str(SKILL / "scripts"))
 import batch_convert  # noqa: E402
@@ -243,13 +284,17 @@ def update_readme():
     )
     table = "\n".join(
         [
-            "| 資料夾 | 文件數 | 頁數 | 待 OCR 文件數 |",
-            "| --- | ---: | ---: | ---: |",
-            *[f"| `{name}/` | {count} | {page_count} | {ocr_count} |" for name, count, page_count, ocr_count in rows],
+            "| 資料夾 | 繁體中文說明 | 文件數 | 頁數 | 待 OCR 文件數 |",
+            "| --- | --- | ---: | ---: | ---: |",
+            *[
+                f"| `{name}/` | {FOLDER_DESCRIPTIONS.get(name, name)} | "
+                f"{count} | {page_count} | {ocr_count} |"
+                for name, count, page_count, ocr_count in rows
+            ],
         ]
     )
     text = re.sub(
-        r"\| 資料夾 \| 文件數 \| 頁數 \| 待 OCR 文件數 \|.*?(?=\n\nJSON 檔名)",
+        r"\| 資料夾 \|.*?(?=\n\nJSON 檔名)",
         table,
         text,
         flags=re.S,
