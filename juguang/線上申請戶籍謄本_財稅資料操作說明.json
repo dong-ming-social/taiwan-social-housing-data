@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "document_name": "線上申請戶籍謄本_財稅資料操作說明",
+    "document_type": "guidance",
+    "version": "莒光社宅",
+    "language": "zh-Hant",
+    "pdf_filename": "線上申請戶籍謄本_財稅資料操作說明.pdf",
+    "json_filename": "線上申請戶籍謄本_財稅資料操作說明.json",
+    "page_count": 2,
+    "pdf_sha256": "60893dc7623aecb4c3baf5337cb50940770a5c0c3a42f83bec27e907073d15da",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/juguang/111年莒光社宅公告附件/%E7%B7%9A%E4%B8%8A%E7%94%B3%E8%AB%8B%E6%88%B6%E7%B1%8D%E8%AC%84%E6%9C%AC_%E8%B2%A1%E7%A8%85%E8%B3%87%E6%96%99%E6%93%8D%E4%BD%9C%E8%AA%AA%E6%98%8E.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，線上申請戶籍謄本_財稅資料操作說明。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "線上申請戶籍謄本_財稅資料操作說明",
+      "page_start": 1,
+      "page_end": 2,
+      "source_pages": [
+        1,
+        2
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "◎線上申請綜合所得稅各類所得資料清單及財產歸屬資料清單操作\n說明\n第1頁 共2頁"
+        },
+        {
+          "page": 2,
+          "text": "◎線上申請戶籍謄本操作說明\n第2頁 共2頁"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "guidance",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "◎線上申請綜合所得稅各類所得資料清單及財產歸屬資料清單操作\n說明\n第1頁 共2頁",
+      "tables": [],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "◎線上申請戶籍謄本操作說明\n第2頁 共2頁",
+      "tables": [],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}

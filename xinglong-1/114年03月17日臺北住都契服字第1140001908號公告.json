@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "document_name": "114年03月17日臺北住都契服字第1140001908號公告",
+    "document_type": "announcement",
+    "version": "民國114年版",
+    "language": "zh-Hant",
+    "pdf_filename": "114年03月17日臺北住都契服字第1140001908號公告.pdf",
+    "json_filename": "114年03月17日臺北住都契服字第1140001908號公告.json",
+    "page_count": 1,
+    "pdf_sha256": "a1c6837b7e3dec2c98a7456bc8e814153e9af0d2104d43cff9323bf1e633153b",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/xinglong-1/114%E5%B9%B403%E6%9C%8817%E6%97%A5%E8%87%BA%E5%8C%97%E4%BD%8F%E9%83%BD%E5%A5%91%E6%9C%8D%E5%AD%97%E7%AC%AC1140001908%E8%99%9F%E5%85%AC%E5%91%8A.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，114年03月17日臺北住都契服字第1140001908號公告。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "114年03月17日臺北住都契服字第1140001908號公告",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
