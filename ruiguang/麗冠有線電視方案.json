@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "document_name": "麗冠有線電視方案",
+    "document_type": "reference_table",
+    "version": "瑞光社宅",
+    "language": "zh-Hant",
+    "pdf_filename": "麗冠有線電視方案.pdf",
+    "json_filename": "麗冠有線電視方案.json",
+    "page_count": 1,
+    "pdf_sha256": "f4751d2223d8aa3fe21844f986fe9e2887d4addb767ebcaaa58b6d0056e1643c",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/ruiguang/%E9%BA%97%E5%86%A0%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E6%96%B9%E6%A1%88.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，麗冠有線電視方案。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "麗冠有線電視方案",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "reference_table",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
