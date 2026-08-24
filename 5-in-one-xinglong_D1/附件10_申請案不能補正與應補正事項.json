@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "document_name": "附件10_申請案不能補正與應補正事項",
+    "document_type": "guidance",
+    "version": "興隆D1區等5處社宅聯合招租",
+    "language": "zh-Hant",
+    "pdf_filename": "附件10_申請案不能補正與應補正事項.pdf",
+    "json_filename": "附件10_申請案不能補正與應補正事項.json",
+    "page_count": 1,
+    "pdf_sha256": "ed2c0f2f46fac134b85fc4b5556c5396f8d3e76585ddcdca82ac41bdc18834c4",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/5-in-one-xinglong_D1/%E9%99%84%E4%BB%B610_%E7%94%B3%E8%AB%8B%E6%A1%88%E4%B8%8D%E8%83%BD%E8%A3%9C%E6%AD%A3%E8%88%87%E6%87%89%E8%A3%9C%E6%AD%A3%E4%BA%8B%E9%A0%85.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，附件10_申請案不能補正與應補正事項。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "附件10_申請案不能補正與應補正事項",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "附件 10_申請案不能補正與應補正事項\n申請案不能補正與應補正事項\n一、家庭成員\n指臺北市社會住宅出租辦法第 4 條第 1 項規\n定之範圍。\n二、不能補正事項：\n申請案件不符合住宅法、臺北市社會住宅出租辦法或本公\n告相關規定且不能補正者，本中心以書面駁回申請。\n● 常見不能補正事項：\n1.申請時家庭成員人口數不足房型人口數。\n2.申請時就學證明為臺北市以外學校。\n3.申請時就業證明為臺北市以外公司或機關。\n二、應補正事項：\n申請人已檢附資料內容尚有欠缺或未檢附以下資料：\n1.家庭成員：含詳細記事之戶口名簿影本、全戶戶籍謄本、\n電子戶籍謄本（擇一）。\n2.所得資料：全部家庭成員之最近一年綜合所得稅各類所\n得資料清單（當年出生新生兒不需檢附）。\n3.財產資料：全部家庭成員之全國財產稅總歸戶財產查詢\n清單（含當年出生新生兒）。\n4.以「未設籍本市於本市就學就業戶」身分提出申請者：在\n學證明、在職證明文件。"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "guidance",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "附件 10_申請案不能補正與應補正事項\n申請案不能補正與應補正事項\n一、家庭成員\n指臺北市社會住宅出租辦法第 4 條第 1 項規\n定之範圍。\n二、不能補正事項：\n申請案件不符合住宅法、臺北市社會住宅出租辦法或本公\n告相關規定且不能補正者，本中心以書面駁回申請。\n● 常見不能補正事項：\n1.申請時家庭成員人口數不足房型人口數。\n2.申請時就學證明為臺北市以外學校。\n3.申請時就業證明為臺北市以外公司或機關。\n二、應補正事項：\n申請人已檢附資料內容尚有欠缺或未檢附以下資料：\n1.家庭成員：含詳細記事之戶口名簿影本、全戶戶籍謄本、\n電子戶籍謄本（擇一）。\n2.所得資料：全部家庭成員之最近一年綜合所得稅各類所\n得資料清單（當年出生新生兒不需檢附）。\n3.財產資料：全部家庭成員之全國財產稅總歸戶財產查詢\n清單（含當年出生新生兒）。\n4.以「未設籍本市於本市就學就業戶」身分提出申請者：在\n學證明、在職證明文件。",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}
