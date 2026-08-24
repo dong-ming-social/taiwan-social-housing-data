@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "document_name": "114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告",
+    "document_type": "announcement",
+    "version": "7處社宅聯合招租（第2批）",
+    "language": "zh-Hant",
+    "pdf_filename": "114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告.pdf",
+    "json_filename": "114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告.json",
+    "page_count": 17,
+    "pdf_sha256": "388ef83641262004f4b2e817f3800e94b62f3baa6ec43640c2bb9a5588c9501e",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/7-in-one-2/114.2.24_%E8%87%BA%E5%8C%97%E4%BD%8F%E9%83%BD%E5%A5%91%E6%9C%8D%E5%AD%97%E7%AC%AC1140001282%E8%99%9F_%E7%A6%8F%E6%98%9F%E7%AD%89%E4%B8%83%E8%99%95%E9%9A%A8%E5%88%B0%E9%9A%A8%E8%BE%A6%E5%85%AC%E5%91%8A.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "114.2.24_臺北住都契服字第1140001282號_福星等七處隨到隨辦公告",
+      "page_start": 1,
+      "page_end": 17,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        },
+        {
+          "page": 2,
+          "text": ""
+        },
+        {
+          "page": 3,
+          "text": ""
+        },
+        {
+          "page": 4,
+          "text": ""
+        },
+        {
+          "page": 5,
+          "text": ""
+        },
+        {
+          "page": 6,
+          "text": ""
+        },
+        {
+          "page": 7,
+          "text": ""
+        },
+        {
+          "page": 8,
+          "text": ""
+        },
+        {
+          "page": 9,
+          "text": ""
+        },
+        {
+          "page": 10,
+          "text": ""
+        },
+        {
+          "page": 11,
+          "text": ""
+        },
+        {
+          "page": 12,
+          "text": ""
+        },
+        {
+          "page": 13,
+          "text": ""
+        },
+        {
+          "page": 14,
+          "text": ""
+        },
+        {
+          "page": 15,
+          "text": ""
+        },
+        {
+          "page": 16,
+          "text": ""
+        },
+        {
+          "page": 17,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 3,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 4,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 5,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 6,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 7,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 8,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 9,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 10,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 11,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 12,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 13,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 14,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 15,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 16,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 17,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
