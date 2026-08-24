@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "document_name": "社會住宅包租代管第2期計畫宣導摺頁_20200416100000",
+    "document_type": "guidance",
+    "version": "全市通用契約範本／申請書",
+    "language": "zh-Hant",
+    "pdf_filename": "社會住宅包租代管第2期計畫宣導摺頁_20200416100000.pdf",
+    "json_filename": "社會住宅包租代管第2期計畫宣導摺頁_20200416100000.json",
+    "page_count": 2,
+    "pdf_sha256": "aa1039e7a75b7d4b4fd2ee2bf3999b83726185d51c42251fa8e5230fde06b929",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/assets/attachments/%E7%A4%BE%E6%9C%83%E4%BD%8F%E5%AE%85%E5%8C%85%E7%A7%9F%E4%BB%A3%E7%AE%A1%E7%AC%AC2%E6%9C%9F%E8%A8%88%E7%95%AB%E5%AE%A3%E5%B0%8E%E6%91%BA%E9%A0%81_20200416100000.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，社會住宅包租代管第2期計畫宣導摺頁_20200416100000。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "社會住宅包租代管第2期計畫宣導摺頁_20200416100000",
+      "page_start": 1,
+      "page_end": 2,
+      "source_pages": [
+        1,
+        2
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        },
+        {
+          "page": 2,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "guidance",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [
+      {
+        "source_pages": [
+          1
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          2
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [
+        [
+          [
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 2,
+      "text": "",
+      "tables": [
+        [
+          [
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}

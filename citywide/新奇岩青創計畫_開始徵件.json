@@ -1,0 +1,751 @@
+{
+  "metadata": {
+    "document_name": "新奇岩青創計畫_開始徵件",
+    "document_type": "announcement",
+    "version": "全市通用契約範本／申請書",
+    "language": "zh-Hant",
+    "pdf_filename": "新奇岩青創計畫_開始徵件.pdf",
+    "json_filename": "新奇岩青創計畫_開始徵件.json",
+    "page_count": 29,
+    "pdf_sha256": "b4341c6ac1c59dfcc265682729fcc0dfc0529ce7bca5cc5fb1632bd96bd69139",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/assets/attachments/%E6%96%B0%E5%A5%87%E5%B2%A9%E9%9D%92%E5%89%B5%E8%A8%88%E7%95%AB_%E9%96%8B%E5%A7%8B%E5%BE%B5%E4%BB%B6.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，新奇岩青創計畫_開始徵件。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "新奇岩青創計畫_開始徵件",
+      "page_start": 1,
+      "page_end": 29,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        },
+        {
+          "page": 2,
+          "text": ""
+        },
+        {
+          "page": 3,
+          "text": "20 表內數字為徵選之青創戶數\n新奇岩\n2018.6\n明倫 瑞光\n健康(507戶)\n2018.12\n26 27\n興隆(510戶)\n2019.8\n健康\n青年(273戶)\n2020.3 35 35\n東明(700戶)\n東明\n2021.5\n明倫(380戶)\n2021.9\n瑞光(389戶)\n2021.11(預計)\n新奇岩(288戶)\n19\n青年一期\n健康33組35戶\n興隆33組35戶\n青年19組19戶\n35\n東明34組35戶\n明倫26組26戶\n興隆二區\n瑞光26組27戶"
+        },
+        {
+          "page": 4,
+          "text": "新奇岩"
+        },
+        {
+          "page": 5,
+          "text": ""
+        },
+        {
+          "page": 6,
+          "text": ""
+        },
+        {
+          "page": 7,
+          "text": ""
+        },
+        {
+          "page": 8,
+          "text": ""
+        },
+        {
+          "page": 9,
+          "text": "新奇岩社宅 一房型 二房型\n坪數(含公設) 15坪 17坪 22坪 22坪 25坪 27坪\n第一階 5,500 7,100 9,900 9,900 12,200 13,800\n第二階 6,500 8,100 10,600 10,600 12,900 14,500\n家庭年所得\n家庭年總收入\n40%分位點 11,900 14,200 15,800\n低於104萬元\n以下\n（家庭年總收入146萬\n元以下）\n第三階 8,500 10,100 13,200\n家庭年總收入\n13,900 16,200 17,800\n104萬元至\n146萬元\n所得分位點40%~50%\n11,500 13,100 16,200 16,900 19,200 20,800\n(家庭年總收146萬元以上166萬元以下)"
+        },
+        {
+          "page": 10,
+          "text": ""
+        },
+        {
+          "page": 11,
+          "text": ""
+        },
+        {
+          "page": 12,
+          "text": "特殊情形\n身分戶\n30%\n一般戶\n70%"
+        },
+        {
+          "page": 13,
+          "text": ""
+        },
+        {
+          "page": 14,
+          "text": "申請資格\n年齡限制\n戶籍、就學、\n就業限制\n人口數與房型"
+        },
+        {
+          "page": 15,
+          "text": "家庭年所得限制\n家庭成員\n家庭年\n所得限制\n持有不動產限制"
+        },
+        {
+          "page": 16,
+          "text": "住宅協助資源不重複受領限制"
+        },
+        {
+          "page": 17,
+          "text": ""
+        },
+        {
+          "page": 18,
+          "text": ""
+        },
+        {
+          "page": 19,
+          "text": "身份資格審查\n1\nStep\n約取前\n推薦評選 50 視提案情形，可超額或\n2 案\nStep\n不足50案\n40%\n公眾參與性\n選出\n30%\n計畫可行性\n簡報評選 20\n3\nStep\n戶\n30%\n社區發展性"
+        },
+        {
+          "page": 20,
+          "text": ""
+        },
+        {
+          "page": 21,
+          "text": ""
+        },
+        {
+          "page": 22,
+          "text": ""
+        },
+        {
+          "page": 23,
+          "text": "明倫社宅暖屋活動"
+        },
+        {
+          "page": 24,
+          "text": "東明新年年獸市集"
+        },
+        {
+          "page": 25,
+          "text": "公共空間營造 公共留言牆"
+        },
+        {
+          "page": 26,
+          "text": ""
+        },
+        {
+          "page": 27,
+          "text": ""
+        },
+        {
+          "page": 28,
+          "text": "青創計畫FB粉專 臺北市政府都市發展局\n臺北市政府安心樂租網\nhttps://www.rent.gov.taipei/"
+        },
+        {
+          "page": 29,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [
+      {
+        "source_pages": [
+          9
+        ],
+        "rows": [
+          [
+            "新奇岩社宅",
+            "",
+            "",
+            "一房型",
+            "",
+            "",
+            "二房型",
+            "",
+            ""
+          ],
+          [
+            "坪數(含公設)",
+            "",
+            "",
+            "15坪",
+            "17坪",
+            "22坪",
+            "22坪",
+            "25坪",
+            "27坪"
+          ],
+          [
+            "家庭年所得\n40%分位點\n以下\n（家庭年總收入146萬\n元以下）",
+            "第一階",
+            "",
+            "5,500",
+            "7,100",
+            "9,900",
+            "9,900",
+            "12,200",
+            "13,800"
+          ],
+          [
+            "",
+            "第二階",
+            "",
+            "6,500",
+            "8,100",
+            "10,600",
+            "10,600",
+            "12,900",
+            "14,500"
+          ],
+          [
+            "",
+            "第三階",
+            "家庭年總收入\n低於104萬元",
+            "8,500",
+            "10,100",
+            "13,200",
+            "11,900",
+            "14,200",
+            "15,800"
+          ],
+          [
+            "",
+            "",
+            "家庭年總收入\n104萬元至\n146萬元",
+            "",
+            "",
+            "",
+            "13,900",
+            "16,200",
+            "17,800"
+          ],
+          [
+            "所得分位點40%~50%\n(家庭年總收146萬元以上166萬元以下)",
+            "",
+            "",
+            "11,500",
+            "13,100",
+            "16,200",
+            "16,900",
+            "19,200",
+            "20,800"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          15
+        ],
+        "rows": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          16
+        ],
+        "rows": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          21
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          22
+        ],
+        "rows": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          29
+        ],
+        "rows": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          29
+        ],
+        "rows": [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 3,
+      "text": "20 表內數字為徵選之青創戶數\n新奇岩\n2018.6\n明倫 瑞光\n健康(507戶)\n2018.12\n26 27\n興隆(510戶)\n2019.8\n健康\n青年(273戶)\n2020.3 35 35\n東明(700戶)\n東明\n2021.5\n明倫(380戶)\n2021.9\n瑞光(389戶)\n2021.11(預計)\n新奇岩(288戶)\n19\n青年一期\n健康33組35戶\n興隆33組35戶\n青年19組19戶\n35\n東明34組35戶\n明倫26組26戶\n興隆二區\n瑞光26組27戶",
+      "tables": [],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 4,
+      "text": "新奇岩",
+      "tables": [],
+      "image_count": 2,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 5,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 6,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 7,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 8,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 9,
+      "text": "新奇岩社宅 一房型 二房型\n坪數(含公設) 15坪 17坪 22坪 22坪 25坪 27坪\n第一階 5,500 7,100 9,900 9,900 12,200 13,800\n第二階 6,500 8,100 10,600 10,600 12,900 14,500\n家庭年所得\n家庭年總收入\n40%分位點 11,900 14,200 15,800\n低於104萬元\n以下\n（家庭年總收入146萬\n元以下）\n第三階 8,500 10,100 13,200\n家庭年總收入\n13,900 16,200 17,800\n104萬元至\n146萬元\n所得分位點40%~50%\n11,500 13,100 16,200 16,900 19,200 20,800\n(家庭年總收146萬元以上166萬元以下)",
+      "tables": [
+        [
+          [
+            "新奇岩社宅",
+            "",
+            "",
+            "一房型",
+            "",
+            "",
+            "二房型",
+            "",
+            ""
+          ],
+          [
+            "坪數(含公設)",
+            "",
+            "",
+            "15坪",
+            "17坪",
+            "22坪",
+            "22坪",
+            "25坪",
+            "27坪"
+          ],
+          [
+            "家庭年所得\n40%分位點\n以下\n（家庭年總收入146萬\n元以下）",
+            "第一階",
+            "",
+            "5,500",
+            "7,100",
+            "9,900",
+            "9,900",
+            "12,200",
+            "13,800"
+          ],
+          [
+            "",
+            "第二階",
+            "",
+            "6,500",
+            "8,100",
+            "10,600",
+            "10,600",
+            "12,900",
+            "14,500"
+          ],
+          [
+            "",
+            "第三階",
+            "家庭年總收入\n低於104萬元",
+            "8,500",
+            "10,100",
+            "13,200",
+            "11,900",
+            "14,200",
+            "15,800"
+          ],
+          [
+            "",
+            "",
+            "家庭年總收入\n104萬元至\n146萬元",
+            "",
+            "",
+            "",
+            "13,900",
+            "16,200",
+            "17,800"
+          ],
+          [
+            "所得分位點40%~50%\n(家庭年總收146萬元以上166萬元以下)",
+            "",
+            "",
+            "11,500",
+            "13,100",
+            "16,200",
+            "16,900",
+            "19,200",
+            "20,800"
+          ]
+        ]
+      ],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 10,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 11,
+      "text": "",
+      "tables": [],
+      "image_count": 8,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 12,
+      "text": "特殊情形\n身分戶\n30%\n一般戶\n70%",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 13,
+      "text": "",
+      "tables": [],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": true,
+      "image_note": null
+    },
+    {
+      "page": 14,
+      "text": "申請資格\n年齡限制\n戶籍、就學、\n就業限制\n人口數與房型",
+      "tables": [],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 15,
+      "text": "家庭年所得限制\n家庭成員\n家庭年\n所得限制\n持有不動產限制",
+      "tables": [
+        [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 16,
+      "text": "住宅協助資源不重複受領限制",
+      "tables": [
+        [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ],
+      "image_count": 1,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 17,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 18,
+      "text": "",
+      "tables": [],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": true,
+      "image_note": null
+    },
+    {
+      "page": 19,
+      "text": "身份資格審查\n1\nStep\n約取前\n推薦評選 50 視提案情形，可超額或\n2 案\nStep\n不足50案\n40%\n公眾參與性\n選出\n30%\n計畫可行性\n簡報評選 20\n3\nStep\n戶\n30%\n社區發展性",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 20,
+      "text": "",
+      "tables": [],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": true,
+      "image_note": null
+    },
+    {
+      "page": 21,
+      "text": "",
+      "tables": [
+        [
+          [
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 0,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 22,
+      "text": "",
+      "tables": [
+        [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 23,
+      "text": "明倫社宅暖屋活動",
+      "tables": [],
+      "image_count": 5,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 24,
+      "text": "東明新年年獸市集",
+      "tables": [],
+      "image_count": 5,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 25,
+      "text": "公共空間營造 公共留言牆",
+      "tables": [],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 26,
+      "text": "",
+      "tables": [],
+      "image_count": 5,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 27,
+      "text": "",
+      "tables": [],
+      "image_count": 2,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 28,
+      "text": "青創計畫FB粉專 臺北市政府都市發展局\n臺北市政府安心樂租網\nhttps://www.rent.gov.taipei/",
+      "tables": [],
+      "image_count": 7,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 29,
+      "text": "",
+      "tables": [
+        [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "document_name": "Mydata操作方式",
+    "document_type": "guidance",
+    "version": "MyData操作說明",
+    "language": "zh-Hant",
+    "pdf_filename": "Mydata操作方式.pdf",
+    "json_filename": "Mydata操作方式.json",
+    "page_count": 12,
+    "pdf_sha256": "cad46ab838115199b38ac67bb0f5cfa3be4ec1da192d8c9a0ba701bf1146d398",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/mydata/Mydata%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，Mydata操作方式。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "Mydata操作方式",
+      "page_start": 1,
+      "page_end": 12,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "1\n個人資料自主運用\nMyData"
+        },
+        {
+          "page": 2,
+          "text": "2\n什麼是 MyData\n民眾可線上下載政府保有的個人資料自主運用，並取得政府提供的\n多項證明文件，透過 MyData 簡化多項申辦流程，並且有完善的資安\n防護。"
+        },
+        {
+          "page": 3,
+          "text": "3\n申請步驟\n一、 如何申請\n1. 上網搜尋「MyData」\n2. 參考網址 https://mydata.nat.gov.tw/signin\n3. 帳號為身份證字號；密碼為出生年月日。"
+        },
+        {
+          "page": 4,
+          "text": "4\n二、 身份驗證\n身份驗證有兩種方式：「免插卡驗證」和「插卡驗證」，可以根據\n個人偏好選擇適合的方式進行登入。\n1. 免插卡驗證\n 行動自然人憑證（僅支援手機）\n 動態密碼\n 手機門號＋健保卡卡號驗證\n 軟體金融憑證"
+        },
+        {
+          "page": 5,
+          "text": "5\n2. 插卡驗證\n 自然人憑證\n 晶片金融卡\n 硬體金融憑證\n 健保卡"
+        },
+        {
+          "page": 6,
+          "text": "6\n3. 基本資訊\n登入後需先確認個人基本資訊，隨即儲存。\n4. 申請文件\n 選擇上方「找文件」， 點選「下載多份文件」。"
+        },
+        {
+          "page": 7,
+          "text": "7\n 將需要申請之文件點選「加入清單」(一次僅能下載五筆，若有需要其它文件則需分\n多次作業)，選擇完申請文件後, 點選下方「確認下載多筆文件」。"
+        },
+        {
+          "page": 8,
+          "text": "8\n 畫面左邊詳細列出了申請文件的涵蓋內容。\n 右邊畫面，請再次確認一下你的個人基本資訊，確保所有資料都正確無誤後，按\n「下一步」。\n 根據個人偏好選擇適合的方式再次進行身份驗證。"
+        },
+        {
+          "page": 9,
+          "text": "9\n 因部分資料需要一些時間才能產生完成(1-2小時)，若產生完成, 會收到簡訊通知。\n 此時可點選右上角圖示「個人專區」。"
+        },
+        {
+          "page": 10,
+          "text": "10\n 點選個人文件, 可查看各文件產生之進度。\n 下載完的文件可點選「資料細節」，根據個人需求選擇「預覽檔案」或「轉存電\n腦」。"
+        },
+        {
+          "page": 11,
+          "text": "11\n完成上傳文件\n 回到安心樂租網進行登入「申請中心」。\n 點選「立即申請」。"
+        },
+        {
+          "page": 12,
+          "text": "12\n 點選「修改申請資料」。\n 進入到申請資料將個人資料填寫完畢，再將MyData 申請的檔案文件上傳（全戶戶\n籍謄本、電子財產資料、個人所得資料等資料），確定資料正確無誤後按下「確定儲\n存」，已完成申租資料。"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "guidance",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [
+      {
+        "source_pages": [
+          1
+        ],
+        "rows": [
+          [
+            "",
+            "1"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          2
+        ],
+        "rows": [
+          [
+            "",
+            "2",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          3
+        ],
+        "rows": [
+          [
+            "",
+            "3",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          4
+        ],
+        "rows": [
+          [
+            "",
+            "4\n二、 身份"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          5
+        ],
+        "rows": [
+          [
+            "",
+            "5\n2. 插卡驗"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          6
+        ],
+        "rows": [
+          [
+            "",
+            "6\n3. 基本資"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          7
+        ],
+        "rows": [
+          [
+            "",
+            "7\n 將需要"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          8
+        ],
+        "rows": [
+          [
+            "",
+            "8\n 畫面左"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          8
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          9
+        ],
+        "rows": [
+          [
+            "",
+            "9\n 因部分"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          10
+        ],
+        "rows": [
+          [
+            "",
+            "10\n 點選個"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          11
+        ],
+        "rows": [
+          [
+            "",
+            "11\n完成上傳",
+            ""
+          ],
+          [
+            "",
+            "",
+            "完成上傳"
+          ]
+        ]
+      },
+      {
+        "source_pages": [
+          12
+        ],
+        "rows": [
+          [
+            "",
+            "12\n 點選「"
+          ]
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "1\n個人資料自主運用\nMyData",
+      "tables": [
+        [
+          [
+            "",
+            "1"
+          ]
+        ]
+      ],
+      "image_count": 2,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "2\n什麼是 MyData\n民眾可線上下載政府保有的個人資料自主運用，並取得政府提供的\n多項證明文件，透過 MyData 簡化多項申辦流程，並且有完善的資安\n防護。",
+      "tables": [
+        [
+          [
+            "",
+            "2",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 3,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 3,
+      "text": "3\n申請步驟\n一、 如何申請\n1. 上網搜尋「MyData」\n2. 參考網址 https://mydata.nat.gov.tw/signin\n3. 帳號為身份證字號；密碼為出生年月日。",
+      "tables": [
+        [
+          [
+            "",
+            "3",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 3,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 4,
+      "text": "4\n二、 身份驗證\n身份驗證有兩種方式：「免插卡驗證」和「插卡驗證」，可以根據\n個人偏好選擇適合的方式進行登入。\n1. 免插卡驗證\n 行動自然人憑證（僅支援手機）\n 動態密碼\n 手機門號＋健保卡卡號驗證\n 軟體金融憑證",
+      "tables": [
+        [
+          [
+            "",
+            "4\n二、 身份"
+          ]
+        ]
+      ],
+      "image_count": 3,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 5,
+      "text": "5\n2. 插卡驗證\n 自然人憑證\n 晶片金融卡\n 硬體金融憑證\n 健保卡",
+      "tables": [
+        [
+          [
+            "",
+            "5\n2. 插卡驗"
+          ]
+        ]
+      ],
+      "image_count": 3,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 6,
+      "text": "6\n3. 基本資訊\n登入後需先確認個人基本資訊，隨即儲存。\n4. 申請文件\n 選擇上方「找文件」， 點選「下載多份文件」。",
+      "tables": [
+        [
+          [
+            "",
+            "6\n3. 基本資"
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 7,
+      "text": "7\n 將需要申請之文件點選「加入清單」(一次僅能下載五筆，若有需要其它文件則需分\n多次作業)，選擇完申請文件後, 點選下方「確認下載多筆文件」。",
+      "tables": [
+        [
+          [
+            "",
+            "7\n 將需要"
+          ]
+        ]
+      ],
+      "image_count": 3,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 8,
+      "text": "8\n 畫面左邊詳細列出了申請文件的涵蓋內容。\n 右邊畫面，請再次確認一下你的個人基本資訊，確保所有資料都正確無誤後，按\n「下一步」。\n 根據個人偏好選擇適合的方式再次進行身份驗證。",
+      "tables": [
+        [
+          [
+            "",
+            "8\n 畫面左"
+          ]
+        ],
+        [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 9,
+      "text": "9\n 因部分資料需要一些時間才能產生完成(1-2小時)，若產生完成, 會收到簡訊通知。\n 此時可點選右上角圖示「個人專區」。",
+      "tables": [
+        [
+          [
+            "",
+            "9\n 因部分"
+          ]
+        ]
+      ],
+      "image_count": 5,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 10,
+      "text": "10\n 點選個人文件, 可查看各文件產生之進度。\n 下載完的文件可點選「資料細節」，根據個人需求選擇「預覽檔案」或「轉存電\n腦」。",
+      "tables": [
+        [
+          [
+            "",
+            "10\n 點選個"
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 11,
+      "text": "11\n完成上傳文件\n 回到安心樂租網進行登入「申請中心」。\n 點選「立即申請」。",
+      "tables": [
+        [
+          [
+            "",
+            "11\n完成上傳",
+            ""
+          ],
+          [
+            "",
+            "",
+            "完成上傳"
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 12,
+      "text": "12\n 點選「修改申請資料」。\n 進入到申請資料將個人資料填寫完畢，再將MyData 申請的檔案文件上傳（全戶戶\n籍謄本、電子財產資料、個人所得資料等資料），確定資料正確無誤後按下「確定儲\n存」，已完成申租資料。",
+      "tables": [
+        [
+          [
+            "",
+            "12\n 點選「"
+          ]
+        ]
+      ],
+      "image_count": 4,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
