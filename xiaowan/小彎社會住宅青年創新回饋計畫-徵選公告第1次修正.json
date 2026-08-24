@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "document_name": "小彎社會住宅青年創新回饋計畫-徵選公告第1次修正",
+    "document_type": "announcement",
+    "version": "小彎社宅",
+    "language": "zh-Hant",
+    "pdf_filename": "小彎社會住宅青年創新回饋計畫-徵選公告第1次修正.pdf",
+    "json_filename": "小彎社會住宅青年創新回饋計畫-徵選公告第1次修正.json",
+    "page_count": 1,
+    "pdf_sha256": "6d24d69a5c9fb0a86e3f2d97d128b30972288a0f30b4da0872278db66320f7d1",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/xiaowan/%E5%B0%8F%E5%BD%8E%E7%A4%BE%E6%9C%83%E4%BD%8F%E5%AE%85%E9%9D%92%E5%B9%B4%E5%89%B5%E6%96%B0%E5%9B%9E%E9%A5%8B%E8%A8%88%E7%95%AB-%E5%BE%B5%E9%81%B8%E5%85%AC%E5%91%8A%E7%AC%AC1%E6%AC%A1%E4%BF%AE%E6%AD%A3.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，小彎社會住宅青年創新回饋計畫-徵選公告第1次修正。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "小彎社會住宅青年創新回饋計畫-徵選公告第1次修正",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 4,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
