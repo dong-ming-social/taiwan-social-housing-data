@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "document_name": "附件4_委託書",
+    "document_type": "form",
+    "version": "青銀換居計畫",
+    "language": "zh-Hant",
+    "pdf_filename": "附件4_委託書.pdf",
+    "json_filename": "附件4_委託書.json",
+    "page_count": 1,
+    "pdf_sha256": "4bbb2bb6c12ebb2fcd62b16f5f0ab810abdc96e2a577d284bf88ee91e3355dff",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/elder-project/115/%E9%99%84%E4%BB%B64_%E5%A7%94%E8%A8%97%E6%9B%B8.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，附件4_委託書。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "附件4_委託書",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "附件4 臺北市社會住宅青銀換居計畫授權書\n委 託 書\n本人 為申請加入臺北市政府「115年度社會住宅青銀換居計\n畫」，提出本授權書，委任代理人 ，代理本人提出申請，\n並代簽署本申請案有關文件。\n此致\n臺北市政府都市發展局\n授權人姓名：\n身分證字號：\n電 話：\n（蓋章）\n受委任人姓名(公司):\n身分證字號(統編):\n電 話:\n(蓋章)\n中華民國 年 月 日"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "form",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "附件4 臺北市社會住宅青銀換居計畫授權書\n委 託 書\n本人 為申請加入臺北市政府「115年度社會住宅青銀換居計\n畫」，提出本授權書，委任代理人 ，代理本人提出申請，\n並代簽署本申請案有關文件。\n此致\n臺北市政府都市發展局\n授權人姓名：\n身分證字號：\n電 話：\n（蓋章）\n受委任人姓名(公司):\n身分證字號(統編):\n電 話:\n(蓋章)\n中華民國 年 月 日",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}

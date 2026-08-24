@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "document_name": "附件5_建物所有權人授權書",
+    "document_type": "form",
+    "version": "青銀換居計畫",
+    "language": "zh-Hant",
+    "pdf_filename": "附件5_建物所有權人授權書.pdf",
+    "json_filename": "附件5_建物所有權人授權書.json",
+    "page_count": 1,
+    "pdf_sha256": "3734aa4f1971347bd13c7c059dd4d1f88c9d7db995ca38b25dfab31864c2c66a",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/elder-project/115/%E9%99%84%E4%BB%B65_%E5%BB%BA%E7%89%A9%E6%89%80%E6%9C%89%E6%AC%8A%E4%BA%BA%E6%8E%88%E6%AC%8A%E6%9B%B8.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，附件5_建物所有權人授權書。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "附件5_建物所有權人授權書",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "附件5 臺北市社會住宅青銀換居計畫授權書\n建物共同持有所有權人授權書\n本人 為房屋持分所有權人之一，同意______________\n提出房屋地址： ，申請加入臺\n北市政府「115年度社會住宅青銀換居計畫」使用。\n此致\n臺北市政府都市發展局\n具授權人姓名：\n具授權人身分證字號：\n具授權人電話：\n（蓋章）\n中華民國 年 月 日"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "form",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "附件5 臺北市社會住宅青銀換居計畫授權書\n建物共同持有所有權人授權書\n本人 為房屋持分所有權人之一，同意______________\n提出房屋地址： ，申請加入臺\n北市政府「115年度社會住宅青銀換居計畫」使用。\n此致\n臺北市政府都市發展局\n具授權人姓名：\n具授權人身分證字號：\n具授權人電話：\n（蓋章）\n中華民國 年 月 日",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}
