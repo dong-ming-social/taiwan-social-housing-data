@@ -25,7 +25,8 @@
 ## 已完成
 
 - `.venv` 已建立並安裝 `firecrawl-anydoc==0.1.9` + `pypdf` + `pdfplumber`（`.venv/` 已在 .gitignore）。
-- 全站 366 份 PDF 的完整清單 → `portal_inventory.json`
+- 全站 367 筆 PDF 發布紀錄的完整清單 → `portal_inventory.json`；其中 2 筆標記為明確重複，
+  對應 365 份資料集輸出。
   （每筆含 `bucket` / `stem` / `path` / `have` / `tier` / `src` / `dupe`）。
 - 住戶規約手冊族已完成；`zhongnan/` 的永平規約副本依重複政策排除。
 - 其餘 313 筆工作清單已全部完成，包含修復截斷的 `7-in-one-2/附件8_管理扣分規定.pdf`。
@@ -86,8 +87,9 @@ S=.claude/skills/housing-doc-to-json
 4. **無文字層的 PDF** 會被標記 `structured_data.requires_ocr: true` 並附 `ocr_note`，
    預設不做 OCR。若要 OCR 走 `scripts/ocr_vision.py`，並依 SKILL.md 改寫
    `metadata.parser` 為 `macos-vision-ocr`、清理文字時用 `scripts/clean_ocr_text.py`。
-5. **尚未完成遠端 PR 交付。** 依 SKILL.md 規則不可直接推 main，需依規劃分批開
-   squash-merge PR；執行前需修復 `gh` 的 GitHub 登入憑證。
+5. **遠端交付已完成。** 工具與 8 批資料已透過 PR #10–#14、#16–#19 squash merge；
+   PR #15 另將 Git 規則固定為 `dwhao84/` 分支與 repository owner 的作者身分。
+   最終 README 與接手狀態由統計 PR 提交。
 
 ## 分級參考
 
