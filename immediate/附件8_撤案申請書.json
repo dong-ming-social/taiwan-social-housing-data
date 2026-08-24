@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "document_name": "附件8_撤案申請書",
+    "document_type": "form",
+    "version": "即時空戶招租",
+    "language": "zh-Hant",
+    "pdf_filename": "附件8_撤案申請書.pdf",
+    "json_filename": "附件8_撤案申請書.json",
+    "page_count": 2,
+    "pdf_sha256": "a0640d22f9e319653a0da0d5532e8365031e347967bb38f5ca0208b88536f4ba",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/immediate/%E9%99%84%E4%BB%B68_%E6%92%A4%E6%A1%88%E7%94%B3%E8%AB%8B%E6%9B%B8.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，附件8_撤案申請書。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "附件8_撤案申請書",
+      "page_start": 1,
+      "page_end": 2,
+      "source_pages": [
+        1,
+        2
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "附件8_撤案申請書\n撤案 申請書\n本人\n（收件序號： ）\n由本中心填寫\n前向 貴中心申請臺北市\n□興隆D1區社宅 身 份 房 型\n□東明社宅 身 份 房 型\n□明倫社宅 身 份 房 型\n□廣慈社宅1區 身 份 房 型\n□廣慈社宅2區 身 份 房 型\n□斯文社宅 身 份 房 型\n□小彎社宅 身 份 房 型\n□行善社宅 身 份 房 型\n□木柵社宅 身 份 房 型\n□大龍峒社宅 身 份 房 型\n□和興水岸社宅 身 份 房 型\n因 ，\n請准予撤銷承租權。"
+        },
+        {
+          "page": 2,
+          "text": "附件8_撤案申請書\n此致\n臺北市住宅及都市更新中心\n申 請 人：\n身分證字號：\n聯 絡 地 址 ：\n聯 絡 電 話 ：\n中華民國 年 月 日"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "form",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "附件8_撤案申請書\n撤案 申請書\n本人\n（收件序號： ）\n由本中心填寫\n前向 貴中心申請臺北市\n□興隆D1區社宅 身 份 房 型\n□東明社宅 身 份 房 型\n□明倫社宅 身 份 房 型\n□廣慈社宅1區 身 份 房 型\n□廣慈社宅2區 身 份 房 型\n□斯文社宅 身 份 房 型\n□小彎社宅 身 份 房 型\n□行善社宅 身 份 房 型\n□木柵社宅 身 份 房 型\n□大龍峒社宅 身 份 房 型\n□和興水岸社宅 身 份 房 型\n因 ，\n請准予撤銷承租權。",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    },
+    {
+      "page": 2,
+      "text": "附件8_撤案申請書\n此致\n臺北市住宅及都市更新中心\n申 請 人：\n身分證字號：\n聯 絡 地 址 ：\n聯 絡 電 話 ：\n中華民國 年 月 日",
+      "tables": [],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}
