@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "document_name": "114年青1暨幸福第2波招租公告(用印)",
+    "document_type": "announcement",
+    "version": "民國114年版",
+    "language": "zh-Hant",
+    "pdf_filename": "114年青1暨幸福第2波招租公告(用印).pdf",
+    "json_filename": "114年青1暨幸福第2波招租公告(用印).json",
+    "page_count": 14,
+    "pdf_sha256": "f556905779e646c58823f2afce04250dbdf688da252b5bbf8652375dbc888953",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/qingnian_1_joyful/114%E5%B9%B4%E9%9D%921%E6%9A%A8%E5%B9%B8%E7%A6%8F%E7%AC%AC2%E6%B3%A2%E6%8B%9B%E7%A7%9F%E5%85%AC%E5%91%8A%28%E7%94%A8%E5%8D%B0%29.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，114年青1暨幸福第2波招租公告(用印)。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "114年青1暨幸福第2波招租公告(用印)",
+      "page_start": 1,
+      "page_end": 14,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        },
+        {
+          "page": 2,
+          "text": ""
+        },
+        {
+          "page": 3,
+          "text": ""
+        },
+        {
+          "page": 4,
+          "text": ""
+        },
+        {
+          "page": 5,
+          "text": ""
+        },
+        {
+          "page": 6,
+          "text": ""
+        },
+        {
+          "page": 7,
+          "text": ""
+        },
+        {
+          "page": 8,
+          "text": ""
+        },
+        {
+          "page": 9,
+          "text": ""
+        },
+        {
+          "page": 10,
+          "text": ""
+        },
+        {
+          "page": 11,
+          "text": ""
+        },
+        {
+          "page": 12,
+          "text": ""
+        },
+        {
+          "page": 13,
+          "text": ""
+        },
+        {
+          "page": 14,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 3,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 4,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 5,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 6,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 7,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 8,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 9,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 10,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 11,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 12,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 13,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 14,
+      "text": "",
+      "tables": [],
+      "image_count": 1,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
