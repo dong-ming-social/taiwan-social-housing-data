@@ -1,44 +1,54 @@
 # Taiwan Social Housing Data
 
-臺灣社會住宅公開文件的結構化 JSON 資料集。目前收錄臺北市東明社會住宅、南港機廠社會住宅 1 區相關文件，方便程式查詢、資料分析、搜尋與公共資訊應用。
+臺灣社會住宅公開文件的結構化 JSON 資料集。目前收錄臺北市住宅及都市更新中心安心樂租網公開的社宅基地、聯合招租、青年創新回饋計畫及全市通用文件，方便程式查詢、資料分析、搜尋與公共資訊應用。
 
 ## 收錄範圍
 
-目前共收錄 2 個社宅基地、26 份官方文件、215 頁。檔案依社宅基地分子資料夾存放。
+目前共收錄 **365 份官方文件、4,292 頁**，分布於 39 個來源資料夾。`citywide/` 收錄沒有基地 slug 的全市通用附件；聯合招租與專案文件則保留官方網址中的 bucket 名稱。
 
-### 東明社會住宅（`dongming/`，12 份、95 頁）
+| 資料夾 | 文件數 | 頁數 | 待 OCR 文件數 |
+| --- | ---: | ---: | ---: |
+| `16-in-one/` | 10 | 71 | 2 |
+| `19-in-one-zhangxinshuian/` | 12 | 331 | 1 |
+| `2025/` | 4 | 11 | 2 |
+| `4-in-one-xinglong_a/` | 30 | 467 | 1 |
+| `5-in-one-xinglong_D1/` | 10 | 55 | 1 |
+| `7-in-one-2/` | 11 | 52 | 1 |
+| `aboriginal-rental/` | 9 | 94 | 3 |
+| `apply/` | 1 | 12 | 0 |
+| `citywide/` | 30 | 365 | 4 |
+| `dalongdong/` | 1 | 33 | 0 |
+| `dongming/` | 17 | 151 | 2 |
+| `elder-project/` | 6 | 35 | 1 |
+| `four-in-one-rental/` | 15 | 355 | 2 |
+| `guangci_3/` | 2 | 37 | 0 |
+| `guangci_d_e/` | 2 | 71 | 0 |
+| `hesingshueian/` | 1 | 35 | 0 |
+| `huarong/` | 2 | 21 | 0 |
+| `immediate/` | 14 | 120 | 0 |
+| `jiankang/` | 8 | 57 | 0 |
+| `jiuzong/` | 1 | 37 | 0 |
+| `juguang/` | 26 | 269 | 2 |
+| `ming-lun/` | 9 | 96 | 2 |
+| `mydata/` | 1 | 12 | 0 |
+| `nangangdepot1/` | 22 | 214 | 1 |
+| `qingnian/` | 7 | 62 | 1 |
+| `qingnian-2/` | 1 | 34 | 0 |
+| `qingnian_1_joyful/` | 16 | 130 | 1 |
+| `ruiguang/` | 13 | 112 | 4 |
+| `svenly3/` | 7 | 25 | 1 |
+| `three-in-one-rental/` | 5 | 96 | 1 |
+| `xiaowan/` | 11 | 191 | 3 |
+| `xinglong/` | 14 | 117 | 0 |
+| `xinglong-1/` | 3 | 44 | 2 |
+| `xinglong_e/` | 11 | 99 | 1 |
+| `xingshan/` | 1 | 45 | 0 |
+| `xinqiyan/` | 6 | 87 | 2 |
+| `yir/` | 19 | 165 | 8 |
+| `yongping/` | 1 | 21 | 0 |
+| `zhongnan/` | 6 | 63 | 1 |
 
-- 東明社會住宅住戶規約手冊（114 年 12 月版）
-- 115 年東明社宅重新招租手冊
-- 附件 2：租期及住宅相關補貼切結書
-- 附件 3：所得級距分級標準表及租金補貼表
-- 附件 5：臺北市歷次社宅其他特殊情形身分戶評點制辦理情形
-- 附件 6：申請書封套
-- 附件 7：申請社會住宅應備文件
-- 附件 8：撤案申請書
-- 附件 9：申請案不能補正與應補正事項
-- 附件 10：管理扣分規定
-- 附件 11：臺北市社會住宅租賃契約書
-- 附件 12：免附家庭成員財稅資料
-
-### 南港機廠社會住宅 1 區（`nangangdepot1/`，14 份、120 頁）
-
-- 南港機廠社宅 1 區招租手冊
-- 南港機廠社會住宅 1 區招租公告（掃描影像 PDF，內文以 macOS Vision OCR 擷取，詳見「資料來源與品質」）
-- 附件 2：租期及住宅相關補貼切結書
-- 附件 3：所得級距及分級補貼租金表
-- 附件 4-1：申請書填寫範例（一般、低收入、原住民）
-- 附件 4-2：申請書填寫範例（其他特殊情形身分戶）
-- 附件 5：臺北市歷次社宅其他特殊情形身分戶評點制辦理情形（114.03）
-- 附件 6：申請社會住宅應備文件
-- 附件 9：申請案不能補正與應補正事項
-- 附件 10：管理扣分規定
-- 附件 11：臺北市社會住宅租賃契約書
-- 附件 12：南港機廠社會住宅 1 區周邊教育及公共服務資源一覽表
-- 附件 13：免附家庭成員財稅資料切結書
-- 南港機廠社會住宅住戶規約手冊（115 年 1 月版）
-
-每個 JSON 檔名均沿用原始 PDF 名稱，僅將副檔名改為 `.json`。同名附件（如各社宅的附件 10、11）以社宅資料夾區隔，內容各自對應該基地的官方 PDF。
+JSON 檔名原則上沿用原始 PDF 名稱，僅將副檔名改為 `.json`。不同官方路徑出現同名 PDF 時，檔名會加入文件標題以避免覆寫；同名標準附件則以來源資料夾區隔。
 
 ## JSON 結構
 
@@ -73,12 +83,12 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
 
 ## 資料來源與品質
 
-- 來源：臺北市政府安心樂租網（[東明社會住宅](https://rent.thurc.org.taipei/Attachments/dongming)、[南港機廠社會住宅 1 區](https://rent.thurc.org.taipei/Attachments/nangangdepot1)）
+- 來源：臺北市政府安心樂租網。完整盤點同時使用[社宅基地地圖](https://rent.thurc.org.taipei/housing-sites/map)、各基地 `/Attachments/<slug>` 附件頁，以及[最新消息](https://rent.thurc.org.taipei/news)全 10 頁的公告詳情附件。
 - 發布單位：臺北市住宅及都市更新中心
 - 網站主管機關：臺北市政府都市發展局
-- 原始 PDF 的來源網址與 SHA-256 均記錄於各 JSON。
-- 所有 PDF 均已確認未加密，並完成逐頁文字、表格及圖像核對。
-- 多數文件的文字由 [anydoc](https://github.com/firecrawl/anydoc)（firecrawl-anydoc 0.1.9）解析、pdfplumber 逐頁核對。**南港機廠社會住宅 1 區招租公告**為掃描影像 PDF、無文字層，anydoc 與 pdfplumber 均無法擷取，改以 **macOS Vision OCR（繁體中文）** 擷取內文（`metadata.parser.name` 為 `macos-vision-ocr`、`structured_data.ocr_applied` 為 `true`）。OCR 文字已再清理：濾除裝訂線／騎縫殘留（單一字元行，共 75 行）與「第N頁，共N頁」頁尾（23 行），並將硬斷行接回段落；`structured_data.full_text` 另提供跨頁接續之連續全文（`structured_data.ocr_cleaning` 記錄清理內容）。惟 OCR 仍可能含少量字元辨識誤差，如需精確引用請對照官方 PDF。
+- 每份 JSON 的 `source` 均記錄官方 PDF 網址、發布單位、網站主管機關及來源出處文字；`metadata.pdf_sha256` 可用於核對原始檔內容。
+- 多數文件由 [anydoc](https://github.com/firecrawl/anydoc)（firecrawl-anydoc 0.1.9）與 pdfplumber 擷取文字及表格。50 份無文字層的掃描 PDF 只標記 `structured_data.requires_ocr: true`，未臆測影像內容；既有已套用 OCR 的文件則在 `metadata.parser` 與 `structured_data.ocr_applied` 記錄方法與限制。
+- 全庫驗證會檢查 JSON 結構、頁數、逐頁編號、SHA-256、官方 URL 唯一性與來源出處欄位；資料仍可能包含 PDF 文字層本身的排版或字元問題，精確引用時請對照 `source.official_pdf_url` 指向的官方 PDF。
 
 本資料集是官方文件的結構化整理成果，不是政府機關的正式法律解釋或申請審查依據。若內容與最新公告不同，應以發布單位的最新官方文件為準。
 
