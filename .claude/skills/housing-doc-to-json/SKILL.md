@@ -101,11 +101,14 @@ Add the document to the 收錄範圍 list (numeric order) and bump the
 
 ### 6. Ship via squash-merge PR
 Never commit to `main` directly.
+Use the repository owner's `dwhao84/` branch prefix for every branch. Commits use
+the Git author identity already configured by the repository owner; do **not** add
+Claude, Codex, or any other AI account as a co-author.
 ```bash
-git checkout -b add-<slug>
+git checkout -b dwhao84/add-<slug>
 git add <new>.json README.md
-git commit -m "<message>"        # end with the Co-Authored-By trailer
-git push -u origin add-<slug>
+git commit -m "<message>"
+git push -u origin dwhao84/add-<slug>
 gh pr create --title "..." --body "..."
 gh pr merge --squash --delete-branch
 git checkout main && git pull
