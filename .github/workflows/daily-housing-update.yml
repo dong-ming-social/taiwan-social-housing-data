@@ -19,8 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
-      HOUSING_PDF_CACHE: ${{ runner.temp }}/housing-pdf-cache
-      HOUSING_UPDATE_SUMMARY: ${{ runner.temp }}/housing-update-summary.md
       GH_TOKEN: ${{ github.token }}
 
     steps:
@@ -40,13 +38,16 @@ jobs:
         run: python -m pip install -r .github/requirements-housing-update.txt
 
       - name: 盤點並更新官方文件
-        run: python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
+        run: |
+          export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
+          export HOUSING_UPDATE_SUMMARY="$RUNNER_TEMP/housing-update-summary.md"
+          python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
 
       - name: 驗證完整資料集與來源出處
         run: python .claude/skills/housing-doc-to-json/scripts/validate_dataset.py
 
       - name: 顯示更新摘要
-        run: cat "$HOUSING_UPDATE_SUMMARY" >> "$GITHUB_STEP_SUMMARY"
+        run: cat "$RUNNER_TEMP/housing-update-summary.md" >> "$GITHUB_STEP_SUMMARY"
 
       - name: 檢查是否有變更
         id: changes
@@ -81,7 +82,7 @@ jobs:
           {
             echo "本 PR 由每日排程自動產生，不會自動合併。"
             echo
-            cat "$HOUSING_UPDATE_SUMMARY"
+            cat "$RUNNER_TEMP/housing-update-summary.md"
             echo
             echo "## 驗證"
             echo '- JSON 結構、頁數、SHA-256、官方來源 URL 與出處欄位已通過全庫驗證。'
