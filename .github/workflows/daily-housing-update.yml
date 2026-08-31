@@ -44,7 +44,7 @@ jobs:
           cache: pip
           cache-dependency-path: .github/requirements-housing-update.txt
 
-      - name: 安裝 PDF 轉檔工具
+      - name: 安裝資料更新工具
         run: python -m pip install -r .github/requirements-housing-update.txt
 
       - name: 設定門牌快取月份
@@ -90,6 +90,13 @@ jobs:
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py --validate-only
 
+      - name: 更新並驗證臺北市社宅法規沿革
+        run: |
+          python .claude/skills/housing-doc-to-json/scripts/taipei_law_history.py \
+            --law-id FL071776 \
+            --output laws/taipei/FL071776.json
+          python .claude/skills/housing-doc-to-json/tests/test_taipei_law_history.py
+
       - name: 保存全臺稽核結果
         if: always()
         uses: actions/upload-artifact@v4
@@ -123,7 +130,7 @@ jobs:
           git switch -C "$branch"
           git add README.md .claude/skills/housing-doc-to-json/batch/portal_inventory.json
           git add -- '*/*.json'
-          git add api
+          git add api laws
           git commit -m "每日更新社宅官方文件（$(date +%F)）"
           git push --force-with-lease origin "HEAD:$branch"
 
