@@ -17,7 +17,7 @@ SPEC.loader.exec_module(nationwide)
 class NationwideHousingTest(unittest.TestCase):
     def test_moi_parser_and_exclusions(self):
         html = """
-        <table id="t3"><tbody>
+        <table id="t1"><tbody>
           <tr><td>台南市</td><td>新市安居</td><td>中央(住都中心)</td>
           <td>1,000</td><td>113/1/1</td><td>113/2/1</td><td>116/1/1</td><td>新完工</td></tr>
           <tr><td>臺南市</td><td>國產署包租案件-第1批</td><td>中央</td>
