@@ -1,0 +1,27 @@
+{
+  "北投區/北投機廠社會住宅": {
+    "address": "臺北市北投區大業路527巷88號",
+    "address_precision": "exact",
+    "source_url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTAt5aWR57SELeaNt%2BmBi%2BWMl%2BaKleapn%2BW7oOWPiuacqOafteapn%2BW7oOWBnOi7iuWgtOe2k%2BeHn%2BeuoeeQhuenn%2Bizgy5wZGY%3D&u=LzAwMS9VcGxvYWQvNDA1L3JlbGZpbGUvNDQ4NTIvOTUyNzAzNC8xODcxNTdjMy02NjU4LTRjMDQtYTgxMS0zMzAwOTBkYmRjNDcucGRm",
+    "note": "規劃基地位於捷運北投機廠；以北投機廠官方門牌表示。"
+  },
+  "萬華區/東園社會住宅": {
+    "address": "臺北市萬華區東園街152號",
+    "address_precision": "exact",
+    "source_url": "https://service.gov.taipei/LoacationInfo/XKAA",
+    "note": "規劃基地為現萬華區健康服務中心基地。"
+  },
+  "北投區/新奇岩社會住宅2區": {
+    "address": "臺北市北投區磺港路269號",
+    "address_precision": "nearby",
+    "address_distance_m": 250.0,
+    "source_url": "https://udd.gov.taipei/assets/nvKF2cDhA7pKtLuWKQLGHn/attachs/%E8%87%BA%E5%8C%97%E5%B8%82%E8%AD%B0%E6%9C%83%E7%AC%AC14%E5%B1%86%E7%AC%AC6%E6%AC%A1%E5%A4%A7%E6%9C%83%E9%83%BD%E7%99%BC%E5%B1%80%E5%B7%A5%E4%BD%9C%E5%A0%B1%E5%91%8A%28114%E5%B9%B410%E6%9C%88%29.pdf",
+    "note": "官方僅公布奇岩區段徵收剩餘地；以同區新奇岩社宅門牌作為可導航參考點，距離採自動允許上限。"
+  },
+  "南港區/誠正社會住宅": {
+    "address": "臺北市南港區富康街1巷24號",
+    "address_precision": "exact",
+    "source_url": "https://www.nghc.gov.taipei/News_Content.aspx?n=5A01487727EE82B0&s=2258186023301810",
+    "note": "規劃基地為誠正國中 EOD 基地；使用誠正國中官方門牌。"
+  }
+}

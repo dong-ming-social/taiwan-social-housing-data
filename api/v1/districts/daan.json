@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-31T05:14:41Z",
+  "source": {
+    "dataset_url": "https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd",
+    "api_url": "https://hms.udd.gov.taipei/api/BigData/project",
+    "doorplate_dataset_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97"
+  },
+  "district": "大安區",
+  "district_code": "daan",
+  "count": 2,
+  "items": [
+    {
+      "id": "taipei-e08801e5e8cbfeb9",
+      "name": "金華社會住宅(特五基地)",
+      "city": "臺北市",
+      "district": "大安區",
+      "address": "臺北市大安區金華街151號",
+      "address_precision": "nearby",
+      "address_method": "nearest_doorplate",
+      "address_distance_m": 28.5,
+      "official_location": "特四基地:大安區金華段三小段146-2、146-3地號等2筆土地,特五基地:大安區金華段三小段145-1(歷史建築)、146、146-1、146-7(歷史建築)、148-2、149-2地號等6筆土地",
+      "address_source_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97",
+      "latitude": 25.03078,
+      "longitude": 121.5256,
+      "households": 437,
+      "residents": null,
+      "floors": "22",
+      "status": "施工中及待開工"
+    },
+    {
+      "id": "taipei-88bea69d2ad9d6c9",
+      "name": "黎元社會住宅",
+      "city": "臺北市",
+      "district": "大安區",
+      "address": "臺北市大安區臥龍街188巷58號",
+      "address_precision": "nearby",
+      "address_method": "nearest_doorplate",
+      "address_distance_m": 37.7,
+      "official_location": null,
+      "address_source_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97",
+      "latitude": 25.01613,
+      "longitude": 121.5509,
+      "households": 253,
+      "residents": null,
+      "floors": null,
+      "status": "規劃中"
+    }
+  ]
+}

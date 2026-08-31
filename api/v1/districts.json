@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-31T05:14:41Z",
+  "source": {
+    "dataset_url": "https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd",
+    "api_url": "https://hms.udd.gov.taipei/api/BigData/project",
+    "doorplate_dataset_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97"
+  },
+  "count": 12,
+  "districts": [
+    {
+      "code": "zhongzheng",
+      "name": "中正區",
+      "count": 0,
+      "path": "districts/zhongzheng.json"
+    },
+    {
+      "code": "datong",
+      "name": "大同區",
+      "count": 6,
+      "path": "districts/datong.json"
+    },
+    {
+      "code": "zhongshan",
+      "name": "中山區",
+      "count": 6,
+      "path": "districts/zhongshan.json"
+    },
+    {
+      "code": "songshan",
+      "name": "松山區",
+      "count": 1,
+      "path": "districts/songshan.json"
+    },
+    {
+      "code": "daan",
+      "name": "大安區",
+      "count": 2,
+      "path": "districts/daan.json"
+    },
+    {
+      "code": "wanhua",
+      "name": "萬華區",
+      "count": 10,
+      "path": "districts/wanhua.json"
+    },
+    {
+      "code": "xinyi",
+      "name": "信義區",
+      "count": 8,
+      "path": "districts/xinyi.json"
+    },
+    {
+      "code": "shilin",
+      "name": "士林區",
+      "count": 3,
+      "path": "districts/shilin.json"
+    },
+    {
+      "code": "beitou",
+      "name": "北投區",
+      "count": 7,
+      "path": "districts/beitou.json"
+    },
+    {
+      "code": "neihu",
+      "name": "內湖區",
+      "count": 8,
+      "path": "districts/neihu.json"
+    },
+    {
+      "code": "nangang",
+      "name": "南港區",
+      "count": 11,
+      "path": "districts/nangang.json"
+    },
+    {
+      "code": "wenshan",
+      "name": "文山區",
+      "count": 17,
+      "path": "districts/wenshan.json"
+    }
+  ]
+}

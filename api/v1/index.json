@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-31T05:14:41Z",
+  "source": {
+    "dataset_url": "https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd",
+    "api_url": "https://hms.udd.gov.taipei/api/BigData/project",
+    "doorplate_dataset_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97"
+  },
+  "housing_count": 79,
+  "district_count": 12,
+  "endpoints": {
+    "all": "housing-locations.json",
+    "districts": "districts.json",
+    "district": "districts/{district-code}.json"
+  }
+}

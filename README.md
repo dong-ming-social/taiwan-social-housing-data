@@ -66,6 +66,36 @@ JSON 檔名原則上沿用原始 PDF 名稱，僅將副檔名改為 `.json`。�
 
 結構化資料均保留 `source_pages`，可回溯至原始 PDF 頁面。無文字層的圖像內容僅標記所在頁面，不臆測圖中資訊。
 
+## 社宅位置 API
+
+`api/v1/` 提供不需要 API key、可直接由 GitHub Raw 讀取的臺北市社宅位置靜態 API。資料涵蓋已完工、施工中、待開工及規劃中的個別住宅基地，並依行政區提供拆分檔案。
+
+| 端點 | 說明 |
+| --- | --- |
+| [`api/v1/index.json`](api/v1/index.json) | API 版本、資料來源與端點索引 |
+| [`api/v1/housing-locations.json`](api/v1/housing-locations.json) | 全部社宅位置 |
+| [`api/v1/districts.json`](api/v1/districts.json) | 12 個行政區、筆數與區域端點 |
+| `api/v1/districts/{district-code}.json` | 指定行政區，例如 `wenshan.json` |
+
+每筆位置都包含可閱讀的 `address`。`address_precision` 說明地址精度：`exact` 是官方門牌、`intersection` 是官方路口、`nearby` 則是依官方基地座標配對的最近門牌；後者會同時提供 `address_distance_m`。政府原始地址或地號保留於 `official_location`，不會與整理後地址混淆。
+
+```python
+import json
+from urllib.request import urlopen
+
+url = (
+    "https://raw.githubusercontent.com/dong-ming-social/"
+    "taiwan-social-housing-data/main/api/v1/districts/wenshan.json"
+)
+with urlopen(url) as response:
+    data = json.load(response)
+
+for housing in data["items"]:
+    print(housing["name"], housing["address"], housing["address_precision"])
+```
+
+位置清單每日與官方[臺北市社會住宅興建工程進度](https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd)同步；只有地號或缺少門牌時，使用每月更新的[臺北市門牌位置數值資料](https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97)補成可導航地址。規劃案若尚無座標，則以有官方出處的人工覆寫資料補齊。這些靜態檔案沒有即時查詢伺服器的可用性保證，正式申請或法律用途仍應以政府最新公告為準。
+
 ## 使用範例
 
 ```python
