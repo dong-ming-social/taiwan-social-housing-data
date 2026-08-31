@@ -52,10 +52,12 @@ jobs:
         shell: bash
         run: echo "month=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
 
-      - name: 還原臺北市門牌資料快取
+      - name: 還原位置資料快取
         uses: actions/cache@v4
         with:
-          path: ${{ runner.temp }}/housing-address-cache
+          path: |
+            ${{ runner.temp }}/housing-address-cache
+            ${{ runner.temp }}/housing-nationwide-cache
           key: housing-address-${{ runner.os }}-${{ steps.address-cache-key.outputs.month }}
 
       - name: 盤點並更新官方文件
@@ -75,6 +77,27 @@ jobs:
         run: |
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py --validate-only
+
+      - name: 盤點全臺社宅位置 API v2
+        env:
+          HOUSING_NATIONWIDE_CACHE: ${{ runner.temp }}/housing-nationwide-cache
+        run: |
+          python .claude/skills/housing-doc-to-json/scripts/test_nationwide_housing.py
+          if [[ -f api/v2/index.json ]]; then
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --validate-only
+          else
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --audit-only
+          fi
+
+      - name: 保存全臺待查地址清單
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nationwide-housing-unresolved
+          path: ${{ runner.temp }}/housing-nationwide-cache/unresolved-projects.json
+          if-no-files-found: ignore
+          retention-days: 30
 
       - name: 顯示更新摘要
         run: cat "$RUNNER_TEMP/housing-update-summary.md" >> "$GITHUB_STEP_SUMMARY"
