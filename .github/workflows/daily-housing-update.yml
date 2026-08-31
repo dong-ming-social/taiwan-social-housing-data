@@ -60,6 +60,18 @@ jobs:
             ${{ runner.temp }}/housing-nationwide-cache
           key: housing-address-${{ runner.os }}-${{ steps.address-cache-key.outputs.month }}
 
+      - name: 盤點全臺社宅位置 API v2
+        env:
+          HOUSING_NATIONWIDE_CACHE: ${{ runner.temp }}/housing-nationwide-cache
+        run: |
+          python .claude/skills/housing-doc-to-json/scripts/test_nationwide_housing.py
+          if [[ -f api/v2/index.json ]]; then
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --validate-only
+          else
+            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --audit-only
+          fi
+
       - name: 盤點並更新官方文件
         run: |
           export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
@@ -77,18 +89,6 @@ jobs:
         run: |
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py --validate-only
-
-      - name: 盤點全臺社宅位置 API v2
-        env:
-          HOUSING_NATIONWIDE_CACHE: ${{ runner.temp }}/housing-nationwide-cache
-        run: |
-          python .claude/skills/housing-doc-to-json/scripts/test_nationwide_housing.py
-          if [[ -f api/v2/index.json ]]; then
-            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py
-            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --validate-only
-          else
-            python .claude/skills/housing-doc-to-json/scripts/nationwide_housing.py --audit-only
-          fi
 
       - name: 保存全臺待查地址清單
         if: always()
@@ -117,7 +117,7 @@ jobs:
         shell: bash
         run: |
           branch="dwhao84/automated-housing-update"
-          git config user.name "Da Wei Hao"
+          git config user.name "dwhao84"
           git config user.email "dawei84@hotaileasing.com.tw"
           git fetch origin "$branch:refs/remotes/origin/$branch" || true
           git switch -C "$branch"
