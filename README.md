@@ -96,6 +96,25 @@ for housing in data["items"]:
 
 位置清單每日與官方[臺北市社會住宅興建工程進度](https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd)同步；只有地號或缺少門牌時，使用每月更新的[臺北市門牌位置數值資料](https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97)補成可導航地址。規劃案若尚無座標，則以有官方出處的人工覆寫資料補齊。這些靜態檔案沒有即時查詢伺服器的可用性保證，正式申請或法律用途仍應以政府最新公告為準。
 
+### 全臺位置 API v2（資料查證中）
+
+全臺版產生器已建立，使用[內政部全國社會住宅個案](https://pip.moi.gov.tw/V3/B/SCRB0505.aspx)作為 22 縣市清單基準，並優先以[國家住都中心安居好室](https://www.socialhousing.tw/portal)及既有臺北市 API 補充門牌、行政區與座標。國產署包租批次、包租代管及彙總列不視為個別社宅基地。
+
+全臺來源仍有部分個案只提供案名或地號，沒有可導航門牌。為避免發布看似完整但實際無法定位的資料，`api/v2/` 會等所有個別基地都完成官方地址查證後才產生；每日 workflow 目前以稽核模式列出已解析與待人工補地址的筆數，不會影響既有 `api/v1/` 更新。
+
+預定端點如下：
+
+| 端點 | 說明 |
+| --- | --- |
+| `api/v2/index.json` | v2 版本、來源統計與端點索引 |
+| `api/v2/housing-locations.json` | 全臺完整社宅清單 |
+| `api/v2/regions.json` | 22 縣市、狀態與行政區筆數 |
+| `api/v2/regions/{region-code}.json` | 指定縣市清單 |
+| `api/v2/districts.json` | 全臺鄉鎮市區索引 |
+| `api/v2/districts/{region-code}/{district-code}.json` | 指定鄉鎮市區清單 |
+
+人工查證結果存於 `.claude/skills/housing-doc-to-json/batch/nationwide_address_overrides.json`。正式模式只要遇到缺地址、來源驟減、未知狀態或索引筆數不一致，就會停止且保留既有 API；內容沒有變化時也不會改寫 JSON。
+
 ## 使用範例
 
 ```python
