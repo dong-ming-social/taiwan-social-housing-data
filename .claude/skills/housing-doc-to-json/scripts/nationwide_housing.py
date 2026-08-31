@@ -612,7 +612,22 @@ def summary_text(source_stats, change_stats, items, unresolved):
 def update(args):
     cache = Path(args.cache_dir or os.environ.get("HOUSING_NATIONWIDE_CACHE", tempfile.gettempdir() + "/housing-nationwide-cache"))
     overrides = load_overrides(Path(args.overrides) if args.overrides else OVERRIDES)
-    moi_rows = load_moi(cache, args.moi_source_dir, refresh=not args.no_refresh)
+    try:
+        moi_rows = load_moi(cache, args.moi_source_dir, refresh=not args.no_refresh)
+    except ValueError as exc:
+        if args.audit_only and "title='Request Rejected'" in str(exc):
+            status = {
+                "status": "skipped",
+                "reason": "official_source_rejected_github_actions",
+                "source_url": MOI_URL,
+                "checked_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+            }
+            path = cache / "audit-status.json"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json_text(status), encoding="utf-8")
+            print(f"WARNING nationwide_audit=skipped: {exc}", file=sys.stderr)
+            return
+        raise
     excluded = [row for row in moi_rows if row["excluded_reason"]]
     selected = [row for row in moi_rows if not row["excluded_reason"]]
     invalid_status = [row for row in selected if row["status"] not in VALID_STATUSES]
@@ -645,6 +660,13 @@ def update(args):
     unresolved_path = cache / "unresolved-projects.json"
     unresolved_path.parent.mkdir(parents=True, exist_ok=True)
     unresolved_path.write_text(json_text({"count": len(unresolved), "items": unresolved}), encoding="utf-8")
+    (cache / "audit-status.json").write_text(
+        json_text({
+            "status": "ok", "discovered": len(moi_rows), "selected": len(selected),
+            "resolved": len(items), "unresolved": len(unresolved),
+        }),
+        encoding="utf-8",
+    )
     if unresolved:
         if args.audit_only:
             print(

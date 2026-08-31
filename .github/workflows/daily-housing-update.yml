@@ -90,12 +90,12 @@ jobs:
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py
           python .claude/skills/housing-doc-to-json/scripts/housing_locations.py --validate-only
 
-      - name: 保存全臺待查地址清單
+      - name: 保存全臺稽核結果
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: nationwide-housing-unresolved
-          path: ${{ runner.temp }}/housing-nationwide-cache/unresolved-projects.json
+          name: nationwide-housing-audit
+          path: ${{ runner.temp }}/housing-nationwide-cache/*.json
           if-no-files-found: ignore
           retention-days: 30
 

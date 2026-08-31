@@ -6,6 +6,8 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest import mock
 
 
 MODULE_PATH = Path(__file__).with_name("nationwide_housing.py")
@@ -15,6 +17,26 @@ SPEC.loader.exec_module(nationwide)
 
 
 class NationwideHousingTest(unittest.TestCase):
+    def test_audit_mode_safely_skips_github_actions_rejection(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            cache = Path(temporary) / "cache"
+            overrides = Path(temporary) / "overrides.json"
+            overrides.write_text('{"aliases": {}, "projects": {}, "extra_projects": []}', encoding="utf-8")
+            args = SimpleNamespace(
+                cache_dir=str(cache), overrides=str(overrides), moi_source_dir=None,
+                no_refresh=False, audit_only=True,
+            )
+            rejection = ValueError(
+                "臺北市: MOI source contains no cases "
+                "(bytes=247, title='Request Rejected', table_ids=[])"
+            )
+            with mock.patch.object(nationwide, "load_moi", side_effect=rejection), \
+                    mock.patch.object(nationwide, "write_documents") as write_documents:
+                nationwide.update(args)
+            status = json.loads((cache / "audit-status.json").read_text(encoding="utf-8"))
+            self.assertEqual(status["status"], "skipped")
+            write_documents.assert_not_called()
+
     def test_moi_parser_and_exclusions(self):
         html = """
         <table id="t1"><tbody>
