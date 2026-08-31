@@ -139,9 +139,9 @@ def project_type(organizer):
 
 
 class MoiTableParser(HTMLParser):
-    """Read data rows from the four status tables on SCRB0505."""
+    """Read data rows from the status tables on SCRB0505."""
 
-    TABLES = {"t2", "t3", "t4", "t5"}
+    TABLES = {"t1", "t2", "t3", "t4", "t5"}
 
     def __init__(self):
         super().__init__()
