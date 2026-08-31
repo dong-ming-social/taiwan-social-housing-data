@@ -132,7 +132,9 @@ python .claude/skills/housing-doc-to-json/scripts/taipei_law_history.py \
 
 全臺版產生器已建立，使用[內政部全國社會住宅個案](https://pip.moi.gov.tw/V3/B/SCRB0505.aspx)作為 22 縣市清單基準，並優先以[國家住都中心安居好室](https://www.socialhousing.tw/portal)及既有臺北市 API 補充門牌、行政區與座標。國產署包租批次、包租代管及彙總列不視為個別社宅基地。
 
-全臺來源仍有部分個案只提供案名或地號，沒有可導航門牌。為避免發布看似完整但實際無法定位的資料，`api/v2/` 會等所有個別基地都完成官方地址查證後才產生；每日 workflow 目前以稽核模式列出已解析與待人工補地址的筆數，不會影響既有 `api/v1/` 更新。
+全臺來源仍有部分個案只提供案名或地號，沒有可導航門牌。為避免發布看似完整但實際無法定位的資料，`api/v2/` 目前尚未正式發布，會等所有個別基地都完成官方地址查證後才產生；每日 workflow 目前以稽核模式列出已解析與待人工補地址的筆數，不會影響既有 `api/v1/` 更新。
+
+內政部網站若拒絕 GitHub Actions 主機連線，該次全臺稽核會明確標記為 `skipped`，並將狀態保存於 `nationwide-housing-audit` artifact 供查核；流程不會把連線失敗視為空資料，也不會產生或覆寫 `api/v2/`。正式發布後若官方來源無法取得，更新仍會失敗並保留既有 API。
 
 預定端點如下：
 
@@ -172,7 +174,7 @@ GitHub Actions 於每天 **06:20（Asia/Taipei）** 執行「每日更新社宅�
 - 官網不再連結的文件只在 inventory 標記 `active: false`，不會自動刪除歷史資料。
 - 若本次找到的文件少於上次有效盤點的 90%，流程會失敗並停止，不會大量誤標下架。
 - 全庫驗證通過且確實有差異時，才會以 `dwhao84/automated-housing-update` 建立或更新 PR；**不會自動合併**。
-- 自動 commit 使用 `Da Wei Hao <dawei84@hotaileasing.com.tw>`，不加入 AI 共同作者。
+- 自動 commit 使用 `dwhao84 <dawei84@hotaileasing.com.tw>`，不加入 AI 共同作者。
 
 首次啟用時，repository 管理者需在 **Settings → Actions → General → Workflow permissions** 允許 GitHub Actions 建立 pull request。workflow 僅申請 `contents: write` 與 `pull-requests: write`。
 
