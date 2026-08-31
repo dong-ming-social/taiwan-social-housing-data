@@ -7,16 +7,17 @@ scratchpad, and writes <repo>/<bucket>/<stem>.json via the skill helper.
 Records nothing it cannot read from the PDF itself.
 """
 import json, os, re, subprocess, sys, tempfile, urllib.parse
+from pathlib import Path
 
 from pypdf import PdfReader
 
-REPO = "/Users/dawei84/taiwan-social-housing-data"
-SKILL = REPO + "/.claude/skills/housing-doc-to-json/scripts"
+REPO = Path(__file__).resolve().parents[4]
+SKILL = REPO / ".claude/skills/housing-doc-to-json/scripts"
 PDFDIR = os.environ.get(
     "HOUSING_PDF_CACHE",
     os.path.join(tempfile.gettempdir(), "taiwan-social-housing-pdf-cache"),
 )
-sys.path.insert(0, SKILL)
+sys.path.insert(0, str(SKILL))
 import pdf_to_json as H  # noqa: E402
 
 HOST = "https://rent.thurc.org.taipei"
@@ -125,12 +126,12 @@ def convert(rec, bucket_label):
         doc["structured_data"]["ocr_note"] = (
             "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；"
             "如需內文請對照官方 PDF 或另行 OCR。")
-    outdir = os.path.join(REPO, bucket)
-    os.makedirs(outdir, exist_ok=True)
-    out = os.path.join(outdir, output_stem + ".json")
+    outdir = REPO / bucket
+    outdir.mkdir(parents=True, exist_ok=True)
+    out = outdir / f"{output_stem}.json"
     with open(out, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=2)
-    return dict(out=out, type=dt, pages=npages, text_pages=ntext,
+    return dict(out=str(out), type=dt, pages=npages, text_pages=ntext,
                 sha=doc["metadata"]["pdf_sha256"][:12])
 
 

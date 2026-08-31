@@ -1967,7 +1967,8 @@
   "src": [
    "3249"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "immediate",
@@ -1978,7 +1979,8 @@
   "src": [
    "3252"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "immediate",
@@ -2498,6 +2500,126 @@
   "dupe": false
  },
  {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "115年景豐1區及力行2處社宅招租手冊",
+  "path": "/documents/lixing-jingfeng-1/115年景豐1區及力行2處社宅招租手冊.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "景豐社宅1區及力行幸福住宅招租公告",
+  "path": "/documents/lixing-jingfeng-1/景豐社宅1區及力行幸福住宅招租公告.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件1_撤案申請書",
+  "path": "/documents/lixing-jingfeng-1/附件1_撤案申請書.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件2_租賃標的、租期及費用(含分級租金補貼)",
+  "path": "/documents/lixing-jingfeng-1/附件2_租賃標的、租期及費用(含分級租金補貼).pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件3_申請社會住宅應備文件",
+  "path": "/documents/lixing-jingfeng-1/附件3_申請社會住宅應備文件.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件4_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形",
+  "path": "/documents/lixing-jingfeng-1/附件4_臺北市歷次社宅其他特殊情形身分戶評點制辦理情形.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件5_申請案不能補正與應補正事項",
+  "path": "/documents/lixing-jingfeng-1/附件5_申請案不能補正與應補正事項.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件6_景豐1區及力行社會住宅周邊教育及公共服務資源一覽表",
+  "path": "/documents/lixing-jingfeng-1/附件6_景豐1區及力行社會住宅周邊教育及公共服務資源一覽表.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件7_管理扣分規定",
+  "path": "/documents/lixing-jingfeng-1/附件7_管理扣分規定.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "lixing-jingfeng-1",
+  "stem": "附件8_11505版-臺北市社會住宅租賃契約書(自建版A1)-契約書範本",
+  "path": "/documents/lixing-jingfeng-1/附件8_11505版-臺北市社會住宅租賃契約書(自建版A1)-契約書範本.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3274",
+   "home"
+  ],
+  "dupe": false
+ },
+ {
   "bucket": "ming-lun",
   "stem": "109學年度明倫非營利幼兒園新生入園預約登記報名Q_A",
   "path": "/documents/ming-lun/109學年度明倫非營利幼兒園新生入園預約登記報名Q_A.pdf",
@@ -2873,6 +2995,83 @@
   "dupe": false
  },
  {
+  "bucket": "only-news",
+  "stem": "1150825臺北住都契服字第1150008355號斯三、新興短租公告(本文)",
+  "path": "/documents/only-news/1150825臺北住都契服字第1150008355號斯三、新興短租公告(本文).pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件2_租期及住宅相關補貼切結書-0715修(修)v2",
+  "path": "/documents/only-news/附件2_租期及住宅相關補貼切結書-0715修(修)v2.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件3_應備文件-0715修(修)v2",
+  "path": "/documents/only-news/附件3_應備文件-0715修(修)v2.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件4_撤案申請書(斯三、新興)-0715修3",
+  "path": "/documents/only-news/附件4_撤案申請書(斯三、新興)-0715修3.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件5_申請書封套-0715修3",
+  "path": "/documents/only-news/附件5_申請書封套-0715修3.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件6_管理扣分規定",
+  "path": "/documents/only-news/附件6_管理扣分規定.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件7_臺北市社會住宅租賃契約書範本",
+  "path": "/documents/only-news/附件7_臺北市社會住宅租賃契約書範本.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
   "bucket": "qingnian-2",
   "stem": "青年社宅2區社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/qingnian-2/青年社宅2區社會住宅住戶規約手冊(114年12月版).pdf",
@@ -2969,7 +3168,8 @@
   "src": [
    "3248"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
@@ -2980,7 +3180,8 @@
   "src": [
    "3251"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "qingnian_1_joyful",
@@ -3990,7 +4191,8 @@
   "src": [
    "3250"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4001,7 +4203,8 @@
   "src": [
    "3250"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4023,7 +4226,8 @@
   "src": [
    "3250"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
