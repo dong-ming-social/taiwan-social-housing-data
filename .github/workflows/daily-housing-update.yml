@@ -47,6 +47,17 @@ jobs:
       - name: 安裝 PDF 轉檔工具
         run: python -m pip install -r .github/requirements-housing-update.txt
 
+      - name: 設定門牌快取月份
+        id: address-cache-key
+        shell: bash
+        run: echo "month=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+
+      - name: 還原臺北市門牌資料快取
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/housing-address-cache
+          key: housing-address-${{ runner.os }}-${{ steps.address-cache-key.outputs.month }}
+
       - name: 盤點並更新官方文件
         run: |
           export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
@@ -54,7 +65,16 @@ jobs:
           python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
 
       - name: 驗證完整資料集與來源出處
-        run: python .claude/skills/housing-doc-to-json/scripts/validate_dataset.py
+        run: |
+          python .claude/skills/housing-doc-to-json/scripts/validate_dataset.py
+          python .claude/skills/housing-doc-to-json/scripts/test_housing_locations.py
+
+      - name: 更新並驗證社宅位置 API
+        env:
+          HOUSING_ADDRESS_CACHE: ${{ runner.temp }}/housing-address-cache
+        run: |
+          python .claude/skills/housing-doc-to-json/scripts/housing_locations.py
+          python .claude/skills/housing-doc-to-json/scripts/housing_locations.py --validate-only
 
       - name: 顯示更新摘要
         run: cat "$RUNNER_TEMP/housing-update-summary.md" >> "$GITHUB_STEP_SUMMARY"
@@ -80,6 +100,7 @@ jobs:
           git switch -C "$branch"
           git add README.md .claude/skills/housing-doc-to-json/batch/portal_inventory.json
           git add -- '*/*.json'
+          git add api
           git commit -m "每日更新社宅官方文件（$(date +%F)）"
           git push --force-with-lease origin "HEAD:$branch"
 

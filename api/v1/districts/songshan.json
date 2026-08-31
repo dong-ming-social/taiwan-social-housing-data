@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-31T05:14:41Z",
+  "source": {
+    "dataset_url": "https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd",
+    "api_url": "https://hms.udd.gov.taipei/api/BigData/project",
+    "doorplate_dataset_url": "https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97"
+  },
+  "district": "松山區",
+  "district_code": "songshan",
+  "count": 1,
+  "items": [
+    {
+      "id": "taipei-5f8093aa0791cb9d",
+      "name": "健康社會住宅",
+      "city": "臺北市",
+      "district": "松山區",
+      "address": "臺北市松山區健康路285、295、305、309、317、323號",
+      "address_precision": "exact",
+      "address_method": "official_housing",
+      "address_distance_m": 0.0,
+      "official_location": "松山區健康路285、295、305、309、317、323號",
+      "address_source_url": "https://hms.udd.gov.taipei/api/BigData/project",
+      "latitude": 25.05436,
+      "longitude": 121.564,
+      "households": 507,
+      "residents": 701,
+      "floors": "一區:1棟/地上14層地下3層二區:3棟/地上16層地下3層",
+      "status": "已完工"
+    }
+  ]
+}
