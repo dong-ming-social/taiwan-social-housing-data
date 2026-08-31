@@ -96,6 +96,38 @@ for housing in data["items"]:
 
 位置清單每日與官方[臺北市社會住宅興建工程進度](https://data.taipei/dataset/detail?id=659c3565-df41-4f80-915f-95e83071bdcd)同步；只有地號或缺少門牌時，使用每月更新的[臺北市門牌位置數值資料](https://data.taipei/dataset/detail?id=b7c8e724-1e98-45ee-a0bd-f3840623ed97)補成可導航地址。規劃案若尚無座標，則以有官方出處的人工覆寫資料補齊。這些靜態檔案沒有即時查詢伺服器的可用性保證，正式申請或法律用途仍應以政府最新公告為準。
 
+## 臺北市社會住宅法規沿革
+
+[`laws/taipei/FL071776.json`](laws/taipei/FL071776.json)收錄《臺北市社會住宅出租辦法》的歷次正式版本。每個版本包含完整條文、官方標示的異動條文，以及與前一版本逐條比較後的新增、刪除與修改內容。
+
+| 欄位 | 說明 |
+| --- | --- |
+| `law_id`、`law_code`、`name` | 官方法規識別資訊 |
+| `source_url`、`authority` | 歷史沿革頁與網站維護機關 |
+| `content_hash` | 不含產生時間的穩定內容雜湊，用來判斷資料是否真正改變 |
+| `versions` | 依發布日期由舊至新排列的所有版本 |
+| `articles` | 該版本完整條文 |
+| `official_amended_articles` | 官方異動條文頁所列內容；首次制定沒有此頁 |
+| `changes_from_previous` | 本資料集依條號計算的新增、刪除及修改前後文字 |
+
+手動更新：
+
+```bash
+python .claude/skills/housing-doc-to-json/scripts/taipei_law_history.py \
+  --law-id FL071776 \
+  --output laws/taipei/FL071776.json
+```
+
+只下載並驗證、不寫入檔案：
+
+```bash
+python .claude/skills/housing-doc-to-json/scripts/taipei_law_history.py \
+  --law-id FL071776 \
+  --check
+```
+
+爬蟲會從[臺北市法規查詢系統的歷史沿革頁](https://laws.gov.taipei/Law/LawSearch/LawInformation/FL071776)自動發現版本，不硬編修正日期；若網站暫時回傳較少版本，會停止而不覆蓋既有資料。法規查詢系統是便於檢索的電子資料，正式法律引用仍應以臺北市政府公報刊載文字為準。
+
 ### 全臺位置 API v2（資料查證中）
 
 全臺版產生器已建立，使用[內政部全國社會住宅個案](https://pip.moi.gov.tw/V3/B/SCRB0505.aspx)作為 22 縣市清單基準，並優先以[國家住都中心安居好室](https://www.socialhousing.tw/portal)及既有臺北市 API 補充門牌、行政區與座標。國產署包租批次、包租代管及彙總列不視為個別社宅基地。
