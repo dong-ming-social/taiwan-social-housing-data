@@ -5,6 +5,15 @@ on:
     - cron: "20 6 * * *"
       timezone: "Asia/Taipei"
   workflow_dispatch:
+    inputs:
+      task:
+        description: 要執行的工作
+        required: true
+        default: daily-update
+        type: choice
+        options:
+          - daily-update
+          - gemini-test
 
 concurrency:
   group: daily-housing-update
@@ -16,6 +25,7 @@ permissions:
 
 jobs:
   update:
+    if: github.event_name == 'schedule' || inputs.task == 'daily-update'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
@@ -93,3 +103,66 @@ jobs:
           else
             gh pr create --base main --head "$branch" --title "每日更新社宅官方文件" --body-file "$body_file"
           fi
+
+  test-gemini:
+    if: github.event_name == 'workflow_dispatch' && inputs.task == 'gemini-test'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: 呼叫 Gemini 2.5 Flash-Lite
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          api_key = os.environ.get("GEMINI_API_KEY")
+          if not api_key:
+              raise SystemExit("GEMINI_API_KEY repository secret is not set")
+
+          url = (
+              "https://generativelanguage.googleapis.com/v1beta/models/"
+              "gemini-2.5-flash-lite:generateContent"
+          )
+          body = {
+              "contents": [
+                  {
+                      "parts": [
+                          {
+                              "text": (
+                                  "請使用繁體中文，只回覆：Gemini API 連線成功"
+                              )
+                          }
+                      ]
+                  }
+              ],
+              "generationConfig": {
+                  "temperature": 0,
+                  "maxOutputTokens": 32,
+              },
+          }
+          request = urllib.request.Request(
+              url,
+              data=json.dumps(body).encode("utf-8"),
+              headers={
+                  "Content-Type": "application/json",
+                  "x-goog-api-key": api_key,
+              },
+              method="POST",
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=60) as response:
+                  result = json.load(response)
+          except urllib.error.HTTPError as error:
+              detail = error.read().decode("utf-8", errors="replace")
+              raise SystemExit(f"Gemini API failed: HTTP {error.code}: {detail}")
+
+          text = result["candidates"][0]["content"]["parts"][0]["text"]
+          print(f"Gemini response: {text.strip()}")
+          PY
