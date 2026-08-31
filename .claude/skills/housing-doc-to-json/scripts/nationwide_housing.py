@@ -226,9 +226,16 @@ def load_moi(cache, source_dir=None, refresh=True):
         path = (source_dir / f"{REGIONS[county]}.html") if source_dir else (cache / "moi" / f"{REGIONS[county]}.html")
         if not source_dir and (refresh or not path.exists()):
             curl_download(f"{MOI_URL}?city={quote(county)}", path, MOI_INDEX_URL)
-        parsed = parse_moi_html(path.read_text(encoding="utf-8"))
+        source = path.read_text(encoding="utf-8")
+        parsed = parse_moi_html(source)
         if not parsed:
-            raise ValueError(f"{county}: MOI source contains no cases")
+            title = re.search(r"<title[^>]*>(.*?)</title>", source, re.IGNORECASE | re.DOTALL)
+            table_ids = sorted(set(re.findall(r'<table[^>]+id=["\']?([^"\' >]+)', source, re.IGNORECASE)))
+            title_text = re.sub(r"\s+", " ", title.group(1)).strip()[:100] if title else ""
+            raise ValueError(
+                f"{county}: MOI source contains no cases "
+                f"(bytes={len(source.encode('utf-8'))}, title={title_text!r}, table_ids={table_ids})"
+            )
         if any(row["county"] != county for row in parsed):
             raise ValueError(f"{county}: MOI source returned another county")
         rows.extend(parsed)
