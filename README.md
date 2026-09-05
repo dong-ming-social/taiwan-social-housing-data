@@ -4,11 +4,11 @@
 
 ## 收錄範圍
 
-目前共收錄 **382 份官方文件、4,406 頁**，分布於 41 個來源資料夾。`citywide/` 收錄沒有基地 slug 的全市通用附件；聯合招租與專案文件則保留官方網址中的 bucket 名稱。
+目前共收錄 **388 份官方文件、4,505 頁**，分布於 41 個來源資料夾。`citywide/` 收錄沒有基地 slug 的全市通用附件；聯合招租與專案文件則保留官方網址中的 bucket 名稱。
 
 | 資料夾 | 繁體中文說明 | 文件數 | 頁數 | 待 OCR 文件數 |
 | --- | --- | ---: | ---: | ---: |
-| `16-in-one/` | 小彎等 16 處零星空戶暨候補戶聯合招租 | 10 | 71 | 2 |
+| `16-in-one/` | 小彎等 16 處零星空戶暨候補戶聯合招租 | 13 | 151 | 2 |
 | `19-in-one-zhangxinshuian/` | 樟新水岸等社宅與幸福住宅聯合招租 | 12 | 331 | 1 |
 | `2025/` | 東明、興隆 E 區青年創新回饋計畫（民國 114 年） | 4 | 11 | 2 |
 | `4-in-one-xinglong_a/` | 興隆 A、樟新水岸、經貿及六張犁社宅聯合招租 | 30 | 467 | 1 |
@@ -33,7 +33,7 @@
 | `ming-lun/` | 明倫社會住宅 | 9 | 96 | 2 |
 | `mydata/` | MyData 線上申請操作說明 | 1 | 12 | 0 |
 | `nangangdepot1/` | 南港機廠社會住宅 1 區 | 22 | 214 | 1 |
-| `only-news/` | only-news | 7 | 23 | 1 |
+| `only-news/` | only-news | 8 | 25 | 1 |
 | `qingnian/` | 青年社會住宅 1 區 | 7 | 62 | 1 |
 | `qingnian-2/` | 青年社會住宅 2 區 | 1 | 34 | 0 |
 | `qingnian_1_joyful/` | 青年 1 區暨洲美等幸福住宅聯合招租 | 16 | 130 | 1 |
@@ -46,7 +46,7 @@
 | `xinglong_e/` | 興隆社會住宅 E 區 | 11 | 99 | 1 |
 | `xingshan/` | 行善社會住宅 | 1 | 45 | 0 |
 | `xinqiyan/` | 新奇岩社會住宅 | 6 | 87 | 2 |
-| `yir/` | 青年創新回饋計畫跨基地公告 | 19 | 165 | 8 |
+| `yir/` | 青年創新回饋計畫跨基地公告 | 21 | 182 | 9 |
 | `yongping/` | 永平社會住宅 | 1 | 21 | 0 |
 | `zhongnan/` | 中南社會住宅及永平聯合招租 | 6 | 63 | 1 |
 
@@ -194,7 +194,7 @@ GitHub Actions 於每天 **06:20（Asia/Taipei）** 執行「每日更新社宅�
 - 發布單位：臺北市住宅及都市更新中心
 - 網站主管機關：臺北市政府都市發展局
 - 每份 JSON 的 `source` 均記錄官方 PDF 網址、發布單位、網站主管機關及來源出處文字；`metadata.pdf_sha256` 可用於核對原始檔內容。
-- 多數文件由 [anydoc](https://github.com/firecrawl/anydoc)（firecrawl-anydoc 0.1.9）與 pdfplumber 擷取文字及表格。52 份無文字層的掃描 PDF 只標記 `structured_data.requires_ocr: true`，未臆測影像內容；既有已套用 OCR 的文件則在 `metadata.parser` 與 `structured_data.ocr_applied` 記錄方法與限制。
+- 多數文件由 [anydoc](https://github.com/firecrawl/anydoc)（firecrawl-anydoc 0.1.9）與 pdfplumber 擷取文字及表格。53 份無文字層的掃描 PDF 只標記 `structured_data.requires_ocr: true`，未臆測影像內容；既有已套用 OCR 的文件則在 `metadata.parser` 與 `structured_data.ocr_applied` 記錄方法與限制。
 - 全庫驗證會檢查 JSON 結構、頁數、逐頁編號、SHA-256、官方 URL 唯一性與來源出處欄位；資料仍可能包含 PDF 文字層本身的排版或字元問題，精確引用時請對照 `source.official_pdf_url` 指向的官方 PDF。
 
 本資料集是官方文件的結構化整理成果，不是政府機關的正式法律解釋或申請審查依據。若內容與最新公告不同，應以發布單位的最新官方文件為準。
