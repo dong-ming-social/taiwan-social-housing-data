@@ -361,6 +361,17 @@
  },
  {
   "bucket": "16-in-one",
+  "stem": "115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告",
+  "path": "/documents/16-in-one/115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
   "stem": "115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案",
   "path": "/documents/16-in-one/115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案.pdf",
   "have": true,
@@ -379,6 +390,28 @@
   "tier": "low",
   "src": [
    "3272"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "【公告說明】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶",
+  "path": "/documents/16-in-one/【公告說明】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "【複查申請表】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分",
+  "path": "/documents/16-in-one/【複查申請表】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
   ],
   "dupe": false
  },
@@ -3007,6 +3040,17 @@
  },
  {
   "bucket": "only-news",
+  "stem": "附件1_申請書_斯三、新興短租-0715修v4",
+  "path": "/documents/only-news/附件1_申請書_斯三、新興短租-0715修v4.pdf",
+  "have": true,
+  "tier": "high",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
   "stem": "附件2_租期及住宅相關補貼切結書-0715修(修)v2",
   "path": "/documents/only-news/附件2_租期及住宅相關補貼切結書-0715修(修)v2.pdf",
   "have": true,
@@ -4292,6 +4336,28 @@
   "tier": "low",
   "src": [
    "3238"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "明倫社宅青創種子徵件公告",
+  "path": "/documents/yir/minglun/明倫社宅青創種子徵件公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3276"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "評選說明",
+  "path": "/documents/yir/minglun/評選說明.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3276"
   ],
   "dupe": false
  },

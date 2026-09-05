@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "document_name": "明倫社宅青創種子徵件公告",
+    "document_type": "announcement",
+    "version": "青年創新回饋計畫",
+    "language": "zh-Hant",
+    "pdf_filename": "明倫社宅青創種子徵件公告.pdf",
+    "json_filename": "明倫社宅青創種子徵件公告.json",
+    "page_count": 9,
+    "pdf_sha256": "621f2ba784970b03a615df0601fcb3083884e7100242c05679eddedbeda67ee9",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/yir/minglun/%E6%98%8E%E5%80%AB%E7%A4%BE%E5%AE%85%E9%9D%92%E5%89%B5%E7%A8%AE%E5%AD%90%E5%BE%B5%E4%BB%B6%E5%85%AC%E5%91%8A.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，明倫社宅青創種子徵件公告。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "明倫社宅青創種子徵件公告",
+      "page_start": 1,
+      "page_end": 9,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": ""
+        },
+        {
+          "page": 2,
+          "text": ""
+        },
+        {
+          "page": 3,
+          "text": ""
+        },
+        {
+          "page": 4,
+          "text": ""
+        },
+        {
+          "page": 5,
+          "text": ""
+        },
+        {
+          "page": 6,
+          "text": ""
+        },
+        {
+          "page": 7,
+          "text": ""
+        },
+        {
+          "page": 8,
+          "text": ""
+        },
+        {
+          "page": 9,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [],
+    "requires_ocr": true,
+    "ocr_note": "本 PDF 無文字層（掃描影像），未進行 OCR，故未擷取內文；如需內文請對照官方 PDF 或另行 OCR。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "",
+      "tables": [],
+      "image_count": 25,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 2,
+      "text": "",
+      "tables": [],
+      "image_count": 14,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 3,
+      "text": "",
+      "tables": [],
+      "image_count": 16,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 4,
+      "text": "",
+      "tables": [],
+      "image_count": 9,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 5,
+      "text": "",
+      "tables": [],
+      "image_count": 13,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 6,
+      "text": "",
+      "tables": [],
+      "image_count": 6,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 7,
+      "text": "",
+      "tables": [],
+      "image_count": 16,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 8,
+      "text": "",
+      "tables": [],
+      "image_count": 9,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    },
+    {
+      "page": 9,
+      "text": "",
+      "tables": [],
+      "image_count": 26,
+      "has_text": false,
+      "is_blank": false,
+      "image_note": "本頁包含圖像內容；未臆測無文字層的圖像細節。"
+    }
+  ]
+}
