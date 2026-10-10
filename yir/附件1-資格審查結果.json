@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "document_name": "附件1-資格審查結果",
+    "document_type": "announcement",
+    "version": "青年創新回饋計畫",
+    "language": "zh-Hant",
+    "pdf_filename": "附件1-資格審查結果.pdf",
+    "json_filename": "附件1-資格審查結果.json",
+    "page_count": 1,
+    "pdf_sha256": "c55329582da4a6e3cf0978aac0fd7b145d4b0c50d9458d6a6a8568769ca64d44",
+    "pdf_encrypted": false,
+    "parser": {
+      "name": "anydoc",
+      "distribution": "firecrawl-anydoc",
+      "version": "0.1.9",
+      "binding": "Python",
+      "repository": "https://github.com/dwhao84/anydoc.git",
+      "repository_commit": "e754e1d33a1a540ebc9226e36f11d3f401852c9e"
+    }
+  },
+  "source": {
+    "official_pdf_url": "https://rent.thurc.org.taipei/documents/yir/minglun/%E9%99%84%E4%BB%B61-%E8%B3%87%E6%A0%BC%E5%AF%A9%E6%9F%A5%E7%B5%90%E6%9E%9C.pdf",
+    "publisher": "臺北市住宅及都市更新中心",
+    "website_owner": "臺北市政府都市發展局",
+    "attribution": "資料來源：臺北市住宅及都市更新中心，附件1-資格審查結果。",
+    "rights_note": "本資料僅記錄官方來源，不另行宣告授權；使用條件請依官方網站為準。"
+  },
+  "sections": [
+    {
+      "id": "document",
+      "title": "附件1-資格審查結果",
+      "page_start": 1,
+      "page_end": 1,
+      "source_pages": [
+        1
+      ],
+      "content_pages": [
+        {
+          "page": 1,
+          "text": "明倫社會住宅青年創新回饋計畫青創種子資格審查結果\n案件編號 提案名稱 提案形式 主要提案人 案件狀態\nSHYIP-MLZ-0002 敷教明倫-普師教化、彰明人倫、闔家團圓 個人提案 李OO 身分資格審查不合格\nSHYIP-MLZ-0003 梅想到plus：健身更健心 個人提案 黃OO 身分資格審查合格\nSHYIP-MLZ-0004 花現明倫 NEXT 個人提案 李OO 身分資格審查不合格\nSHYIP-MLZ-0005 熊愛讀冊 個人提案 陳OO 身分資格審查合格\nSHYIP-MLZ-0006 親子明倫糖 個人提案 賴OO 身分資格審查合格\nSHYIP-MLZ-0007 青椒樂園 個人提案 李OO 身分資格審查合格\nSHYIP-MLZ-0008 D02明天開始，倫家與你開心忘齡 個人提案 黃OO 身分資格審查合格\nSHYIP-MLZ-0009 明倫好生活 個人提案 伍OO 身分資格審查合格\nSHYIP-MLZ-0011 藝術明倫版作伙 個人提案 簡OO 身分資格審查合格\nSHYIP-MLZ-0012 明倫小學堂 走讀學素養 個人提案 許OO 身分資格審查不合格"
+        }
+      ]
+    }
+  ],
+  "structured_data": {
+    "document_type": "announcement",
+    "entities": {
+      "dates": [],
+      "times": [],
+      "amounts_twd": [],
+      "percentages": [],
+      "phone_numbers": []
+    },
+    "tables": [
+      {
+        "source_pages": [
+          1
+        ],
+        "rows": [
+          [
+            "明倫社會住宅青年創新回饋計畫青創種子資格審查結果",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "案件編號",
+            "提案名稱",
+            "提案形式",
+            "主要提案人",
+            "案件狀態"
+          ],
+          [
+            "SHYIP-MLZ-0002",
+            "敷教明倫-普師教化、彰明人倫、闔家團圓",
+            "個人提案",
+            "李OO",
+            "身分資格審查不合格"
+          ],
+          [
+            "SHYIP-MLZ-0003",
+            "梅想到plus：健身更健心",
+            "個人提案",
+            "黃OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0004",
+            "花現明倫 NEXT",
+            "個人提案",
+            "李OO",
+            "身分資格審查不合格"
+          ],
+          [
+            "SHYIP-MLZ-0005",
+            "熊愛讀冊",
+            "個人提案",
+            "陳OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0006",
+            "親子明倫糖",
+            "個人提案",
+            "賴OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0007",
+            "青椒樂園",
+            "個人提案",
+            "李OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0008",
+            "D02明天開始，倫家與你開心忘齡",
+            "個人提案",
+            "黃OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0009",
+            "明倫好生活",
+            "個人提案",
+            "伍OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0011",
+            "藝術明倫版作伙",
+            "個人提案",
+            "簡OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0012",
+            "明倫小學堂 走讀學素養",
+            "個人提案",
+            "許OO",
+            "身分資格審查不合格"
+          ]
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page": 1,
+      "text": "明倫社會住宅青年創新回饋計畫青創種子資格審查結果\n案件編號 提案名稱 提案形式 主要提案人 案件狀態\nSHYIP-MLZ-0002 敷教明倫-普師教化、彰明人倫、闔家團圓 個人提案 李OO 身分資格審查不合格\nSHYIP-MLZ-0003 梅想到plus：健身更健心 個人提案 黃OO 身分資格審查合格\nSHYIP-MLZ-0004 花現明倫 NEXT 個人提案 李OO 身分資格審查不合格\nSHYIP-MLZ-0005 熊愛讀冊 個人提案 陳OO 身分資格審查合格\nSHYIP-MLZ-0006 親子明倫糖 個人提案 賴OO 身分資格審查合格\nSHYIP-MLZ-0007 青椒樂園 個人提案 李OO 身分資格審查合格\nSHYIP-MLZ-0008 D02明天開始，倫家與你開心忘齡 個人提案 黃OO 身分資格審查合格\nSHYIP-MLZ-0009 明倫好生活 個人提案 伍OO 身分資格審查合格\nSHYIP-MLZ-0011 藝術明倫版作伙 個人提案 簡OO 身分資格審查合格\nSHYIP-MLZ-0012 明倫小學堂 走讀學素養 個人提案 許OO 身分資格審查不合格",
+      "tables": [
+        [
+          [
+            "明倫社會住宅青年創新回饋計畫青創種子資格審查結果",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "案件編號",
+            "提案名稱",
+            "提案形式",
+            "主要提案人",
+            "案件狀態"
+          ],
+          [
+            "SHYIP-MLZ-0002",
+            "敷教明倫-普師教化、彰明人倫、闔家團圓",
+            "個人提案",
+            "李OO",
+            "身分資格審查不合格"
+          ],
+          [
+            "SHYIP-MLZ-0003",
+            "梅想到plus：健身更健心",
+            "個人提案",
+            "黃OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0004",
+            "花現明倫 NEXT",
+            "個人提案",
+            "李OO",
+            "身分資格審查不合格"
+          ],
+          [
+            "SHYIP-MLZ-0005",
+            "熊愛讀冊",
+            "個人提案",
+            "陳OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0006",
+            "親子明倫糖",
+            "個人提案",
+            "賴OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0007",
+            "青椒樂園",
+            "個人提案",
+            "李OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0008",
+            "D02明天開始，倫家與你開心忘齡",
+            "個人提案",
+            "黃OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0009",
+            "明倫好生活",
+            "個人提案",
+            "伍OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0011",
+            "藝術明倫版作伙",
+            "個人提案",
+            "簡OO",
+            "身分資格審查合格"
+          ],
+          [
+            "SHYIP-MLZ-0012",
+            "明倫小學堂 走讀學素養",
+            "個人提案",
+            "許OO",
+            "身分資格審查不合格"
+          ]
+        ]
+      ],
+      "image_count": 0,
+      "has_text": true,
+      "is_blank": false,
+      "image_note": null
+    }
+  ]
+}

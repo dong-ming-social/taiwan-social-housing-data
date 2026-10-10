@@ -361,6 +361,39 @@
  },
  {
   "bucket": "16-in-one",
+  "stem": "115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果",
+  "path": "/documents/16-in-one/115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶評點排序結果.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3279"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數再次",
+  "path": "/documents/16-in-one/115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數再次.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3277"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告",
+  "path": "/documents/16-in-one/115年「小彎等6處社宅（零星空戶暨候補戶名單建置）」其他特殊情形身分戶評點分數第一次公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
   "stem": "115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案",
   "path": "/documents/16-in-one/115年度7月小彎等16處零星零星空戶暨候補戶名單建置招租案.pdf",
   "have": true,
@@ -379,6 +412,28 @@
   "tier": "low",
   "src": [
    "3272"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "【公告說明】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶",
+  "path": "/documents/16-in-one/【公告說明】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分戶.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "16-in-one",
+  "stem": "【複查申請表】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分",
+  "path": "/documents/16-in-one/【複查申請表】115年「小彎等6處社宅（零星空戶及候補戶名單建置）」其他特殊情形身分.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3275"
   ],
   "dupe": false
  },
@@ -643,7 +698,8 @@
   "src": [
    "3255"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "2025",
@@ -2203,6 +2259,28 @@
   "dupe": false
  },
  {
+  "bucket": "jingfeng",
+  "stem": "115年「景豐社會住宅1區」其他特殊情形身分戶評點分數第一次公告",
+  "path": "/documents/jingfeng/115年「景豐社會住宅1區」其他特殊情形身分戶評點分數第一次公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3281"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "jingfeng",
+  "stem": "【複查申請表】115年「景豐社會住宅1區」其他特殊情形身分戶評點分數複查申請表",
+  "path": "/documents/jingfeng/【複查申請表】115年「景豐社會住宅1區」其他特殊情形身分戶評點分數複查申請表.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3281"
+  ],
+  "dupe": false
+ },
+ {
   "bucket": "jiuzong",
   "stem": "舊宗社會住宅住戶規約手冊(114年12月版)",
   "path": "/documents/jiuzong/舊宗社會住宅住戶規約手冊(114年12月版).pdf",
@@ -3000,6 +3078,17 @@
   "path": "/documents/only-news/1150825臺北住都契服字第1150008355號斯三、新興短租公告(本文).pdf",
   "have": true,
   "tier": "low",
+  "src": [
+   "3273"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "only-news",
+  "stem": "附件1_申請書_斯三、新興短租-0715修v4",
+  "path": "/documents/only-news/附件1_申請書_斯三、新興短租-0715修v4.pdf",
+  "have": true,
+  "tier": "high",
   "src": [
    "3273"
   ],
@@ -4147,7 +4236,8 @@
   "src": [
    "3254"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4169,7 +4259,8 @@
   "src": [
    "3253"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4180,7 +4271,8 @@
   "src": [
    "3253"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4260,7 +4352,8 @@
   "src": [
    "3254"
   ],
-  "dupe": false
+  "dupe": false,
+  "active": false
  },
  {
   "bucket": "yir",
@@ -4292,6 +4385,61 @@
   "tier": "low",
   "src": [
    "3238"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "明倫社宅青創種子徵件公告",
+  "path": "/documents/yir/minglun/明倫社宅青創種子徵件公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3276"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "評選說明",
+  "path": "/documents/yir/minglun/評選說明.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3276"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "附件1-資格審查結果",
+  "path": "/documents/yir/minglun/附件1-資格審查結果.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3280"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "附件2-簡報評選流程",
+  "path": "/documents/yir/minglun/附件2-簡報評選流程.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3280"
+  ],
+  "dupe": false
+ },
+ {
+  "bucket": "yir",
+  "stem": "附件3-明倫青創種子身分審查結果及簡報評選流程公告",
+  "path": "/documents/yir/minglun/附件3-明倫青創種子身分審查結果及簡報評選流程公告.pdf",
+  "have": true,
+  "tier": "low",
+  "src": [
+   "3280"
   ],
   "dupe": false
  },
