@@ -26,6 +26,7 @@ permissions:
 jobs:
   update:
     if: github.event_name == 'schedule' || inputs.task == 'daily-update'
+    # Node.js 24 actions require Actions Runner >= 2.327.1 (GitHub-hosted Ubuntu).
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
@@ -33,12 +34,12 @@ jobs:
 
     steps:
       - name: 取出 repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: 設定 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -53,7 +54,7 @@ jobs:
         run: echo "month=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
 
       - name: 還原位置資料快取
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ${{ runner.temp }}/housing-address-cache
@@ -76,10 +77,12 @@ jobs:
         run: |
           export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
           export HOUSING_UPDATE_SUMMARY="$RUNNER_TEMP/housing-update-summary.md"
+          export HOUSING_CONVERSION_LOG="$RUNNER_TEMP/housing-conversions.jsonl"
           python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
 
       - name: 驗證完整資料集與來源出處
         run: |
+          python -m unittest discover -s .claude/skills/housing-doc-to-json/tests
           python .claude/skills/housing-doc-to-json/scripts/validate_dataset.py
           python .claude/skills/housing-doc-to-json/scripts/test_housing_locations.py
 
@@ -99,15 +102,30 @@ jobs:
 
       - name: 保存全臺稽核結果
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: nationwide-housing-audit
           path: ${{ runner.temp }}/housing-nationwide-cache/*.json
           if-no-files-found: ignore
           retention-days: 30
 
+      - name: 保存文件轉檔紀錄
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: housing-update-diagnostics
+          path: |
+            ${{ runner.temp }}/housing-conversions.jsonl
+            ${{ runner.temp }}/housing-update-summary.md
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: 顯示更新摘要
-        run: cat "$RUNNER_TEMP/housing-update-summary.md" >> "$GITHUB_STEP_SUMMARY"
+        if: always()
+        run: |
+          if [[ -f "$RUNNER_TEMP/housing-update-summary.md" ]]; then
+            cat "$RUNNER_TEMP/housing-update-summary.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: 檢查是否有變更
         id: changes

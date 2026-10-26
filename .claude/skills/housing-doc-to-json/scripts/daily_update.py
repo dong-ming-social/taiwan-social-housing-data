@@ -65,6 +65,15 @@ FOLDER_DESCRIPTIONS = {
 sys.path.insert(0, str(SKILL / "scripts"))
 import batch_convert  # noqa: E402
 import portal_discovery  # noqa: E402
+from output_rules import FORBIDDEN_OUTPUTS  # noqa: E402
+
+CONVERSION_LOG = Path(os.environ.get("HOUSING_CONVERSION_LOG", "/tmp/housing-conversions.jsonl"))
+
+def log_conversion(**entry):
+    CONVERSION_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with CONVERSION_LOG.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    print(json.dumps(entry, ensure_ascii=False), flush=True)
 
 
 def load_json(path):
@@ -174,22 +183,12 @@ def download_all(records, workers):
 
 
 def unique_new_name(record, downloaded, occupied):
+    occupied = occupied | FORBIDDEN_OUTPUTS
     bucket = output_bucket(record["path"])
     stem = record["stem"]
     candidate = stem
     if (bucket, candidate) not in occupied:
         return candidate, candidate
-
-    # Prefer the first extracted line because it is usually the document's full title.
-    try:
-        import pdfplumber
-        with pdfplumber.open(downloaded[record["path"]]) as pdf:
-            first_line = ((pdf.pages[0].extract_text() or "").splitlines() or [""])[0].strip()
-        first_line = re.sub(r"[/:]", "_", first_line).strip(" .")
-        if first_line and (bucket, first_line) not in occupied:
-            return first_line, first_line
-    except Exception:
-        pass
 
     path = Path(record["path"])
     parent = path.parent.name
@@ -204,7 +203,7 @@ def unique_new_name(record, downloaded, occupied):
 def convert_changes(records, downloaded, existing_sources):
     labels = load_json(BATCH / "labels_rest.json")
     overrides = worklist_overrides()
-    occupied = {(path.parent.name, path.stem) for path in REPO.glob("*/*.json")}
+    occupied = {(path.parent.name, path.stem) for path in REPO.glob("*/*.json")} | FORBIDDEN_OUTPUTS
     new_files = []
     changed_files = []
 
@@ -228,17 +227,31 @@ def convert_changes(records, downloaded, existing_sources):
             rec["title"] = document["metadata"].get("document_name", existing_path.stem)
         else:
             override = overrides.get(path, {})
-            if override:
+            if "output_stem" in override:
                 rec.update(override)
+                target = (rec["bucket"], rec.get("output_stem", rec["stem"]))
+                if target in occupied:
+                    reason = "forbidden output" if target in FORBIDDEN_OUTPUTS else "occupied output"
+                    log_conversion(source_url=batch_convert.HOST + urllib.parse.quote(path),
+                                   output=f"{target[0]}/{target[1]}.json", status="rejected", reason=reason)
+                    raise ValueError(f"{path}: explicit output {target} conflicts: {reason}")
             else:
                 output_stem, title = unique_new_name(record, downloaded, occupied)
                 rec["output_stem"] = output_stem
-                rec["title"] = title
+                rec["title"] = override.get("title", title)
             occupied.add((rec["bucket"], rec.get("output_stem", rec["stem"])))
 
-        result = batch_convert.convert(
-            rec, labels.get(rec["bucket"], rec["bucket"] + " 招租文件")
-        )
+        output = f"{rec['bucket']}/{rec.get('output_stem', rec['stem'])}.json"
+        trace = dict(source_url=batch_convert.HOST + urllib.parse.quote(path), output=output)
+        log_conversion(**trace, status="started")
+        try:
+            result = batch_convert.convert(
+                rec, labels.get(rec["bucket"], rec["bucket"] + " 招租文件")
+            )
+        except Exception as exc:
+            log_conversion(**trace, status="failed", reason=str(exc))
+            raise
+        log_conversion(**trace, status="completed", sha256=current_sha)
         relative = str(Path(result["out"]).relative_to(REPO))
         (changed_files if existing else new_files).append(relative)
 

@@ -9,6 +9,8 @@ import urllib.parse
 from collections import Counter
 from pathlib import Path
 
+from output_rules import FORBIDDEN_OUTPUTS
+
 
 REPO = Path(__file__).resolve().parents[4]
 EXPECTED_PUBLISHER = "臺北市住宅及都市更新中心"
@@ -91,11 +93,7 @@ def main():
     for path in sorted(source_paths - expected_paths):
         errors.append(f"dataset source missing from inventory: {path}")
 
-    forbidden = [
-        REPO / "yir" / "簡報評選結果.json",
-        REPO / "zhongnan" / "永平社會住宅住戶規約手冊(114年12月版).json",
-        REPO / "nangangdepot1" / "南港機廠社1區宅手冊.json",
-    ]
+    forbidden = [REPO / bucket / f"{stem}.json" for bucket, stem in FORBIDDEN_OUTPUTS]
     for path in forbidden:
         if path.exists():
             fail(errors, path, "explicit duplicate/colliding output must not be present")
