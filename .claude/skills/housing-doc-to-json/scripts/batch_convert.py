@@ -6,7 +6,7 @@ Reads a worklist JSON [{bucket, stem, path}], downloads each PDF into the
 scratchpad, and writes <repo>/<bucket>/<stem>.json via the skill helper.
 Records nothing it cannot read from the PDF itself.
 """
-import json, os, re, subprocess, sys, tempfile, urllib.parse
+import json, os, re, subprocess, sys, tempfile, time, urllib.parse
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -21,6 +21,7 @@ sys.path.insert(0, str(SKILL))
 import pdf_to_json as H  # noqa: E402
 
 HOST = "https://rent.thurc.org.taipei"
+DOWNLOAD_RETRY_DELAYS = (2, 4, 8)
 
 # filename -> document_type. Order matters: first match wins.
 TYPE_RULES = [
@@ -90,16 +91,45 @@ def fetch(path, refresh=False):
     local = os.path.join(PDFDIR, re.sub(r"[/]", "_", path.lstrip("/")))
     if refresh or not valid_pdf(local):
         tmp = local + ".download"
-        r = subprocess.run(["curl", "-sSL", "--fail", "-o", tmp, url],
-                           capture_output=True, text=True)
-        if r.returncode != 0:
+        attempts = len(DOWNLOAD_RETRY_DELAYS) + 1
+        for attempt in range(1, attempts + 1):
             if os.path.exists(tmp):
                 os.unlink(tmp)
-            raise RuntimeError(f"download failed ({r.returncode}) {url}")
-        if not valid_pdf(tmp):
-            os.unlink(tmp)
-            raise RuntimeError(f"downloaded file is not a complete PDF: {path}")
-        os.replace(tmp, local)
+            result = subprocess.run(
+                [
+                    "curl", "--silent", "--show-error", "--location", "--fail",
+                    "--connect-timeout", "30", "--max-time", "300",
+                    "--output", tmp, url,
+                ],
+                capture_output=True,
+                text=True,
+            )
+            stderr = result.stderr.strip()
+            if result.returncode == 0 and valid_pdf(tmp):
+                os.replace(tmp, local)
+                break
+
+            if result.returncode:
+                detail = f"curl exit {result.returncode}"
+                if stderr:
+                    detail += f": {stderr}"
+            else:
+                detail = "curl exit 0; downloaded file is not a complete PDF"
+            if os.path.exists(tmp):
+                os.unlink(tmp)
+
+            if attempt == attempts:
+                raise RuntimeError(
+                    f"download failed after {attempts} attempts ({detail}) {url}"
+                )
+            delay = DOWNLOAD_RETRY_DELAYS[attempt - 1]
+            print(
+                f"WARNING download retry {attempt}/{attempts} in {delay}s "
+                f"({detail}) {url}",
+                file=sys.stderr,
+                flush=True,
+            )
+            time.sleep(delay)
     return local
 
 

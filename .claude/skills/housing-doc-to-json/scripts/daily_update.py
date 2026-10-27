@@ -178,7 +178,21 @@ def download_all(records, workers):
         }
         for future in as_completed(futures):
             record = futures[future]
-            downloaded[record["path"]] = Path(future.result())
+            try:
+                downloaded[record["path"]] = Path(future.result())
+            except Exception as exc:
+                path = record["path"]
+                source_url = batch_convert.HOST + "/".join(
+                    urllib.parse.quote(part, safe="") if index == len(path.split("/")) - 1 else part
+                    for index, part in enumerate(path.split("/"))
+                )
+                log_conversion(
+                    source_url=source_url,
+                    source_path=path,
+                    status="download_failed",
+                    reason=str(exc),
+                )
+                raise
     return downloaded
 
 
