@@ -1,0 +1,49 @@
+name: PR 資料驗證
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate-housing-data:
+    name: validate-housing-data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 取出 repository
+        uses: actions/checkout@v5
+
+      - name: 設定 Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: .github/requirements-housing-update.txt
+
+      - name: 安裝資料驗證工具
+        run: python -m pip install -r .github/requirements-housing-update.txt
+
+      - name: 執行單元測試
+        run: python -m unittest discover -s .claude/skills/housing-doc-to-json/tests
+
+      - name: 驗證完整資料集與來源出處
+        run: python .claude/skills/housing-doc-to-json/scripts/validate_dataset.py
+
+      - name: 測試臺北市社宅位置資料
+        run: python .claude/skills/housing-doc-to-json/scripts/test_housing_locations.py
+
+      - name: 測試全臺社宅位置資料
+        run: python .claude/skills/housing-doc-to-json/scripts/test_nationwide_housing.py
+
+      - name: 測試臺北市社宅法規資料
+        run: python .claude/skills/housing-doc-to-json/tests/test_taipei_law_history.py
