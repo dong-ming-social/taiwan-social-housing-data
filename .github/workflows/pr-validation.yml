@@ -1,6 +1,7 @@
 name: PR 資料驗證
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -10,7 +11,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: pr-validation-${{ github.event.pull_request.number }}
+  group: pr-validation-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
