@@ -26,6 +26,10 @@ permissions:
 jobs:
   update:
     if: github.event_name == 'schedule' || inputs.task == 'daily-update'
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
     # Node.js 24 actions require Actions Runner >= 2.327.1 (GitHub-hosted Ubuntu).
     runs-on: ubuntu-latest
     timeout-minutes: 300
@@ -171,6 +175,18 @@ jobs:
             gh pr edit "$number" --title "每日更新社宅官方文件" --body-file "$body_file"
           else
             gh pr create --base main --head "$branch" --title "每日更新社宅官方文件" --body-file "$body_file"
+          fi
+
+      # Explicit dispatch allows unattended checks for GITHUB_TOKEN-created PRs.
+      # The branch ref attaches validate-housing-data to the PR head SHA.
+      - name: 自動啟動更新 PR 的獨立資料驗證
+        shell: bash
+        run: |
+          branch="dwhao84/automated-housing-update"
+          number="$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')"
+          if [[ -n "$number" ]]; then
+            gh workflow run pr-validation.yml --ref "$branch"
+            echo "已為 PR #$number 啟動 validate-housing-data；驗證結果請見 PR checks。" >> "$GITHUB_STEP_SUMMARY"
           fi
 
   test-gemini:

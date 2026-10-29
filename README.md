@@ -174,9 +174,10 @@ GitHub Actions 於每天 **06:20（Asia/Taipei）** 執行「每日更新社宅�
 - 官網不再連結的文件只在 inventory 標記 `active: false`，不會自動刪除歷史資料。
 - 若本次找到的文件少於上次有效盤點的 90%，流程會失敗並停止，不會大量誤標下架。
 - 全庫驗證通過且確實有差異時，才會以 `dwhao84/automated-housing-update` 建立或更新 PR；**不會自動合併**。
+- 每日更新成功後，若仍有待合併的自動更新 PR，會以該分支明確啟動獨立的 `validate-housing-data` 檢查；即使當天沒有新增資料也會重新驗證。檢查通過後仍須人工審查合併。
 - 自動 commit 使用 `dwhao84 <dawei84@hotaileasing.com.tw>`，不加入 AI 共同作者。
 
-首次啟用時，repository 管理者需在 **Settings → Actions → General → Workflow permissions** 允許 GitHub Actions 建立 pull request。workflow 僅申請 `contents: write` 與 `pull-requests: write`。
+首次啟用時，repository 管理者需在 **Settings → Actions → General → Workflow permissions** 允許 GitHub Actions 建立 pull request。更新工作申請 `contents: write`、`pull-requests: write` 與啟動獨立驗證所需的 `actions: write`；驗證工作維持 `contents: read`，不需新增個人存取權杖。
 
 本機可用下列命令先做唯讀盤點，或完整演練：
 
