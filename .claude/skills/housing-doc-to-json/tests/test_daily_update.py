@@ -5,6 +5,7 @@ import json
 import sys
 import tempfile
 import unittest
+from collections import defaultdict
 from pathlib import Path
 from unittest.mock import patch
 
@@ -51,9 +52,6 @@ class PortalDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             inventory = Path(tmp) / "inventory.json"
             inventory.write_text(json.dumps(records), encoding="utf-8")
-            found = {}
-            from collections import defaultdict
-
             found = defaultdict(set)
             with patch.object(portal_discovery, "INVENTORY", inventory):
                 portal_discovery.preserve_failed_source(found, "example")
@@ -81,8 +79,6 @@ class NewsDiscoveryTests(unittest.TestCase):
             if path in failing:
                 raise RuntimeError(f"HTTP fetch failed (28) {path}")
             return self.PAGES[path]
-
-        from collections import defaultdict
 
         found = defaultdict(set)
         with tempfile.TemporaryDirectory() as tmp:
@@ -149,14 +145,19 @@ class DailyUpdateTests(unittest.TestCase):
             records = [{"path": f"/documents/yir/{site}/簡報評選結果.pdf", "stem": "簡報評選結果"}
                        for site in ("dongming", "liuzhangli")]
             downloaded = {r["path"]: pdf for r in records}
-            def convert(rec, label):
+            def convert(rec, _label):
                 out = root / rec["bucket"] / (rec["output_stem"] + ".json")
                 out.parent.mkdir(exist_ok=True)
                 out.write_text(json.dumps({"metadata": {"pdf_sha256": daily_update.sha256(pdf)},
                     "source": {"official_pdf_url": daily_update.batch_convert.HOST + rec["path"]}}))
                 return {"out": str(out)}
-            with patch.object(daily_update, "REPO", root), patch.object(daily_update, "CONVERSION_LOG", root / "trace.jsonl"), patch.object(daily_update, "worklist_overrides", return_value={}), patch.object(daily_update.batch_convert, "convert", side_effect=convert):
-                new, changed = daily_update.convert_changes(records, downloaded, {})
+            with (
+                patch.object(daily_update, "REPO", root),
+                patch.object(daily_update, "CONVERSION_LOG", root / "trace.jsonl"),
+                patch.object(daily_update, "worklist_overrides", return_value={}),
+                patch.object(daily_update.batch_convert, "convert", side_effect=convert),
+            ):
+                new, _ = daily_update.convert_changes(records, downloaded, {})
                 self.assertEqual(len(new), 2)
                 sources = daily_update.dataset_by_source()
                 self.assertEqual(set(sources), set(downloaded))
@@ -177,7 +178,13 @@ class DailyUpdateTests(unittest.TestCase):
                 pdf = root / "source.pdf"
                 pdf.write_bytes(b"pdf")
                 record = {"path": "/documents/yir/new.pdf", "stem": "new"}
-                with patch.object(daily_update, "REPO", root), patch.object(daily_update, "CONVERSION_LOG", root / "trace.jsonl"), patch.object(daily_update, "worklist_overrides", return_value={record["path"]: {"output_stem": stem}}), patch.object(daily_update.batch_convert, "convert") as convert:
+                overrides = {record["path"]: {"output_stem": stem}}
+                with (
+                    patch.object(daily_update, "REPO", root),
+                    patch.object(daily_update, "CONVERSION_LOG", root / "trace.jsonl"),
+                    patch.object(daily_update, "worklist_overrides", return_value=overrides),
+                    patch.object(daily_update.batch_convert, "convert") as convert,
+                ):
                     with self.assertRaisesRegex(ValueError, "explicit output.*conflicts"):
                         daily_update.convert_changes([record], {record["path"]: pdf}, {})
                     convert.assert_not_called()

@@ -49,7 +49,7 @@ class Source:
         try:
             with urllib.request.urlopen(url, timeout=30) as response:
                 return json.load(response)
-        except Exception:
+        except (OSError, ValueError):
             # Some Python builds lack CA certs; curl uses the system store.
             output = subprocess.run(
                 ["curl", "-fsSL", "--max-time", "30", url], check=True, capture_output=True
@@ -62,7 +62,7 @@ class Source:
             return json.loads(local.read_text(encoding="utf-8")) if local.exists() else _bundled()
         try:
             return self.load(REMOTE_CATALOG)
-        except Exception:
+        except (OSError, ValueError, subprocess.CalledProcessError):
             return _bundled()
 
 
@@ -245,7 +245,7 @@ def cmd_law(source, args):
     }
     if args.version is None and not args.article and not args.changes:
         emit(summary)
-        return
+        return 0
     chosen = versions[-1] if args.version is None else next(
         (v for v in versions if v["sequence"] == args.version), None
     )
@@ -268,6 +268,7 @@ def cmd_law(source, args):
             ]}
         output["changes_from_previous"] = changes
     emit(output)
+    return 0
 
 
 def build_parser():
