@@ -112,6 +112,11 @@ jobs:
             --output laws/taipei/FL071776.json
           python .claude/skills/housing-doc-to-json/tests/test_taipei_law_history.py
 
+      - name: 重建社宅查詢技能文件目錄
+        run: |
+          python .claude/skills/housing-query/scripts/build_catalog.py
+          python .claude/skills/housing-query/tests/test_query.py
+
       - name: 保存全臺稽核結果
         if: always()
         uses: actions/upload-artifact@v6
@@ -159,7 +164,8 @@ jobs:
           git config user.email "dawei84@hotaileasing.com.tw"
           git fetch origin "$branch:refs/remotes/origin/$branch" || true
           git switch -C "$branch"
-          git add README.md .claude/skills/housing-doc-to-json/batch/portal_inventory.json
+          git add README.md .claude/skills/housing-doc-to-json/batch/portal_inventory.json \
+            .claude/skills/housing-query/reference/catalog.json
           git add -- '*/*.json'
           git add api laws
           git commit -m "每日更新社宅官方文件（$(date +%F)）"
