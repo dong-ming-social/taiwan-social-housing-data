@@ -78,6 +78,7 @@ jobs:
           export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
           export HOUSING_UPDATE_SUMMARY="$RUNNER_TEMP/housing-update-summary.md"
           export HOUSING_CONVERSION_LOG="$RUNNER_TEMP/housing-conversions.jsonl"
+          export HOUSING_DISCOVERY_LOG="$RUNNER_TEMP/housing-discovery.jsonl"
           python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
 
       - name: 驗證完整資料集與來源出處
@@ -116,6 +117,7 @@ jobs:
           name: housing-update-diagnostics
           path: |
             ${{ runner.temp }}/housing-conversions.jsonl
+            ${{ runner.temp }}/housing-discovery.jsonl
             ${{ runner.temp }}/housing-update-summary.md
           if-no-files-found: ignore
           retention-days: 30
