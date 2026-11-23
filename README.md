@@ -193,6 +193,7 @@ GitHub Actions 於每天 **06:20（Asia/Taipei）** 執行「每日更新社宅�
 
 - 新 PDF 會自動轉成 JSON；同一網址內容更新時會重建原 JSON。
 - 官網不再連結的文件只在 inventory 標記 `active: false`，不會自動刪除歷史資料。
+- 全站下載頁、各基地附件頁或最新消息頁暫時連不上時，只跳過該頁並保留上次從該頁找到的文件；首頁或社宅基地地圖連不上則整次停止。
 - 若本次找到的文件少於上次有效盤點的 90%，流程會失敗並停止，不會大量誤標下架。
 - 全庫驗證通過且確實有差異時，才會以 `dwhao84/automated-housing-update` 建立或更新 PR；**不會自動合併**。
 - 自動 commit 使用 `dwhao84 <dawei84@hotaileasing.com.tw>`，不加入 AI 共同作者。
