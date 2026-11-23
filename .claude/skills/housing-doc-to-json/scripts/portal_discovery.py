@@ -4,9 +4,11 @@
 
 import html
 import json
+import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 from collections import defaultdict
 from html.parser import HTMLParser
@@ -16,6 +18,18 @@ from pathlib import Path
 HOST = "https://rent.thurc.org.taipei"
 REPO = Path(__file__).resolve().parents[4]
 INVENTORY = REPO / ".claude/skills/housing-doc-to-json/batch/portal_inventory.json"
+
+
+def log_discovery(**entry):
+    """Append one JSON line to HOUSING_DISCOVERY_LOG when it is configured."""
+    target = os.environ.get("HOUSING_DISCOVERY_LOG")
+    if not target:
+        return
+    path = Path(target)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    entry = {"time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), **entry}
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
 class LinkParser(HTMLParser):
@@ -33,6 +47,7 @@ class LinkParser(HTMLParser):
 
 def fetch_html(path):
     url = urllib.parse.urljoin(HOST, path)
+    started = time.monotonic()
     result = subprocess.run(
         [
             "curl", "--silent", "--show-error", "--location", "--fail",
@@ -40,8 +55,16 @@ def fetch_html(path):
         ],
         capture_output=True,
     )
+    seconds = round(time.monotonic() - started, 2)
     if result.returncode:
-        raise RuntimeError(f"HTTP fetch failed ({result.returncode}) {url}")
+        stderr = result.stderr.decode("utf-8", errors="replace").strip()
+        log_discovery(
+            event="fetch", url=url, ok=False, curl_exit=result.returncode,
+            seconds=seconds, error=stderr,
+        )
+        detail = f"{result.returncode}: {stderr}" if stderr else str(result.returncode)
+        raise RuntimeError(f"HTTP fetch failed ({detail}) {url}")
+    log_discovery(event="fetch", url=url, ok=True, seconds=seconds, bytes=len(result.stdout))
     return result.stdout.decode("utf-8", errors="replace")
 
 
@@ -94,15 +117,19 @@ def known_attachment_slugs():
 
 def warn(message):
     print(f"WARNING {message}", file=sys.stderr, flush=True)
+    log_discovery(event="skipped", message=message)
 
 
 def preserve_failed_source(found, source):
     """Do not mark known documents inactive when one portal page is down."""
-    if not INVENTORY.exists():
-        return
-    for record in json.loads(INVENTORY.read_text(encoding="utf-8")):
-        if source in record.get("src", []) and record.get("active") is not False:
-            found[record["path"]].add(source)
+    preserved = 0
+    if INVENTORY.exists():
+        for record in json.loads(INVENTORY.read_text(encoding="utf-8")):
+            if source in record.get("src", []) and record.get("active") is not False:
+                found[record["path"]].add(source)
+                preserved += 1
+    log_discovery(event="preserved", source=source, documents=preserved)
+    return preserved
 
 
 def known_news_sources():
@@ -202,6 +229,10 @@ def discover():
 
     discover_news(found)
 
+    log_discovery(
+        event="summary", pdfs=len(found),
+        sources=len({source for sources in found.values() for source in sources}),
+    )
     return {path: sorted(sources) for path, sources in sorted(found.items())}
 
 

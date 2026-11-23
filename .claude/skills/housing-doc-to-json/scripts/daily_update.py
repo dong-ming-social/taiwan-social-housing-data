@@ -354,9 +354,15 @@ def main():
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
 
-    discovered = portal_discovery.discover()
-    existing_sources = dataset_by_source()
-    records = merge_inventory(discovered, existing_sources)
+    try:
+        discovered = portal_discovery.discover()
+        existing_sources = dataset_by_source()
+        records = merge_inventory(discovered, existing_sources)
+    except Exception as exc:
+        portal_discovery.log_discovery(
+            event="fatal", error_type=type(exc).__name__, error=str(exc)
+        )
+        raise
     inactive = sorted(record["path"] for record in records if record.get("active") is False)
     print(
         f"discovered={len(discovered)} inventory={len(records)} "

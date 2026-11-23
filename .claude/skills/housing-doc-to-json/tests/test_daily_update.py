@@ -113,6 +113,21 @@ class NewsDiscoveryTests(unittest.TestCase):
         self.assertNotIn("/documents/news/old.pdf", found)
         self.assertNotIn("/documents/site/d.pdf", found)
 
+    def test_discovery_log_records_skips_and_preserves(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            log = Path(tmp) / "discovery.jsonl"
+            with patch.dict("os.environ", {"HOUSING_DISCOVERY_LOG": str(log)}):
+                self.run_news({"/news/detail/102"})
+            entries = [json.loads(line) for line in log.read_text(encoding="utf-8").splitlines()]
+        events = [entry["event"] for entry in entries]
+        self.assertIn("skipped", events)
+        preserved = [entry for entry in entries if entry["event"] == "preserved"]
+        self.assertEqual(preserved, [{**preserved[0], "source": "102", "documents": 1}])
+
+    def test_discovery_log_disabled_without_env(self):
+        with patch.dict("os.environ", {}, clear=True):
+            portal_discovery.log_discovery(event="fetch")  # must not raise or write
+
     def test_failed_first_list_page_does_not_raise(self):
         found = self.run_news({"/News?page=1"})
         self.assertEqual(
