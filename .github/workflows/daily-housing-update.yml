@@ -30,13 +30,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
-      GH_TOKEN: ${{ github.token }}
+      # 以 GITHUB_TOKEN 推送或建立的 PR 不會自動觸發 PR 資料驗證（會停在 action_required），
+      # 因此優先使用 dwhao84 的 fine-grained PAT；未設定時退回 GITHUB_TOKEN 以免排程中斷。
+      GH_TOKEN: ${{ secrets.HOUSING_UPDATE_TOKEN || github.token }}
 
     steps:
+      - name: 檢查每日更新 PR 用 token
+        env:
+          HAS_UPDATE_TOKEN: ${{ secrets.HOUSING_UPDATE_TOKEN != '' }}
+        run: |
+          if [[ "$HAS_UPDATE_TOKEN" != "true" ]]; then
+            echo "::warning title=未設定 HOUSING_UPDATE_TOKEN::每日更新 PR 將以 github-actions[bot] 推送，PR 資料驗證需手動核准。"
+          fi
+
       - name: 取出 repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
+          token: ${{ secrets.HOUSING_UPDATE_TOKEN || github.token }}
 
       - name: 設定 Python
         uses: actions/setup-python@v6
@@ -78,6 +89,7 @@ jobs:
           export HOUSING_PDF_CACHE="$RUNNER_TEMP/housing-pdf-cache"
           export HOUSING_UPDATE_SUMMARY="$RUNNER_TEMP/housing-update-summary.md"
           export HOUSING_CONVERSION_LOG="$RUNNER_TEMP/housing-conversions.jsonl"
+          export HOUSING_DISCOVERY_LOG="$RUNNER_TEMP/housing-discovery.jsonl"
           python -u .claude/skills/housing-doc-to-json/scripts/daily_update.py
 
       - name: 驗證完整資料集與來源出處
@@ -116,6 +128,7 @@ jobs:
           name: housing-update-diagnostics
           path: |
             ${{ runner.temp }}/housing-conversions.jsonl
+            ${{ runner.temp }}/housing-discovery.jsonl
             ${{ runner.temp }}/housing-update-summary.md
           if-no-files-found: ignore
           retention-days: 30
