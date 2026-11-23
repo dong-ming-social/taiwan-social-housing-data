@@ -162,6 +162,27 @@ for rent in data["structured_data"]["rent_after_subsidy"]:
     print(rent["room_type"], rent["tier_1_twd"], rent["source_pages"])
 ```
 
+## Claude 查詢技能
+
+[`.claude/skills/housing-query/`](.claude/skills/housing-query/SKILL.md) 是讓 Claude 直接查詢本資料集的 skill。問到臺北社宅的招租、資格、租金、契約、規約、位置或出租辦法時，Claude 會用其中的 `query.py` 挑出相關文件與頁面回答，並附上官方 PDF 網址與頁碼。
+
+- **在本 repo 使用**：以 Claude Code 開啟此目錄即可自動載入，查詢讀取本機檔案。
+- **在其他專案使用**：將整個資料夾複製到 `~/.claude/skills/housing-query/`，查詢會改從 GitHub Raw 的 `main` 分支讀取，需要網路。
+- **在 claude.ai 使用**：將 `housing-query` 資料夾壓縮成 zip，從 claude.ai 的 Skills 設定上傳；執行環境需允許連線至 `raw.githubusercontent.com`。
+
+`query.py` 也可單獨使用，所有指令都輸出 JSON：
+
+```bash
+Q=.claude/skills/housing-query/scripts/query.py
+python3 $Q docs --folder dongming --type rent_table
+python3 $Q show "dongming/附件3_所得級距分級標準表及租金補貼表.json" --field rent_after_subsidy
+python3 $Q search "寵物" --folder dongming
+python3 $Q locations --district 文山 --status 已完工
+python3 $Q law --article 23 --changes
+```
+
+skill 依賴的文件目錄 `reference/catalog.json` 由 `build_catalog.py` 產生，每日更新會一併重建，PR 驗證也會檢查它是否與資料集一致。
+
 ## 新增資料
 
 `.claude/skills/housing-doc-to-json/` 收錄可重複使用的轉檔技能，封裝「下載 → anydoc 解析 → 產生 repo schema JSON → 更新 README → 開 PR squash merge」的完整流程。在此 repo 目錄以 Claude Code 開新 session 後，貼上新的 PDF 連結或附件下載頁即可觸發；詳見該資料夾的 `SKILL.md` 與 `reference/schema.md`。
