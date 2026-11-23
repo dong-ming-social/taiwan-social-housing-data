@@ -6,6 +6,7 @@ import html
 import json
 import re
 import subprocess
+import sys
 import urllib.parse
 from collections import defaultdict
 from html.parser import HTMLParser
@@ -91,13 +92,84 @@ def known_attachment_slugs():
     return slugs
 
 
-def preserve_failed_attachment_source(found, slug):
-    """Do not mark known documents inactive when one attachment page is down."""
+def warn(message):
+    print(f"WARNING {message}", file=sys.stderr, flush=True)
+
+
+def preserve_failed_source(found, source):
+    """Do not mark known documents inactive when one portal page is down."""
     if not INVENTORY.exists():
         return
     for record in json.loads(INVENTORY.read_text(encoding="utf-8")):
-        if slug in record.get("src", []) and record.get("active") is not False:
-            found[record["path"]].add(slug)
+        if source in record.get("src", []) and record.get("active") is not False:
+            found[record["path"]].add(source)
+
+
+def known_news_sources():
+    """Return news detail ids that previously linked active documents."""
+    if not INVENTORY.exists():
+        return set()
+    return {
+        str(source)
+        for record in json.loads(INVENTORY.read_text(encoding="utf-8"))
+        if record.get("active") is not False
+        for source in record.get("src", [])
+        if str(source).isdigit()
+    }
+
+
+def news_detail_paths(document):
+    return {
+        urllib.parse.urlparse(link).path
+        for link in hrefs(document)
+        if re.fullmatch(r"/news/detail/\d+", urllib.parse.urlparse(link).path, re.I)
+    }
+
+
+def discover_news(found):
+    """Collect PDFs from news pages, tolerating individual page failures.
+
+    If any list page fails, some detail pages may be missing from this run, so
+    every previously known news source that was not fetched is preserved.
+    """
+    detail_paths = set()
+    list_failed = False
+    try:
+        first_news = fetch_html("/News?page=1")
+    except RuntimeError as exc:
+        warn(f"news list page 1 skipped: {exc}")
+        first_news = None
+        list_failed = True
+
+    if first_news is not None:
+        detail_paths |= news_detail_paths(first_news)
+        page_numbers = {
+            int(match.group(1))
+            for link in hrefs(first_news)
+            if (match := re.search(r"/News\?page=(\d+)", link, re.I))
+        }
+        for page in range(2, max(page_numbers or {1}) + 1):
+            try:
+                detail_paths |= news_detail_paths(fetch_html(f"/News?page={page}"))
+            except RuntimeError as exc:
+                warn(f"news list page {page} skipped: {exc}")
+                list_failed = True
+
+    fetched = set()
+    for detail_path in sorted(detail_paths):
+        source = detail_path.rsplit("/", 1)[-1]
+        try:
+            document = fetch_html(detail_path)
+        except RuntimeError as exc:
+            warn(f"news detail {source} skipped: {exc}")
+            preserve_failed_source(found, source)
+            continue
+        fetched.add(source)
+        add_pdfs(found, document, source)
+
+    if list_failed:
+        for source in sorted(known_news_sources() - fetched):
+            preserve_failed_source(found, source)
 
 
 def discover():
@@ -124,28 +196,11 @@ def discover():
         except RuntimeError:
             # This portal returns HTTP 500 for sites without attachment pages.
             # Preserve previously known links for transient failures as well.
-            preserve_failed_attachment_source(found, slug)
+            preserve_failed_source(found, slug)
             continue
         add_pdfs(found, document, slug)
 
-    first_news = fetch_html("/News?page=1")
-    page_numbers = {
-        int(match.group(1))
-        for link in hrefs(first_news)
-        if (match := re.search(r"/News\?page=(\d+)", link, re.I))
-    }
-    last_page = max(page_numbers or {1})
-    detail_paths = set()
-    for page in range(1, last_page + 1):
-        document = first_news if page == 1 else fetch_html(f"/News?page={page}")
-        for link in hrefs(document):
-            if re.fullmatch(r"/news/detail/\d+", urllib.parse.urlparse(link).path, re.I):
-                detail_paths.add(urllib.parse.urlparse(link).path)
-
-    for detail_path in sorted(detail_paths):
-        document = fetch_html(detail_path)
-        source = detail_path.rsplit("/", 1)[-1]
-        add_pdfs(found, document, source)
+    discover_news(found)
 
     return {path: sorted(sources) for path, sources in sorted(found.items())}
 

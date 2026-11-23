@@ -56,9 +56,68 @@ class PortalDiscoveryTests(unittest.TestCase):
 
             found = defaultdict(set)
             with patch.object(portal_discovery, "INVENTORY", inventory):
-                portal_discovery.preserve_failed_attachment_source(found, "example")
+                portal_discovery.preserve_failed_source(found, "example")
         self.assertEqual(found["/documents/example/file.pdf"], {"example"})
         self.assertNotIn("/documents/retired/file.pdf", found)
+
+
+class NewsDiscoveryTests(unittest.TestCase):
+    RECORDS = [
+        {"path": "/documents/news/a.pdf", "src": ["101"]},
+        {"path": "/documents/news/b.pdf", "src": ["102"]},
+        {"path": "/documents/news/c.pdf", "src": ["103"]},
+        {"path": "/documents/news/old.pdf", "src": ["104"], "active": False},
+        {"path": "/documents/site/d.pdf", "src": ["example"]},
+    ]
+    PAGES = {
+        "/News?page=1": '<a href="/news/detail/101"></a><a href="/News?page=2"></a>',
+        "/News?page=2": '<a href="/news/detail/102"></a>',
+        "/news/detail/101": '<a href="/documents/news/a.pdf"></a>',
+        "/news/detail/102": '<a href="/documents/news/b.pdf"></a>',
+    }
+
+    def run_news(self, failing):
+        def fake_fetch(path):
+            if path in failing:
+                raise RuntimeError(f"HTTP fetch failed (28) {path}")
+            return self.PAGES[path]
+
+        from collections import defaultdict
+
+        found = defaultdict(set)
+        with tempfile.TemporaryDirectory() as tmp:
+            inventory = Path(tmp) / "inventory.json"
+            inventory.write_text(json.dumps(self.RECORDS), encoding="utf-8")
+            with patch.object(portal_discovery, "INVENTORY", inventory), \
+                    patch.object(portal_discovery, "fetch_html", side_effect=fake_fetch), \
+                    patch("sys.stderr"):
+                portal_discovery.discover_news(found)
+        return dict(found)
+
+    def test_all_pages_succeed_drops_unlinked_news(self):
+        self.assertEqual(
+            self.run_news(set()),
+            {"/documents/news/a.pdf": {"101"}, "/documents/news/b.pdf": {"102"}},
+        )
+
+    def test_failed_detail_page_preserves_its_documents(self):
+        found = self.run_news({"/news/detail/102"})
+        self.assertEqual(found["/documents/news/b.pdf"], {"102"})
+        self.assertNotIn("/documents/news/c.pdf", found)
+
+    def test_failed_list_page_preserves_unfetched_known_news(self):
+        found = self.run_news({"/News?page=2"})
+        self.assertEqual(found["/documents/news/a.pdf"], {"101"})
+        self.assertEqual(found["/documents/news/b.pdf"], {"102"})
+        self.assertEqual(found["/documents/news/c.pdf"], {"103"})
+        self.assertNotIn("/documents/news/old.pdf", found)
+        self.assertNotIn("/documents/site/d.pdf", found)
+
+    def test_failed_first_list_page_does_not_raise(self):
+        found = self.run_news({"/News?page=1"})
+        self.assertEqual(
+            set(found), {"/documents/news/a.pdf", "/documents/news/b.pdf", "/documents/news/c.pdf"}
+        )
 
 
 class DailyUpdateTests(unittest.TestCase):
