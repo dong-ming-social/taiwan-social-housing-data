@@ -201,7 +201,7 @@ def download_all(records, workers):
     return downloaded
 
 
-def unique_new_name(record, downloaded, occupied):
+def unique_new_name(record, _downloaded, occupied):
     occupied = occupied | FORBIDDEN_OUTPUTS
     bucket = output_bucket(record["path"])
     stem = record["stem"]
@@ -261,7 +261,7 @@ def convert_changes(records, downloaded, existing_sources):
             occupied.add((rec["bucket"], rec.get("output_stem", rec["stem"])))
 
         output = f"{rec['bucket']}/{rec.get('output_stem', rec['stem'])}.json"
-        trace = dict(source_url=batch_convert.HOST + urllib.parse.quote(path), output=output)
+        trace = {"source_url": batch_convert.HOST + urllib.parse.quote(path), "output": output}
         log_conversion(**trace, status="started")
         try:
             result = batch_convert.convert(

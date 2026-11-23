@@ -54,6 +54,7 @@ def fetch_html(path):
             "--retry", "3", "--retry-delay", "2", "--max-time", "90", url,
         ],
         capture_output=True,
+        check=False,
     )
     seconds = round(time.monotonic() - started, 2)
     if result.returncode:

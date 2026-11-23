@@ -222,8 +222,8 @@ def parse_moi_html(text):
 def load_moi(cache, source_dir=None, refresh=True):
     rows = []
     source_dir = Path(source_dir) if source_dir else None
-    for county in REGIONS:
-        path = (source_dir / f"{REGIONS[county]}.html") if source_dir else (cache / "moi" / f"{REGIONS[county]}.html")
+    for county, code in REGIONS.items():
+        path = (source_dir / f"{code}.html") if source_dir else (cache / "moi" / f"{code}.html")
         if not source_dir and (refresh or not path.exists()):
             curl_download(f"{MOI_URL}?city={quote(county)}", path, MOI_INDEX_URL)
         source = path.read_text(encoding="utf-8")
@@ -412,7 +412,8 @@ def existing_timestamp(items):
             previous = [{**item, "updated_at": None} for item in existing.get("items", [])]
             if previous == comparable:
                 return existing.get("updated_at")
-        except Exception:
+        except Exception:  # pylint: disable=broad-exception-caught
+            # 舊檔無法比較時改用現在時間
             pass
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
@@ -479,7 +480,7 @@ def validate_api(api_root=API_ROOT):
         regions_doc = load_json(api_root / "regions.json")
         districts_doc = load_json(api_root / "districts.json")
         index_doc = load_json(api_root / "index.json")
-    except Exception as exc:
+    except (OSError, ValueError) as exc:
         return [f"API files cannot be loaded: {exc}"]
     items = all_doc.get("items", [])
     if all_doc.get("count") != len(items) or index_doc.get("housing_count") != len(items):
@@ -534,7 +535,8 @@ def validate_api(api_root=API_ROOT):
         path = api_root / row.get("path", "")
         try:
             document = load_json(path)
-        except Exception as exc:
+        except Exception as exc:  # pylint: disable=broad-exception-caught
+            # 收集所有錯誤後一併回報
             errors.append(f"{row.get('name')}: cannot load region file: {exc}")
             continue
         region_items = document.get("items", [])
@@ -549,13 +551,17 @@ def validate_api(api_root=API_ROOT):
     for row in districts_doc.get("districts", []):
         try:
             document = load_json(api_root / row["path"])
-        except Exception as exc:
+        except Exception as exc:  # pylint: disable=broad-exception-caught
+            # 收集所有錯誤後一併回報
             errors.append(f"{row.get('name')}: cannot load district file: {exc}")
             continue
         district_items = document.get("items", [])
         if row.get("count") != len(district_items) or document.get("count") != len(district_items):
             errors.append(f"{row.get('region')}/{row.get('name')}: inconsistent district count")
-        if any(item.get("county") != row.get("region") or item.get("district") != row.get("name") for item in district_items):
+        if any(
+            item.get("county") != row.get("region") or item.get("district") != row.get("name")
+            for item in district_items
+        ):
             errors.append(f"{row.get('region')}/{row.get('name')}: district file contains another area")
         district_collected.extend(district_items)
     if sorted(district_collected, key=lambda x: x["id"]) != sorted(items, key=lambda x: x["id"]):
@@ -610,7 +616,8 @@ def summary_text(source_stats, change_stats, items, unresolved):
 
 
 def update(args):
-    cache = Path(args.cache_dir or os.environ.get("HOUSING_NATIONWIDE_CACHE", tempfile.gettempdir() + "/housing-nationwide-cache"))
+    default_cache = tempfile.gettempdir() + "/housing-nationwide-cache"
+    cache = Path(args.cache_dir or os.environ.get("HOUSING_NATIONWIDE_CACHE", default_cache))
     overrides = load_overrides(Path(args.overrides) if args.overrides else OVERRIDES)
     try:
         moi_rows = load_moi(cache, args.moi_source_dir, refresh=not args.no_refresh)
@@ -717,7 +724,8 @@ def main():
         else:
             update(args)
         return 0
-    except Exception as exc:
+    except Exception as exc:  # pylint: disable=broad-exception-caught
+        # CLI 最外層，轉成錯誤訊息與 exit code
         print(f"ERROR {exc}", file=sys.stderr)
         return 1
 

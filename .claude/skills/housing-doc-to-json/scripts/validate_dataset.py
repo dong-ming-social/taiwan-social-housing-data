@@ -34,7 +34,7 @@ def main():
     for path in files:
         try:
             doc = json.loads(path.read_text(encoding="utf-8"))
-        except Exception as exc:
+        except (OSError, ValueError) as exc:
             fail(errors, path, f"invalid JSON: {exc}")
             continue
 

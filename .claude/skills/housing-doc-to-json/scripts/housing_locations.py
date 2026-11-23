@@ -350,7 +350,8 @@ def existing_timestamp(items):
             existing = json.loads(path.read_text(encoding="utf-8"))
             if existing.get("items") == items:
                 return existing.get("updated_at")
-        except Exception:
+        except Exception:  # pylint: disable=broad-exception-caught
+            # 舊檔無法比較時改用現在時間
             pass
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
@@ -405,7 +406,7 @@ def validate_api(api_root=API_ROOT):
         all_doc = json.loads((api_root / "housing-locations.json").read_text(encoding="utf-8"))
         district_doc = json.loads((api_root / "districts.json").read_text(encoding="utf-8"))
         index_doc = json.loads((api_root / "index.json").read_text(encoding="utf-8"))
-    except Exception as exc:
+    except (OSError, ValueError) as exc:
         return [f"API files cannot be loaded: {exc}"]
     items = all_doc.get("items", [])
     if all_doc.get("count") != len(items):
@@ -453,7 +454,8 @@ def validate_api(api_root=API_ROOT):
     for row in district_rows:
         try:
             document = json.loads((api_root / row["path"]).read_text(encoding="utf-8"))
-        except Exception as exc:
+        except Exception as exc:  # pylint: disable=broad-exception-caught
+            # 收集所有錯誤後一併回報
             errors.append(f"{row.get('name')}: cannot load district file: {exc}")
             continue
         if document.get("count") != row.get("count") or document.get("count") != len(document.get("items", [])):
@@ -467,7 +469,8 @@ def validate_api(api_root=API_ROOT):
 
 
 def update(args):
-    cache = Path(args.cache_dir or os.environ.get("HOUSING_ADDRESS_CACHE", tempfile.gettempdir() + "/housing-address-cache"))
+    default_cache = tempfile.gettempdir() + "/housing-address-cache"
+    cache = Path(args.cache_dir or os.environ.get("HOUSING_ADDRESS_CACHE", default_cache))
     housing_path = source_path(args.housing_source, cache / "housing-projects.json", refresh=True)
     doorplate_path = source_path(args.doorplate_source, cache / "taipei-doorplates.csv")
     rows = load_source(housing_path)
@@ -513,7 +516,8 @@ def main():
         else:
             update(args)
         return 0
-    except Exception as exc:
+    except Exception as exc:  # pylint: disable=broad-exception-caught
+        # CLI 最外層，轉成錯誤訊息與 exit code
         print(f"ERROR {exc}", file=sys.stderr)
         return 1
 
