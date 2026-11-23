@@ -17,4 +17,5 @@
 - Keep commits focused and write concise Traditional Chinese commit messages.
 - Do not modify generated housing data unless the task explicitly requires a data update.
 - Before opening a pull request, run the tests and validation commands relevant to the changed files.
+- Python changes must pass `pylint $(git ls-files '*.py')` with no messages; settings live in `pyproject.toml` and the pinned version in `.github/requirements-dev.txt`. Prefer fixing code over adding `# pylint: disable`; when a disable is intentional, put the reason in a comment.
 - Pull requests into `main` or `develop` must pass `validate-housing-data`.

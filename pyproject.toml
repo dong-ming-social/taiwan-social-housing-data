@@ -1,0 +1,30 @@
+# 本 repo 不是可安裝的 Python 套件；此檔只放開發工具設定。
+
+[tool.pylint.main]
+py-version = "3.12"
+# macOS 專用的 OCR 腳本（ocr_vision.py）依賴 PyObjC 與 PyMuPDF，CI 與一般環境不安裝。
+ignored-modules = ["Quartz", "Vision", "Foundation", "pymupdf"]
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint."messages control"]
+disable = [
+  # 內部腳本以清楚的函式名稱為主，不強制每個模組、類別、函式都寫 docstring。
+  "missing-module-docstring",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  # 腳本需先 sys.path.insert 才能匯入同資料夾模組。
+  "wrong-import-position",
+  # 臺北市（api/v1）與全臺（api/v2）位置產生器刻意各自獨立，不共用驗證程式。
+  "duplicate-code",
+  "too-few-public-methods",
+]
+
+[tool.pylint.design]
+# 以既有資料管線的最大值為基準，避免一次大幅重構；新程式碼請盡量維持在預設值以下。
+max-locals = 30
+max-branches = 30
+max-statements = 80
+max-args = 10
+max-positional-arguments = 10

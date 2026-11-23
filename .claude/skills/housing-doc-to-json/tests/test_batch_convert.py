@@ -26,7 +26,7 @@ class BatchConvertDownloadTests(unittest.TestCase):
                 subprocess.CompletedProcess([], 0, "", ""),
             ]
 
-            def run(*args, **kwargs):
+            def run(*args, **_kwargs):
                 result = results.pop(0)
                 if result.returncode == 0:
                     Path(args[0][args[0].index("--output") + 1]).write_bytes(b"pdf")
@@ -50,7 +50,7 @@ class BatchConvertDownloadTests(unittest.TestCase):
 
     def test_exhausted_retries_report_curl_error_and_clean_temporary_file(self):
         with tempfile.TemporaryDirectory() as tmp:
-            def run(command, **kwargs):
+            def run(command, **_kwargs):
                 Path(command[command.index("--output") + 1]).write_bytes(b"partial")
                 return subprocess.CompletedProcess([], 56, "", "HTTP/2 stream reset")
 
@@ -71,7 +71,7 @@ class BatchConvertDownloadTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             downloads = [b"partial", b"pdf"]
 
-            def run(command, **kwargs):
+            def run(command, **_kwargs):
                 Path(command[command.index("--output") + 1]).write_bytes(downloads.pop(0))
                 return subprocess.CompletedProcess([], 0, "", "")
 

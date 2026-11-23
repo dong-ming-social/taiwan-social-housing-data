@@ -6,7 +6,14 @@ Reads a worklist JSON [{bucket, stem, path}], downloads each PDF into the
 scratchpad, and writes <repo>/<bucket>/<stem>.json via the skill helper.
 Records nothing it cannot read from the PDF itself.
 """
-import json, os, re, subprocess, sys, tempfile, time, urllib.parse
+import json
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import time
+import urllib.parse
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -77,7 +84,8 @@ def valid_pdf(path):
             if fh.read(5) != b"%PDF-":
                 return False
         return len(PdfReader(path).pages) > 0
-    except Exception:
+    except Exception:  # pylint: disable=broad-exception-caught
+        # pypdf 對損毀檔會丟出各種例外，一律視為無效 PDF
         return False
 
 
@@ -103,6 +111,7 @@ def fetch(path, refresh=False):
                 ],
                 capture_output=True,
                 text=True,
+                check=False,
             )
             stderr = result.stderr.strip()
             if result.returncode == 0 and valid_pdf(tmp):
@@ -161,13 +170,17 @@ def convert(rec, bucket_label):
     out = outdir / f"{output_stem}.json"
     with open(out, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=2)
-    return dict(out=str(out), type=dt, pages=npages, text_pages=ntext,
-                sha=doc["metadata"]["pdf_sha256"][:12])
+    return {"out": str(out), "type": dt, "pages": npages, "text_pages": ntext,
+            "sha": doc["metadata"]["pdf_sha256"][:12]}
 
 
 def main():
-    worklist = json.load(open(sys.argv[1], encoding="utf-8"))
-    labels = json.load(open(sys.argv[2], encoding="utf-8")) if len(sys.argv) > 2 else {}
+    with open(sys.argv[1], encoding="utf-8") as fh:
+        worklist = json.load(fh)
+    labels = {}
+    if len(sys.argv) > 2:
+        with open(sys.argv[2], encoding="utf-8") as fh:
+            labels = json.load(fh)
     ok, fail = [], []
     for rec in worklist:
         try:
@@ -175,7 +188,8 @@ def main():
             ok.append((rec, r))
             print(f"OK   {r['type']:<19} p{r['pages']:<3} text{r['text_pages']:<3} "
                   f"{rec['bucket']}/{rec['stem'][:52]}")
-        except Exception as e:
+        except Exception as e:  # pylint: disable=broad-exception-caught
+            # 單筆失敗不中斷整批轉檔
             fail.append((rec, str(e)))
             print(f"FAIL {rec['bucket']}/{rec['stem'][:52]} :: {e}")
     print(f"\n=== {len(ok)} ok, {len(fail)} failed ===")

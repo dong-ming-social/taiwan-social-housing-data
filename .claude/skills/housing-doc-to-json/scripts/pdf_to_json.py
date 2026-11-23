@@ -139,7 +139,8 @@ def main():
 
     extra = None
     if a.structured:
-        extra = json.load(open(a.structured, encoding="utf-8"))
+        with open(a.structured, encoding="utf-8") as fh:
+            extra = json.load(fh)
 
     doc = build(a.pdf, a.name, a.document_type, a.version, a.attribution,
                 pdf_basename=a.basename, official_pdf_url=a.url,
