@@ -99,6 +99,13 @@ own verbatim text.
 Add the document to the 收錄範圍 list (numeric order) and bump the
 「共收錄 N 份官方文件、M 頁」 counts (M = sum of every JSON's `page_count`).
 
+Then rebuild the housing-query skill's document catalog and include it in the
+commit — PR validation fails if it is out of date:
+```bash
+python .claude/skills/housing-query/scripts/build_catalog.py
+git add .claude/skills/housing-query/reference/catalog.json
+```
+
 ### 6. Ship via squash-merge PR
 Never commit to `main` directly.
 Use the repository owner's `dwhao84/` branch prefix for every branch. Commits use

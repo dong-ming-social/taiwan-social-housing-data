@@ -47,3 +47,8 @@ jobs:
 
       - name: 測試臺北市社宅法規資料
         run: python .claude/skills/housing-doc-to-json/tests/test_taipei_law_history.py
+
+      - name: 測試社宅查詢技能與文件目錄
+        run: |
+          python .claude/skills/housing-query/scripts/build_catalog.py --check
+          python .claude/skills/housing-query/tests/test_query.py
