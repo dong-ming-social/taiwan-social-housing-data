@@ -29,11 +29,11 @@
 | `jiankang/` | 健康社會住宅 | 8 | 57 | 0 |
 | `jiuzong/` | 舊宗社會住宅 | 1 | 37 | 0 |
 | `juguang/` | 莒光社會住宅 | 26 | 269 | 2 |
-| `lixing-jingfeng-1/` | lixing-jingfeng-1 | 10 | 91 | 1 |
+| `lixing-jingfeng-1/` | 景豐社會住宅 1 區及力行幸福住宅聯合招租 | 10 | 91 | 1 |
 | `ming-lun/` | 明倫社會住宅 | 9 | 96 | 2 |
 | `mydata/` | MyData 線上申請操作說明 | 1 | 12 | 0 |
 | `nangangdepot1/` | 南港機廠社會住宅 1 區 | 22 | 214 | 1 |
-| `only-news/` | only-news | 7 | 23 | 1 |
+| `only-news/` | 斯文里三期中繼安置戶及新興社宅短租（115 年 8 月） | 7 | 23 | 1 |
 | `qingnian/` | 青年社會住宅 1 區 | 7 | 62 | 1 |
 | `qingnian-2/` | 青年社會住宅 2 區 | 1 | 34 | 0 |
 | `qingnian_1_joyful/` | 青年 1 區暨洲美等幸福住宅聯合招租 | 16 | 130 | 1 |
