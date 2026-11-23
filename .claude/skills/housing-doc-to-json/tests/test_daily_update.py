@@ -59,6 +59,47 @@ class PortalDiscoveryTests(unittest.TestCase):
         self.assertNotIn("/documents/retired/file.pdf", found)
 
 
+class SiteWideAttachmentsTests(unittest.TestCase):
+    RECORDS = [
+        {"path": "/documents/shared/a.pdf", "src": ["attachments", "example"]},
+        {"path": "/documents/shared/old.pdf", "src": ["attachments"], "active": False},
+    ]
+    PAGES = {
+        "/": "",
+        "/attachments": '<a href="/documents/shared/a.pdf"></a><a href="/documents/shared/new.pdf"></a>',
+        "/housing-sites/map": "",
+    }
+
+    def run_discover(self, failing):
+        def fake_fetch(path):
+            if path in failing or path not in self.PAGES:
+                raise RuntimeError(f"HTTP fetch failed (28) {path}")
+            return self.PAGES[path]
+
+        with tempfile.TemporaryDirectory() as tmp:
+            inventory = Path(tmp) / "inventory.json"
+            inventory.write_text(json.dumps(self.RECORDS), encoding="utf-8")
+            with patch.object(portal_discovery, "INVENTORY", inventory), \
+                    patch.object(portal_discovery, "fetch_html", side_effect=fake_fetch), \
+                    patch.object(portal_discovery, "discover_news"), \
+                    patch("sys.stderr"):
+                return portal_discovery.discover()
+
+    def test_collects_links_when_page_succeeds(self):
+        found = self.run_discover(set())
+        self.assertIn("attachments", found["/documents/shared/new.pdf"])
+
+    def test_failed_page_preserves_known_documents_and_continues(self):
+        found = self.run_discover({"/attachments"})
+        self.assertIn("attachments", found["/documents/shared/a.pdf"])
+        self.assertNotIn("/documents/shared/new.pdf", found)
+        self.assertNotIn("/documents/shared/old.pdf", found)
+
+    def test_failed_site_map_still_raises(self):
+        with self.assertRaises(RuntimeError):
+            self.run_discover({"/housing-sites/map"})
+
+
 class NewsDiscoveryTests(unittest.TestCase):
     RECORDS = [
         {"path": "/documents/news/a.pdf", "src": ["101"]},

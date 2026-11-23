@@ -206,8 +206,15 @@ def discover():
     home = fetch_html("/")
     add_pdfs(found, home, "home")
 
-    downloads = fetch_html("/attachments")
-    add_pdfs(found, downloads, "attachments")
+    try:
+        downloads = fetch_html("/attachments")
+    except RuntimeError as exc:
+        # The site-wide download page only repeats links found elsewhere; a timeout
+        # here should not stop the whole run.
+        warn(f"site-wide attachments page skipped: {exc}")
+        preserve_failed_source(found, "attachments")
+    else:
+        add_pdfs(found, downloads, "attachments")
 
     site_map = fetch_html("/housing-sites/map")
     site_slugs = {
